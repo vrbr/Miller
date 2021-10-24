@@ -1,0 +1,5 @@
+@import './blocks/global/fonts.css';
+@import './blocks/global/normalize.css';
+@import './blocks/global/global.css';
+
+@import './blocks/header.css';
