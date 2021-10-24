@@ -32,18 +32,39 @@ body {
     min-width: 320px;
     max-width: 1900px;
     font-family: 'Gilroy', 'Arial', sans-serif;
-    /* font-size: 14px;
+    font-size: 14px;
     line-height: 18px;
-    font-weight: 400; */
+    font-weight: 500;
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
 }
 .container {
+    margin: 0 auto;
+    width: 90.4%;
 }
+
 @media (min-width: 768px) {
+    body {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .container {
+        width: 91.5%;
+    }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1349px) {
+    body {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .container {
+        width: 87.3%;
+    }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1904px) {
+    body {
+        font-size: 25px;
+        line-height: 32px;
+    }
 }
