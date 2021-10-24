@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1900px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    /* font-size: 14px;
+    line-height: 18px;
+    font-weight: 400; */
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+}
+.container {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1440px) {
+}
