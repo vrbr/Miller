@@ -43,6 +43,11 @@ body {
     margin: 0 auto;
     width: 90.4%;
 }
+.button {
+    background: #F9B300;
+    color: #fff;
+    border-radius: 5px;
+}
 
 @media (min-width: 768px) {
     body {

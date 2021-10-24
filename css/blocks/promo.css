@@ -1,0 +1,77 @@
+.promo {
+    margin-bottom: 20px;
+}
+.promo-swiper {
+    position: relative;
+    background: url("../../img/promo/bg.svg") no-repeat;
+    background-position: 100% 61%;
+    background-size: 146px 576px;
+}
+.promo-slide__wrapper {
+    position: relative;
+    height: 362px;
+    padding: 60px 50px 70px 4.8%;
+}
+.promo-slide__title {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 283px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+}
+.promo-slide__text {
+    margin: 0;
+    width: 224px;
+}
+.promo-slide__text + .promo-slide__text {
+    padding-top: 20px;
+}
+.promo-slide__text .strong {
+    display: block;
+    font-weight: 700;
+}
+.promo-slide__img {
+    position: absolute;
+}
+.promo-slide__img-01 {
+    right: 0;
+    bottom: 0;
+}
+.promo-slide__img-02 {
+    right: 0;
+    bottom: 0;
+}
+.promo-slide__img-03 {
+    right: 25px;
+    bottom: 0;
+}
+.promo-slide__img-04 {
+    right: 0;
+    bottom: 30px;
+}
+.promo-pagination.swiper-pagination {
+    text-align: left;
+    left: 4.8%;
+    bottom: 70px;
+}
+.promo-pagination .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: #E9E9E9;
+    opacity: 1;
+    outline: none;
+}
+.promo-pagination .swiper-pagination-bullet-active {
+    background: #F9B300;
+}
+.promo__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90.4%;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+}
