@@ -44,6 +44,10 @@ body {
     width: 90.4%;
 }
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
     background: #F9B300;
     color: #fff;
     border-radius: 5px;

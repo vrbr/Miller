@@ -88,9 +88,6 @@
 }
 
 .promo__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 90.4%;
     margin: 0 auto;
     height: 50px;
