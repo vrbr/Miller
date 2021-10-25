@@ -44,9 +44,19 @@ body {
     width: 90.4%;
 }
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
     background: #F9B300;
     color: #fff;
     border-radius: 5px;
+}
+.section-title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 @media (min-width: 768px) {
@@ -57,11 +67,15 @@ body {
     .container {
         width: 91.5%;
     }
+    .section-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 @media (min-width: 1349px) {
     body {
         background: url("../../../img/promo/bg-laptop.svg") no-repeat;
-        background-size: 514px 1244px;
+        background-size: 514px, 1244px;
         background-position-x: right;
         background-position-y: -197px;
         font-size: 18px;
@@ -70,10 +84,18 @@ body {
     .container {
         width: 87.3%;
     }
+    .section-title {
+        font-size: 35px;
+        line-height: 44px;
+    }
 }
 @media (min-width: 1904px) {
     body {
         font-size: 25px;
         line-height: 32px;
+    }
+    .section-title {
+        font-size: 50px;
+        line-height: 62px;
     }
 }
