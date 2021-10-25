@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miller</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,6 +88,76 @@
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="promo">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="mySwiper promo-swiper">
+                <div class="promo-wrapper swiper-wrapper">
+                    <div class="promo-slide swiper-slide">
+                        <div class="promo-slide__wrapper">
+                            <h2 class="promo-slide__title">Свежеобжаренный кофе</h2>
+                            <div class="promo-slide__texts">
+                                <p class="promo-slide__text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+                                <p class="promo-slide__text">Мы обжариваем кофе <span class="strong">каждые выходные.</span></p>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1349px)" srcset="img/promo/slide-laptop-01@1x.png 1x, img/promo/slide-laptop-01@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="img/promo/slide-tab-01@1x.png 1x, img/promo/slide-tab-01@2x.png 2x">
+                                <img class="promo-slide__img promo-slide__img-01" src="img/promo/slide-01@1x.png" srcset="img/promo/slide-01@2x.png" width="278" height="292" alt="Свежеобжаренный кофе">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="promo-slide swiper-slide">
+                        <div class="promo-slide__wrapper">
+                            <h2 class="promo-slide__title">Чай и кофейные напитки</h2>
+                            <div class="promo-slide__texts">
+                                <p class="promo-slide__text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+                                <p class="promo-slide__text">Мы обжариваем кофе <span class="strong">каждые выходные.</span></p>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1349px)" srcset="img/promo/slide-laptop-02@1x.png 1x, img/promo/slide-laptop-02@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="img/promo/slide-tab-02@1x.png 1x, img/promo/slide-tab-02@2x.png 2x">
+                                <img class="promo-slide__img promo-slide__img-02" src="img/promo/slide-02@1x.png" srcset="img/promo/slide-02@2x.png" width="321" height="259" alt="Чай и кофейные напитки">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="promo-slide swiper-slide">
+                        <div class="promo-slide__wrapper">
+                            <h2 class="promo-slide__title">Продукция для вендинга</h2>
+                            <div class="promo-slide__texts">
+                                <p class="promo-slide__text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+                                <p class="promo-slide__text">Мы обжариваем кофе <span class="strong">каждые выходные.</span></p>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1349px)" srcset="img/promo/slide-laptop-03@1x.png 1x, img/promo/slide-laptop-03@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="img/promo/slide-tab-03@1x.png 1x, img/promo/slide-tab-03@2x.png 2x">
+                                <img class="promo-slide__img promo-slide__img-03" src="img/promo/slide-03@1x.png" srcset="img/promo/slide-03@2x.png" width="211" height="226" alt="Продукция для вендинга">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="promo-slide swiper-slide">
+                        <div class="promo-slide__wrapper">
+                            <h2 class="promo-slide__title">Здоровое питание</h2>
+                            <div class="promo-slide__texts">
+                                <p class="promo-slide__text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+                                <p class="promo-slide__text">Мы обжариваем кофе <span class="strong">каждые выходные.</span></p>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1349px)" srcset="img/promo/slide-laptop-04@1x.png 1x, img/promo/slide-laptop-04@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="img/promo/slide-tab-04@1x.png 1x, img/promo/slide-tab-04@2x.png 2x">
+                                <img class="promo-slide__img promo-slide__img-04" src="img/promo/slide-04@1x.png" srcset="img/promo/slide-04@2x.png" width="226" height="188" alt="Здоровое питание">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-pagination swiper-pagination"></div>
+            </div>
+            <a class="button promo__button" href="#">Посмотреть каталог</a>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/promo-swiper.js"></script>
 </body>
 </html>

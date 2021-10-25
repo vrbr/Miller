@@ -43,6 +43,11 @@ body {
     margin: 0 auto;
     width: 90.4%;
 }
+.button {
+    background: #F9B300;
+    color: #fff;
+    border-radius: 5px;
+}
 
 @media (min-width: 768px) {
     body {
@@ -55,6 +60,10 @@ body {
 }
 @media (min-width: 1349px) {
     body {
+        background: url("../../../img/promo/bg-laptop.svg") no-repeat;
+        background-size: 514px 1244px;
+        background-position-x: right;
+        background-position-y: -197px;
         font-size: 18px;
         line-height: 23px;
     }

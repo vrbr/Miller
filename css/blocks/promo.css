@@ -1,0 +1,302 @@
+.promo {
+    margin-bottom: 20px;
+}
+
+.promo-swiper {
+    position: relative;
+    background: url("../../img/promo/bg.svg") no-repeat;
+    background-position-x: right;
+    background-position-y: -50px;
+    background-size: 146px 576px;
+}
+
+.promo-slide__wrapper {
+    position: relative;
+    height: 362px;
+    padding: 60px 50px 70px 4.8%;
+}
+
+.promo-slide__title {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 283px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.promo-slide__text {
+    margin: 0;
+    width: 224px;
+}
+
+.promo-slide__text+.promo-slide__text {
+    padding-top: 20px;
+}
+
+.promo-slide__text .strong {
+    display: block;
+    font-weight: 700;
+}
+
+.promo-slide__img {
+    position: absolute;
+}
+
+.promo-slide__img-01 {
+    right: 0;
+    bottom: 0;
+}
+
+.promo-slide__img-02 {
+    right: 0;
+    bottom: 0;
+}
+
+.promo-slide__img-03 {
+    right: 25px;
+    bottom: 0;
+}
+
+.promo-slide__img-04 {
+    right: 0;
+    bottom: 30px;
+}
+
+.promo-pagination.swiper-pagination {
+    text-align: left;
+    left: 4.8%;
+    bottom: 70px;
+}
+
+.promo-pagination .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: #E9E9E9;
+    opacity: 1;
+    outline: none;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 16px;
+    margin-left: 0;
+}
+
+.promo-pagination .swiper-pagination-bullet-active {
+    background: #F9B300;
+}
+
+.promo__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90.4%;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media (min-width: 768px) {
+    .promo-swiper {
+        background: url("../../img/promo/bg-tab.svg") no-repeat;
+        background-position-x: right;
+        background-position-y: -100px;
+        background-size: 362px 937px;
+    }
+
+    .promo-slide__wrapper {
+        height: 591px;
+        padding: 130px 100px 145px 4.8%;
+    }
+
+    .promo-slide__title {
+        margin-bottom: 80px;
+        width: 472px;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    .promo-slide__text {
+        margin: 0;
+        width: 314px;
+    }
+
+    .promo-slide__text+.promo-slide__text {
+        padding-top: 30px;
+    }
+
+    .promo-slide__img-01 {
+        width: 577px;
+        height: 469px;
+        bottom: 83px;
+    }
+
+    .promo-slide__img-02 {
+        width: 582px;
+        height: 524px;
+    }
+
+    .promo-slide__img-03 {
+        width: 414px;
+        height: 444px;
+        bottom: 30px;
+    }
+
+    .promo-slide__img-04 {
+        width: 448px;
+        height: 366px;
+    }
+
+    .promo-pagination.swiper-pagination {
+        bottom: 145px;
+    }
+
+    .promo-pagination .swiper-pagination-bullet {
+        width: 25px;
+        height: 25px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-right: 30px;
+    }
+
+    .promo__button {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .promo {
+        position: relative;
+    }
+    .promo-slide__wrapper {
+        padding: 87px 6.35% 201px;
+        height: 317px;
+    }
+    .promo-swiper {
+        background: none;
+    }
+    .promo-slide__img-01 {
+        width: 637px;
+        height: 549px;
+        bottom: 28px;
+        right: 150px;
+    }
+    .promo-slide__img-02 {
+        width: 481px;
+        height: 428px;
+        right: 230px;
+        bottom: 150px;
+    }
+    .promo-slide__img-03 {
+        width: 334px;
+        height: 359px;
+        bottom: 130px;
+        right: 225px;
+    }
+    .promo-slide__img-04 {
+        width: 365px;
+        height: 257px;
+        right: 250px;
+        bottom: 160px;
+    }
+    .promo-slide__title {
+        width: 100%;
+        font-size: 56px;
+        line-height: 70px;
+    }
+    .promo-slide__text {
+        width: 466px;
+    }
+    .promo-slide__text+.promo-slide__text {
+        padding-top: 20px;
+    }
+    .promo-pagination.swiper-pagination {
+        bottom: auto;
+        top: 50px;
+        right: 6.35%;
+        left: auto;
+        text-align: right;
+    }
+    .promo-pagination .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .promo-pagination .swiper-pagination-bullet-active {
+        background: #40241D;
+    }
+    .promo__button {
+        position: absolute;
+        bottom: 140px;
+        left: 6.35%;
+        width: 283px;
+        height: 56px;
+        font-size: 21px;
+        line-height: 25px;
+        z-index: 20;
+    }
+}
+
+@media (min-width: 1904px) {
+    .promo-slide__wrapper {
+        padding-top: 119px;
+        padding-bottom: 366px;
+    }
+    .promo-slide__title {
+        margin-bottom: 60px;
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .promo-slide__text {
+        width: 658px;
+    }
+    .promo-slide__text+.promo-slide__text {
+        padding-top: 30px;
+    }
+    .promo-slide__img-01 {
+        width: 900px;
+        height: 773px;
+        bottom: 0px;
+        right: 200px;
+    }
+    .promo-slide__img-02 {
+        width: 746px;
+        height: 601px;
+    }
+    .promo-slide__img-03 {
+        width: 473px;
+        height: 504px;
+        bottom: 170px;
+        right: 260px;
+    }
+    .promo-slide__img-04 {
+        width: 518px;
+        height: 364px;
+        bottom: 200px;
+    }
+    .promo__button {
+        width: 400px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 36px;
+        bottom: 196px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-left: 30px;
+    }
+    .promo-pagination .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -224,7 +224,7 @@
         min-height: 143px;
     }
     .header__nav-btn {
-        top: 33px;
+        top: 44px;
         width: 59px;
         height: 30px;
     }
@@ -397,9 +397,12 @@
         color: #C4C4C4;
     }
     .header-search__img {
-        top: 50px;
+        top: 45px;
         width: 22px;
         height: 22px;
+    }
+    .header-search__btn {
+        color: #000;
     }
 }
 
