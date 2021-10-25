@@ -211,9 +211,6 @@
         font-size: 56px;
         line-height: 70px;
     }
-    .promo-slide__texts {
-        margin-top: 41px;
-    }
     .promo-slide__text {
         width: 466px;
     }
@@ -248,5 +245,58 @@
         font-size: 21px;
         line-height: 25px;
         z-index: 20;
+    }
+}
+
+@media (min-width: 1904px) {
+    .promo-slide__wrapper {
+        padding-top: 119px;
+        padding-bottom: 366px;
+    }
+    .promo-slide__title {
+        margin-bottom: 60px;
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .promo-slide__text {
+        width: 658px;
+    }
+    .promo-slide__text+.promo-slide__text {
+        padding-top: 30px;
+    }
+    .promo-slide__img-01 {
+        width: 900px;
+        height: 773px;
+        bottom: 0px;
+        right: 200px;
+    }
+    .promo-slide__img-02 {
+        width: 746px;
+        height: 601px;
+    }
+    .promo-slide__img-03 {
+        width: 473px;
+        height: 504px;
+        bottom: 170px;
+        right: 260px;
+    }
+    .promo-slide__img-04 {
+        width: 518px;
+        height: 364px;
+        bottom: 200px;
+    }
+    .promo__button {
+        width: 400px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 36px;
+        bottom: 196px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-left: 30px;
+    }
+    .promo-pagination .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
     }
 }
