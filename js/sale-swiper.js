@@ -5,4 +5,9 @@ const swiper = new Swiper(".mySwiper.sale-swiper", {
         nextEl: ".swiper-sale-button-next",
         prevEl: ".swiper-sale-button-prev",
     },
+    breakpoints: {
+        1349: {
+            spaceBetween: 15,
+        },
+    },
 });

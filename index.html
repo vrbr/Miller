@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miller</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/blocks/global/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -217,295 +217,311 @@
                 <p class="sale__text">Наша компания предлагает покупать товар со скидкой не только в дни распродаж  или в течение действия ограниченных предложений,
                     но и пользоваться скидками постоянно!</p>
             </div>
-            <div class="mySwiper sale-swiper">
-                <div class="sale-wrapper swiper-wrapper">
-                    <div class="sale-slide swiper-slide">
-                        <div class="sale-slide__wrapper">
-                            <div class="sale-slide__header">
-                                <p class="sale-slide__header-title">Скидки</p>
-                                <select class="sale-slide__header-size">
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                </select>
-                            </div>
-                            <div class="sale-slide__content sale-card">
-                                <div class="sale-card__deskr sale-deskr">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
-                                        <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
-                                    </picture>
-                                    <div class="sale-deskr__info">
-                                        <div class="sale-deskr__ratings">
-                                            <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
-                                            <div class="sale-card__grade">
-                                                <span class="sale-card__number">4.0</span>
-                                                <span class="sale-card__reviews">(32 отзыва)</span>
-                                            </div>
-                                        </div>
-                                        <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+            <div class="sale-wrapper-container">
+                <div class="mySwiper sale-swiper">
+                    <div class="sale-wrapper swiper-wrapper">
+                        <div class="sale-slide swiper-slide">
+                            <div class="sale-slide__wrapper">
+                                <div class="sale-slide__header">
+                                    <p class="sale-slide__header-title">Скидки</p>
+                                    <select class="sale-slide__header-size">
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                    </select>
+                                </div>
+                                <div class="sale-slide__content sale-card">
+                                    <div class="sale-card__deskr sale-deskr">
+                                        <picture>
+                                            <source media="(min-width: 1349px)" srcset="img/sale/slide-laptop@1x.jpg 1x, img/sale/slide-laptop@2x.jpg 2x">
+                                            <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
+                                            <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
+                                        </picture>
                                         <div class="sale-deskr__info">
-                                            <div class="sale-deskr__box sale-deskr__sour">
-                                                <p class="sale-deskr__title">Кислинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                            <div class="sale-deskr__ratings">
+                                                <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
+                                                <div class="sale-card__grade">
+                                                    <span class="sale-card__number">4.0</span>
+                                                    <span class="sale-card__reviews">(32 отзыва)</span>
+                                                </div>
                                             </div>
-                                            <div class="sale-deskr__box sale-deskr__bitterly">
-                                                <p class="sale-deskr__title">Горчинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__richly">
-                                                <p class="sale-deskr__title">Насыщенность</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                            <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+                                            <div class="sale-deskr__info">
+                                                <div class="sale-deskr__box sale-deskr__sour">
+                                                    <p class="sale-deskr__title">Кислинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__bitterly">
+                                                    <p class="sale-deskr__title">Горчинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__richly">
+                                                    <p class="sale-deskr__title">Насыщенность</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="sale-slide__footer sale-description">
-                                <h3 class="sale-description__title">Colombia Supremo</h3>
-                                <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
-                                <div class="sale-description__box">
-                                    <div class="sale-description__price">
-                                        <span class="sale-description__price-old">350 ₽</span>
-                                        <span class="sale-description__price-new">250 ₽</span>
+                                <div class="sale-slide__footer sale-description">
+                                    <h3 class="sale-description__title">Colombia Supremo</h3>
+                                    <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
+                                    <div class="sale-description__box">
+                                        <div class="sale-description__price">
+                                            <span class="sale-description__price-old">350 ₽</span>
+                                            <span class="sale-description__price-new">250 ₽</span>
+                                        </div>
+                                        <button class="button sale-description__button">В корзину</button>
                                     </div>
-                                    <button class="button sale-description__button">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-slide swiper-slide">
+                            <div class="sale-slide__wrapper">
+                                <div class="sale-slide__header">
+                                    <p class="sale-slide__header-title">Скидки</p>
+                                    <select class="sale-slide__header-size">
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                    </select>
+                                </div>
+                                <div class="sale-slide__content sale-card">
+                                    <div class="sale-card__deskr sale-deskr">
+                                        <picture>
+                                            <source media="(min-width: 1349px)" srcset="img/sale/slide-laptop@1x.jpg 1x, img/sale/slide-laptop@2x.jpg 2x">
+                                            <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
+                                            <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
+                                        </picture>
+                                        <div class="sale-deskr__info">
+                                            <div class="sale-deskr__ratings">
+                                                <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
+                                                <div class="sale-card__grade">
+                                                    <span class="sale-card__number">4.0</span>
+                                                    <span class="sale-card__reviews">(32 отзыва)</span>
+                                                </div>
+                                            </div>
+                                            <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+                                            <div class="sale-deskr__info">
+                                                <div class="sale-deskr__box sale-deskr__sour">
+                                                    <p class="sale-deskr__title">Кислинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__bitterly">
+                                                    <p class="sale-deskr__title">Горчинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__richly">
+                                                    <p class="sale-deskr__title">Насыщенность</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sale-slide__footer sale-description">
+                                    <h3 class="sale-description__title">Colombia Supremo</h3>
+                                    <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
+                                    <div class="sale-description__box">
+                                        <div class="sale-description__price">
+                                            <span class="sale-description__price-old">350 ₽</span>
+                                            <span class="sale-description__price-new">250 ₽</span>
+                                        </div>
+                                        <button class="button sale-description__button">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-slide swiper-slide">
+                            <div class="sale-slide__wrapper">
+                                <div class="sale-slide__header">
+                                    <p class="sale-slide__header-title">Скидки</p>
+                                    <select class="sale-slide__header-size">
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                    </select>
+                                </div>
+                                <div class="sale-slide__content sale-card">
+                                    <div class="sale-card__deskr sale-deskr">
+                                        <picture>
+                                            <source media="(min-width: 1349px)" srcset="img/sale/slide-laptop@1x.jpg 1x, img/sale/slide-laptop@2x.jpg 2x">
+                                            <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
+                                            <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
+                                        </picture>
+                                        <div class="sale-deskr__info">
+                                            <div class="sale-deskr__ratings">
+                                                <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
+                                                <div class="sale-card__grade">
+                                                    <span class="sale-card__number">4.0</span>
+                                                    <span class="sale-card__reviews">(32 отзыва)</span>
+                                                </div>
+                                            </div>
+                                            <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+                                            <div class="sale-deskr__info">
+                                                <div class="sale-deskr__box sale-deskr__sour">
+                                                    <p class="sale-deskr__title">Кислинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__bitterly">
+                                                    <p class="sale-deskr__title">Горчинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__richly">
+                                                    <p class="sale-deskr__title">Насыщенность</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sale-slide__footer sale-description">
+                                    <h3 class="sale-description__title">Colombia Supremo</h3>
+                                    <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
+                                    <div class="sale-description__box">
+                                        <div class="sale-description__price">
+                                            <span class="sale-description__price-old">350 ₽</span>
+                                            <span class="sale-description__price-new">250 ₽</span>
+                                        </div>
+                                        <button class="button sale-description__button">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-slide swiper-slide">
+                            <div class="sale-slide__wrapper">
+                                <div class="sale-slide__header">
+                                    <p class="sale-slide__header-title">Скидки</p>
+                                    <select class="sale-slide__header-size">
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                    </select>
+                                </div>
+                                <div class="sale-slide__content sale-card">
+                                    <div class="sale-card__deskr sale-deskr">
+                                        <picture>
+                                            <source media="(min-width: 1349px)" srcset="img/sale/slide-laptop@1x.jpg 1x, img/sale/slide-laptop@2x.jpg 2x">
+                                            <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
+                                            <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
+                                        </picture>
+                                        <div class="sale-deskr__info">
+                                            <div class="sale-deskr__ratings">
+                                                <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
+                                                <div class="sale-card__grade">
+                                                    <span class="sale-card__number">4.0</span>
+                                                    <span class="sale-card__reviews">(32 отзыва)</span>
+                                                </div>
+                                            </div>
+                                            <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+                                            <div class="sale-deskr__info">
+                                                <div class="sale-deskr__box sale-deskr__sour">
+                                                    <p class="sale-deskr__title">Кислинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__bitterly">
+                                                    <p class="sale-deskr__title">Горчинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__richly">
+                                                    <p class="sale-deskr__title">Насыщенность</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sale-slide__footer sale-description">
+                                    <h3 class="sale-description__title">Colombia Supremo</h3>
+                                    <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
+                                    <div class="sale-description__box">
+                                        <div class="sale-description__price">
+                                            <span class="sale-description__price-old">350 ₽</span>
+                                            <span class="sale-description__price-new">250 ₽</span>
+                                        </div>
+                                        <button class="button sale-description__button">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-slide swiper-slide">
+                            <div class="sale-slide__wrapper">
+                                <div class="sale-slide__header">
+                                    <p class="sale-slide__header-title">Скидки</p>
+                                    <select class="sale-slide__header-size">
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                        <option value="250 г.">250 г.</option>
+                                    </select>
+                                </div>
+                                <div class="sale-slide__content sale-card">
+                                    <div class="sale-card__deskr sale-deskr">
+                                        <picture>
+                                            <source media="(min-width: 1349px)" srcset="img/sale/slide-laptop@1x.jpg 1x, img/sale/slide-laptop@2x.jpg 2x">
+                                            <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
+                                            <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
+                                        </picture>
+                                        <div class="sale-deskr__info">
+                                            <div class="sale-deskr__ratings">
+                                                <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
+                                                <div class="sale-card__grade">
+                                                    <span class="sale-card__number">4.0</span>
+                                                    <span class="sale-card__reviews">(32 отзыва)</span>
+                                                </div>
+                                            </div>
+                                            <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
+                                            <div class="sale-deskr__info">
+                                                <div class="sale-deskr__box sale-deskr__sour">
+                                                    <p class="sale-deskr__title">Кислинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__bitterly">
+                                                    <p class="sale-deskr__title">Горчинка</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                                <div class="sale-deskr__box sale-deskr__richly">
+                                                    <p class="sale-deskr__title">Насыщенность</p>
+                                                    <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sale-slide__footer sale-description">
+                                    <h3 class="sale-description__title">Colombia Supremo</h3>
+                                    <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
+                                    <div class="sale-description__box">
+                                        <div class="sale-description__price">
+                                            <span class="sale-description__price-old">350 ₽</span>
+                                            <span class="sale-description__price-new">250 ₽</span>
+                                        </div>
+                                        <button class="button sale-description__button">В корзину</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sale-slide swiper-slide">
-                        <div class="sale-slide__wrapper">
-                            <div class="sale-slide__header">
-                                <p class="sale-slide__header-title">Скидки</p>
-                                <select class="sale-slide__header-size">
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                </select>
-                            </div>
-                            <div class="sale-slide__content sale-card">
-                                <div class="sale-card__deskr sale-deskr">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
-                                        <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
-                                    </picture>
-                                    <div class="sale-deskr__info">
-                                        <div class="sale-deskr__ratings">
-                                            <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
-                                            <div class="sale-card__grade">
-                                                <span class="sale-card__number">4.0</span>
-                                                <span class="sale-card__reviews">(32 отзыва)</span>
-                                            </div>
-                                        </div>
-                                        <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
-                                        <div class="sale-deskr__info">
-                                            <div class="sale-deskr__box sale-deskr__sour">
-                                                <p class="sale-deskr__title">Кислинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__bitterly">
-                                                <p class="sale-deskr__title">Горчинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__richly">
-                                                <p class="sale-deskr__title">Насыщенность</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sale-slide__footer sale-description">
-                                <h3 class="sale-description__title">Colombia Supremo</h3>
-                                <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
-                                <div class="sale-description__box">
-                                    <div class="sale-description__price">
-                                        <span class="sale-description__price-old">350 ₽</span>
-                                        <span class="sale-description__price-new">250 ₽</span>
-                                    </div>
-                                    <button class="button sale-description__button">В корзину</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-sale-button-next swiper-button-next">
+                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1014 6.7007C19.3781 6.42401 19.3781 5.97541 19.1014 5.69872L14.5925 1.1898C14.3158 0.913108 13.8672 0.913108 13.5905 1.1898C13.3138 1.46649 13.3138 1.91509 13.5905 2.19178L17.5984 6.19971L13.5905 10.2076C13.3138 10.4843 13.3138 10.9329 13.5905 11.2096C13.8672 11.4863 14.3158 11.4863 14.5925 11.2096L19.1014 6.7007ZM0.400391 6.90822L18.6004 6.90822L18.6004 5.4912L0.400391 5.4912L0.400391 6.90822Z" fill="white"/>
+                        </svg>
                     </div>
-                    <div class="sale-slide swiper-slide">
-                        <div class="sale-slide__wrapper">
-                            <div class="sale-slide__header">
-                                <p class="sale-slide__header-title">Скидки</p>
-                                <select class="sale-slide__header-size">
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                </select>
-                            </div>
-                            <div class="sale-slide__content sale-card">
-                                <div class="sale-card__deskr sale-deskr">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
-                                        <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
-                                    </picture>
-                                    <div class="sale-deskr__info">
-                                        <div class="sale-deskr__ratings">
-                                            <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
-                                            <div class="sale-card__grade">
-                                                <span class="sale-card__number">4.0</span>
-                                                <span class="sale-card__reviews">(32 отзыва)</span>
-                                            </div>
-                                        </div>
-                                        <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
-                                        <div class="sale-deskr__info">
-                                            <div class="sale-deskr__box sale-deskr__sour">
-                                                <p class="sale-deskr__title">Кислинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__bitterly">
-                                                <p class="sale-deskr__title">Горчинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__richly">
-                                                <p class="sale-deskr__title">Насыщенность</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sale-slide__footer sale-description">
-                                <h3 class="sale-description__title">Colombia Supremo</h3>
-                                <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
-                                <div class="sale-description__box">
-                                    <div class="sale-description__price">
-                                        <span class="sale-description__price-old">350 ₽</span>
-                                        <span class="sale-description__price-new">250 ₽</span>
-                                    </div>
-                                    <button class="button sale-description__button">В корзину</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sale-slide swiper-slide">
-                        <div class="sale-slide__wrapper">
-                            <div class="sale-slide__header">
-                                <p class="sale-slide__header-title">Скидки</p>
-                                <select class="sale-slide__header-size">
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                </select>
-                            </div>
-                            <div class="sale-slide__content sale-card">
-                                <div class="sale-card__deskr sale-deskr">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
-                                        <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
-                                    </picture>
-                                    <div class="sale-deskr__info">
-                                        <div class="sale-deskr__ratings">
-                                            <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
-                                            <div class="sale-card__grade">
-                                                <span class="sale-card__number">4.0</span>
-                                                <span class="sale-card__reviews">(32 отзыва)</span>
-                                            </div>
-                                        </div>
-                                        <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
-                                        <div class="sale-deskr__info">
-                                            <div class="sale-deskr__box sale-deskr__sour">
-                                                <p class="sale-deskr__title">Кислинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__bitterly">
-                                                <p class="sale-deskr__title">Горчинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__richly">
-                                                <p class="sale-deskr__title">Насыщенность</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sale-slide__footer sale-description">
-                                <h3 class="sale-description__title">Colombia Supremo</h3>
-                                <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
-                                <div class="sale-description__box">
-                                    <div class="sale-description__price">
-                                        <span class="sale-description__price-old">350 ₽</span>
-                                        <span class="sale-description__price-new">250 ₽</span>
-                                    </div>
-                                    <button class="button sale-description__button">В корзину</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sale-slide swiper-slide">
-                        <div class="sale-slide__wrapper">
-                            <div class="sale-slide__header">
-                                <p class="sale-slide__header-title">Скидки</p>
-                                <select class="sale-slide__header-size">
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                    <option value="250 г.">250 г.</option>
-                                </select>
-                            </div>
-                            <div class="sale-slide__content sale-card">
-                                <div class="sale-card__deskr sale-deskr">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="img/sale/slide-tab@1x.jpg 1x, img/sale/slide-tab@2x.jpg 2x">
-                                        <img class="sale-deskr__main-img" src="img/sale/slide@1x.jpg" srcset="img/sale/slide@2x.jpg" width="107" height="193" alt="">
-                                    </picture>
-                                    <div class="sale-deskr__info">
-                                        <div class="sale-deskr__ratings">
-                                            <img class="sale-card__stars" src="img/sale/stars.svg" alt="">
-                                            <div class="sale-card__grade">
-                                                <span class="sale-card__number">4.0</span>
-                                                <span class="sale-card__reviews">(32 отзыва)</span>
-                                            </div>
-                                        </div>
-                                        <img class="sale-deskr__img" src="img/sale/coffee.svg" width="80" height="12" alt="">
-                                        <div class="sale-deskr__info">
-                                            <div class="sale-deskr__box sale-deskr__sour">
-                                                <p class="sale-deskr__title">Кислинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__bitterly">
-                                                <p class="sale-deskr__title">Горчинка</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                            <div class="sale-deskr__box sale-deskr__richly">
-                                                <p class="sale-deskr__title">Насыщенность</p>
-                                                <img class="sale-deskr__rating" src="img/sale/rating.svg" width="79" height="6" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sale-slide__footer sale-description">
-                                <h3 class="sale-description__title">Colombia Supremo</h3>
-                                <p class="sale-description__text">Свежеобжаренный кофе -<br>описание товара, вкус, аромат</p>
-                                <div class="sale-description__box">
-                                    <div class="sale-description__price">
-                                        <span class="sale-description__price-old">350 ₽</span>
-                                        <span class="sale-description__price-new">250 ₽</span>
-                                    </div>
-                                    <button class="button sale-description__button">В корзину</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-sale-button-prev swiper-button-prev">
+                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.898535 5.29873C0.621801 5.57546 0.621801 6.02414 0.898535 6.30087L5.40818 10.8105C5.68491 11.0873 6.13359 11.0873 6.41032 10.8105C6.68705 10.5338 6.68705 10.0851 6.41032 9.80837L2.40175 5.7998L6.41032 1.79123C6.68706 1.5145 6.68706 1.06582 6.41032 0.789088C6.13359 0.512354 5.68491 0.512354 5.40818 0.789088L0.898535 5.29873ZM19.5996 5.09118L1.39961 5.09118L1.39961 6.50842L19.5996 6.50843L19.5996 5.09118Z" fill="white"/>
+                        </svg>
                     </div>
                 </div>
-                <div class="swiper-sale-button-next swiper-button-next"></div>
-                <div class="swiper-sale-button-prev swiper-button-prev"></div>
             </div>
+            <a class="sale__link" href="#">Смотреть все</a>
         </section>
     </main>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/promo-swiper.js"></script>
     <script src="js/preview-swiper.js"></script>
