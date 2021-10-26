@@ -1,4 +1,6 @@
 .advantage {
+    z-index: 100;
+    position: relative;
     padding-top: 62px;
     padding-bottom: 64px;
     background-repeat: no-repeat;
