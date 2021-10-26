@@ -178,6 +178,9 @@
 }
 
 @media (min-width: 1904px) {
+    .preview {
+        padding-bottom: 90px;
+    }
     .preview__title {
         margin-bottom: 83px;
     }
