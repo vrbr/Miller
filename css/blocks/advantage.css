@@ -33,23 +33,25 @@
 .advantage-wrapper__box::after {
     position: absolute;
     content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box-roasting::after {
-    background: url("../../img/advantage/roasting.svg") no-repeat;
+    background-image: url("../../img/advantage/roasting.svg");
     top: 10px;
     left: 12px;
     width: 18px;
     height: 18px;
 }
 .box-prices::after {
-    background: url("../../img/advantage/prices.svg") no-repeat;
+    background-image: url("../../img/advantage/prices.svg");
     top: 11px;
     left: 12px;
     width: 18px;
     height: 18px;
 }
 .box-consultation::after {
-    background: url("../../img/advantage/consultation.svg") no-repeat;
+    background-image: url("../../img/advantage/consultation.svg");
     top: 11px;
     left: 12px;
     width: 21px;
@@ -71,4 +73,81 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .advantage {
+        padding-bottom: 130px;
+    }
+    .advantage__container {
+        padding-left: 4.25%;
+    }
+    .advantage__title {
+        margin-bottom: 61px;
+    }
+    .advantage-wrapper__box {
+        position: relative;
+        padding-left: 120px;
+        padding-bottom: 60px;
+    }
+    .advantage-wrapper__box::before {
+        width: 81px;
+        height: 81px;
+        left: 0;
+        top: 0;
+    }
+    .box-roasting::after {
+        top: 23px;
+        left: 28px;
+        width: 30px;
+        height: 30px;
+    }
+    .box-prices::after {
+        top: 27px;
+        left: 27px;
+        width: 30px;
+        height: 30px;
+    }
+    .box-consultation::after {
+        top: 26px;
+        left: 26px;
+        width: 35px;
+        height: 29px;
+    }
+    .advantage-wrapper__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .advantage-wrapper__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .advantage__container {
+        position: relative;
+    }
+    .advantage__container::after {
+        position: absolute;
+        content: "";
+        background-image: url("../../img/advantage/bg@1x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 538px;
+        height: 440px;
+        left: 7.25%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .advantage-wrapper,
+    .advantage__title {
+        width: 600px;
+        margin-left: auto;
+    }
+}
+@media (min-resolution: 2dppx) and (min-width: 1200px) {
+    .advantage__container::after {
+        background-image: url("../../img/advantage/bg@2x.png");
+    }
 }
