@@ -153,6 +153,9 @@
 }
 
 @media (min-width: 1349px) {
+    .advantage {
+        background-image: url("../../img/advantage/vector-bg-laptop.svg");
+    }
     .advantage__container {
         padding-left: 6.35%;
         padding-right: 6.35%;
@@ -193,5 +196,55 @@
         left: 20px;
         width: 26px;
         height: 22px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .advantage-wrapper,
+    .advantage__title {
+        width: 850px;
+    }
+    .advantage__title {
+        margin-bottom: 80px;
+    }
+    .advantage-wrapper__box {
+        padding-left: 134px;
+        padding-bottom: 60px;
+    }
+    .advantage-wrapper__title {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 25px;
+    }
+    .advantage-wrapper__text {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .advantage-wrapper__box::before {
+        width: 84px;
+        height: 84px;
+    }
+    .box-roasting::after {
+        top: 26px;
+        left: 29px;
+        width: 31px;
+        height: 30px;
+    }
+    .box-prices::after {
+        top: 26px;
+        left: 27px;
+        width: 31px;
+        height: 31px;
+    }
+    .box-consultation::after {
+        top: 25px;
+        left: 27px;
+        width: 36px;
+        height: 30px;
+    }
+    .advantage__container::after {
+        background-image: url('../../img/advantage/bg-desk@1x.png');
+        width: 754px;
+        height: 600px;
     }
 }
