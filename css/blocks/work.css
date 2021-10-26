@@ -1,0 +1,122 @@
+.work {
+    position: relative;
+    color: #fff;
+}
+.work::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/work/bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 655px;
+    top: -92px;
+    left: 0;
+    z-index: -1;
+}
+.work .container {
+    position: relative;
+    margin-bottom: 70px;
+    margin-left: 4.8%;
+    width: 339px;
+}
+.work__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+.work__texts {
+    margin-bottom: 40px;
+}
+.work__text {
+    margin: 0;
+    padding-bottom: 17px;
+}
+.work__text:last-of-type {
+    padding-bottom: 0;
+}
+.work__button {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@media (min-resolution: 2dppx) and (max-width: 767px) {
+    .work::before {
+        background-image: url("../../img/work/bg@2x.jpg");
+    }
+}
+
+@media (min-width: 768px) {
+    .work::before {
+        top: -115px;
+        height: 835px;
+    }
+    .work .container {
+        width: 700px;
+    }
+    .work__title {
+        margin-bottom: 69px;
+    }
+    .work__texts {
+        margin-bottom: 93px;
+    }
+    .work__text {
+        padding-bottom: 30px;
+    }
+    .work__button {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .work::before {
+        top: -167px;
+    }
+    .work .container {
+        margin-left: 6.35%;
+        width: 882px;
+    }
+    .work__texts {
+        margin-bottom: 70px;
+    }
+    .work__button {
+        margin-left: 0;
+        width: 283px;
+        height: 56px;
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .work::before {
+        top: -380px;
+        height: 1058px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .work::before {
+        top: -212px;
+        height: 1078px;
+    }
+    .work .container {
+        width: 1246px;
+    }
+    .work__title,
+    .work__texts {
+        margin-bottom: 100px;
+    }
+    .work__button {
+        margin-left: 0;
+        width: 400px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
