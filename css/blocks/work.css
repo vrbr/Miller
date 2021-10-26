@@ -23,8 +23,6 @@
     margin: 0;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 20px;
-    line-height: 25px;
 }
 .work__texts {
     margin-bottom: 40px;
@@ -51,4 +49,45 @@
 }
 
 @media (min-width: 768px) {
+    .work::before {
+        top: -115px;
+        height: 835px;
+    }
+    .work .container {
+        width: 700px;
+    }
+    .work__title {
+        margin-bottom: 69px;
+    }
+    .work__texts {
+        margin-bottom: 93px;
+    }
+    .work__text {
+        padding-bottom: 30px;
+    }
+    .work__button {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .work::before {
+        top: -348px;
+        height: 1024px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .work::before {
+        top: -400px;
+        height: 1140px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .work .container {
+        margin-left: 6.35%;
+    }
 }
