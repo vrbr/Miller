@@ -180,8 +180,6 @@
     .sale__title {
         margin-top: 101px;
         margin-bottom: 50px;
-        font-size: 40px;
-        line-height: 50px;
     }
     .sale__text {
         margin-bottom: 80px;
@@ -295,8 +293,6 @@
     .sale__title {
         margin-top: 0;
         margin-bottom: 39px;
-        font-size: 35px;
-        line-height: 44px;
     }
     .sale__text {
         margin-bottom: 54px;
@@ -415,5 +411,140 @@
         line-height: 16px;
         text-align: right;
         text-decoration-line: underline;
+    }
+}
+
+@media (min-width: 1904px) {
+    .sale-swiper {
+        padding-right: 7px;
+    }
+    .sale__title {
+        margin-bottom: 50px;
+    }
+    .sale__text {
+        margin-bottom: 45px;
+        width: 1107px;
+    }
+    .sale-wrapper-container {
+        margin-right: 262px;
+        width: 1256px;
+        height: 687px;
+    }
+    .sale-slide {
+        width: 400px !important;
+        height: 652px;
+        border-radius: 20px;
+    }
+    .sale-slide__wrapper {
+        padding: 21px 41px 52px 38px;
+    }
+    .sale-slide__header-title {
+        padding-top: 31px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sale-slide__header-title::before {
+        top: -51px;
+        left: -3px;
+        width: 70px;
+        height: 70px;
+    }
+    .sale-slide__header-title::after {
+        top: -36px;
+        left: 19px;
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .sale-slide__header-size {
+        padding-left: 20px;
+        width: 132px;
+        height: 33px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sale-deskr__main-img {
+        width: 172px;
+        height: 311px;
+    }
+    .sale-deskr__ratings {
+        padding-bottom: 30px;
+    }
+    .sale-card__stars {
+        width: 133px;
+        height: 25px;
+    }
+    .sale-card__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sale-card__reviews {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sale-deskr__img {
+        margin-bottom: 30px;
+        width: 127px;
+        height: 19px;
+    }
+    .sale-deskr__box + .sale-deskr__box {
+        margin-top: 15px;
+    }
+    .sale-deskr__title {
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sale-deskr__rating {
+        width: 127px;
+        height: 10px;
+    }
+    .sale-description__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sale-description__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sale-description__box {
+        margin-top: 30px;
+    }
+    .sale-description__price-old {
+        top: -26px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .sale-description__price-new {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .sale-description__button {
+        width: 178px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .swiper-sale-button-next,
+    .swiper-sale-button-prev {
+        width: 70px;
+        height: 70px;
+    }
+    .swiper-sale-button-next {
+        right: 6.35%;
+    }
+    .swiper-sale-button-prev {
+        right: 1584px;
+    }
+    .swiper-sale-button-prev svg,
+    .swiper-sale-button-next svg {
+        width: 26px;
+        height: 16px;
+    }
+    .sale__link {
+        margin-top: 58px;
+        margin-right: 262px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }

@@ -9,5 +9,8 @@ const swiper = new Swiper(".mySwiper.sale-swiper", {
         1349: {
             spaceBetween: 15,
         },
+        1904: {
+            spaceBetween: 20,
+        },
     },
 });
