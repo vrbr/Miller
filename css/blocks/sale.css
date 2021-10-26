@@ -289,6 +289,7 @@
 @media (min-width: 1349px) {
     .sale {
         position: relative;
+        margin-bottom: 0;
     }
     .sale__title {
         margin-top: 0;
