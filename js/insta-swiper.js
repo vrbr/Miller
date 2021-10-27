@@ -5,4 +5,12 @@ const instaSwiper = new Swiper(".insta__swiper", {
         nextEl: ".insta-swiper-button-next",
         prevEl: ".insta-swiper-button-prev",
     },
+    breakpoints: {
+        1349: {
+            // grid: {
+            //     rows: 2,
+            // },
+            spaceBetween: 0,
+        },
+    },
 });

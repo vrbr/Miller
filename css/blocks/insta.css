@@ -132,3 +132,59 @@
         background-image: url("../../img/insta/bg-tab@2x.png");
     }
 }
+
+@media (min-width: 1349px) {
+    .insta__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 300px;
+        background-position: 0px 186px, 0 818px;
+    }
+    .insta__container::before {
+        background: url("../../img/insta/bg-laptop@1x.png") no-repeat;
+        width: 384px;
+        height: 577px;
+        top: 131px;
+        right: auto;
+        left: 113px;
+        z-index: 2;
+    }
+    .insta__title {
+        margin-left: 6.35%;
+        margin-bottom: 61px;
+    }
+    .insta__link {
+        margin-bottom: 55px;
+        width: 60px;
+        height: 60px;
+    }
+    .insta__link svg {
+        width: 35px;
+        height: 35px;
+    }
+    .insta__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+    }
+    .insta__swiper {
+        padding: 0 23px 21px 44%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 47%,rgba(249,179,0,1) 49%);
+    }
+    .insta__slide {
+        width: 280px;
+        height: 270px;
+    }
+    .insta__img {
+        width: 280px;
+        height: 270px;
+    }
+    .insta-swiper-buttons {
+        margin-top: 60px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 60px;
+        height: 60px;
+    }
+}
