@@ -143,6 +143,7 @@
     }
     .insta__container::before {
         background: url("../../img/insta/bg-laptop@1x.png") no-repeat;
+        background-size: cover;
         width: 384px;
         height: 577px;
         top: 131px;
@@ -186,5 +187,58 @@
     .insta-swiper-button-next, .insta-swiper-button-prev {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1349px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-laptop@2x.png");
+    }
+}
+
+@media (min-width: 1904px) {
+    .insta__container {
+        background-position: 0px 287px, 0 1086px;
+    }
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-desk@1x.png");
+        background-size: cover;
+        width: 541px;
+        height: 818px;
+        top: 152px;
+        left: 164px;
+    }
+    .insta__title {
+        margin-bottom: 83px;
+    }
+    .insta__link {
+        margin-bottom: 55px;
+        width: 86px;
+        height: 86px;
+    }
+    .insta__link svg {
+        width: 48px;
+        height: 48px;
+    }
+    .insta__swiper {
+        padding-right: 43%;
+    }
+    .insta__slide {
+        width: 400px;
+        height: 382px;
+    }
+    .insta__img {
+        width: 400px;
+        height: 382px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-desk@2x.png");
     }
 }
