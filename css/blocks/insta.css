@@ -7,12 +7,6 @@
     background-position: 0px 87px, 0 404px;
     background-color: #FFF7E1;
 }
-@media (min-width: 590px) {
-    .insta__container {
-        padding-bottom: 127px;
-        background-position: 0px 70px, 0 404px;
-    }
-}
 .insta__container::before {
     position: absolute;
     content: "";
@@ -21,6 +15,11 @@
     height: 399px;
     top: 42px;
     right: -45px;
+}
+@media (min-resolution: 2dppx) and (max-width: 767px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg@2x.png");
+    }
 }
 .insta__title {
     margin-left: 4.8%;
@@ -67,4 +66,69 @@
 }
 .insta-swiper-button-next {
     margin-left: 10px;
+}
+
+@media (min-width: 590px) {
+    .insta__container {
+        padding-bottom: 127px;
+        background-position: 0px 70px, 0 404px;
+    }
+}
+
+@media (min-width: 768px) {
+    .insta__container {
+        padding-top: 30px;
+        padding-bottom: 222px;
+        background-position: 0px 178px, 0 818px;
+    }
+    .insta__container::before {
+        background: url("../../img/insta/bg-tab@1x.png") no-repeat;
+        background-size: cover;
+        width: 420px;
+        height: 815px;
+        top: 75px;
+        right: -70px;
+    }
+    .insta__title {
+        margin-bottom: 40px;
+    }
+    .insta__link {
+        margin-bottom: 70px;
+        width: 81px;
+        height: 81px;
+    }
+    .insta__link svg {
+        width: 45px;
+        height: 45px;
+    }
+    .insta__swiper {
+        padding: 0 23px 65px 4.8%;
+    }
+    .insta__slide {
+        width: 340px;
+    }
+    .insta__img {
+        width: 340px;
+        height: 389px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 81px;
+        height: 81px;
+    }
+    .insta-swiper-buttons {
+        margin-top: 32px;
+    }
+    .insta-swiper-buttons svg {
+        width: 32px;
+        height: 16px;
+    }
+    .insta-swiper-button-next {
+        margin-left: 20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-tab@2x.png");
+    }
 }
