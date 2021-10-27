@@ -79,6 +79,7 @@
     }
     .work .container {
         margin-left: 6.35%;
+        padding-bottom: 110px;
         width: 882px;
     }
     .work__texts {
@@ -107,6 +108,7 @@
     }
     .work .container {
         width: 1246px;
+        padding-bottom: 160px;
     }
     .work__title,
     .work__texts {
