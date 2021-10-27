@@ -1,0 +1,244 @@
+.insta__container {
+    position: relative;
+    padding-bottom: 100px;
+    background: url("../../img/insta/vector-top.svg"), url("../../img/insta/vector-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 87px, 0 404px;
+    background-color: #FFF7E1;
+}
+.insta__container::before {
+    position: absolute;
+    content: "";
+    background: url("../../img/insta/bg@1x.png") no-repeat;
+    width: 208px;
+    height: 399px;
+    top: 42px;
+    right: -45px;
+}
+@media (min-resolution: 2dppx) and (max-width: 767px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg@2x.png");
+    }
+}
+.insta__title {
+    margin-left: 4.8%;
+    margin-bottom: 20px;
+}
+.insta__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4.8%;
+    margin-bottom: 43px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F9B300;
+}
+.insta__swiper {
+    padding: 0 15px 22px 4.8%;
+    background-color: #F9B300;
+}
+.insta__slide {
+    width: 160px;
+    border-radius: 10px;
+}
+.insta__img {
+    border-radius: 10px;
+}
+.insta-swiper-button-next:after, 
+.insta-swiper-button-prev:after {
+    content: none;
+}
+.insta-swiper-buttons {
+    display: flex;
+    margin-top: 50px;
+}
+.insta-swiper-button-next,
+.insta-swiper-button-prev {
+    position: static;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+}
+.insta-swiper-button-next {
+    margin-left: 10px;
+}
+
+@media (min-width: 590px) {
+    .insta__container {
+        padding-bottom: 127px;
+        background-position: 0px 70px, 0 404px;
+    }
+}
+
+@media (min-width: 768px) {
+    .insta__container {
+        padding-top: 30px;
+        padding-bottom: 222px;
+        background-position: 0px 178px, 0 818px;
+    }
+    .insta__container::before {
+        background: url("../../img/insta/bg-tab@1x.png") no-repeat;
+        background-size: cover;
+        width: 420px;
+        height: 815px;
+        top: 75px;
+        right: -70px;
+    }
+    .insta__title {
+        margin-bottom: 40px;
+    }
+    .insta__link {
+        margin-bottom: 70px;
+        width: 81px;
+        height: 81px;
+    }
+    .insta__link svg {
+        width: 45px;
+        height: 45px;
+    }
+    .insta__swiper {
+        padding: 0 23px 65px 4.8%;
+    }
+    .insta__slide {
+        width: 340px;
+    }
+    .insta__img {
+        width: 340px;
+        height: 389px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 81px;
+        height: 81px;
+    }
+    .insta-swiper-buttons {
+        margin-top: 32px;
+    }
+    .insta-swiper-buttons svg {
+        width: 32px;
+        height: 16px;
+    }
+    .insta-swiper-button-next {
+        margin-left: 20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-tab@2x.png");
+    }
+}
+
+@media (min-width: 1349px) {
+    .insta__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 300px;
+        background-position: 0px 186px, 0 818px;
+    }
+    .insta__container::before {
+        background: url("../../img/insta/bg-laptop@1x.png") no-repeat;
+        background-size: cover;
+        width: 384px;
+        height: 577px;
+        top: 131px;
+        right: auto;
+        left: 113px;
+        z-index: 2;
+    }
+    .insta__title {
+        margin-left: 6.35%;
+        margin-bottom: 61px;
+    }
+    .insta__link {
+        margin-bottom: 55px;
+        width: 60px;
+        height: 60px;
+    }
+    .insta__link svg {
+        width: 35px;
+        height: 35px;
+    }
+    .insta__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+    }
+    .insta__swiper {
+        padding: 0 23px 21px 44%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 47%,rgba(249,179,0,1) 49%);
+    }
+    .insta__slide {
+        width: 280px;
+        height: 270px;
+    }
+    .insta__img {
+        width: 280px;
+        height: 270px;
+    }
+    .insta-swiper-buttons {
+        margin-top: 60px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1349px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-laptop@2x.png");
+    }
+}
+
+@media (min-width: 1904px) {
+    .insta__container {
+        background-position: 0px 287px, 0 1086px;
+    }
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-desk@1x.png");
+        background-size: cover;
+        width: 541px;
+        height: 818px;
+        top: 152px;
+        left: 164px;
+    }
+    .insta__title {
+        margin-bottom: 83px;
+    }
+    .insta__link {
+        margin-bottom: 55px;
+        width: 86px;
+        height: 86px;
+    }
+    .insta__link svg {
+        width: 48px;
+        height: 48px;
+    }
+    .insta__swiper {
+        padding-right: 43%;
+    }
+    .insta__slide {
+        width: 400px;
+        height: 382px;
+    }
+    .insta__img {
+        width: 400px;
+        height: 382px;
+    }
+    .insta-swiper-button-next, .insta-swiper-button-prev {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .insta__container::before {
+        background-image: url("../../img/insta/bg-desk@2x.png");
+    }
+}
