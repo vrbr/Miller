@@ -108,6 +108,7 @@
     }
     .work .container {
         width: 1246px;
+        padding-bottom: 160px;
     }
     .work__title,
     .work__texts {
