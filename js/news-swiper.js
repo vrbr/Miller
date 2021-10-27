@@ -5,4 +5,9 @@ const newsSwiper = new Swiper(".news-swiper", {
         nextEl: ".news-swiper-button-next",
         prevEl: ".news-swiper-button-prev",
     },
+    breakpoints: {
+        768: {
+            spaceBetween: 40,
+        },
+    },
 });
