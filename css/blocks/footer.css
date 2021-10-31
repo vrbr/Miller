@@ -65,3 +65,17 @@
         line-height: 21px;
     }
 }
+
+@media (min-width: 1904px) {
+    .footer .container {
+        padding-bottom: 100px;
+    }
+    .footer__logo {
+        width: 260px;
+        height: 116px;
+    }
+    .footer__link {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
