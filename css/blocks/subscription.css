@@ -130,6 +130,7 @@
         padding: 17px 80px 17px 40px;
         height: 56px;
         width: 670px;
+        border-radius: 28px;
     }
     .subscription__input::placeholder {
         font-size: 18px;
@@ -150,5 +151,40 @@
     }
     .subscription__agreement .carry {
         display: inline;
+    }
+}
+
+@media (min-width: 1904px) {
+    .subscription__title {
+        margin-bottom: 50px;
+    }
+    .subscription__text {
+        margin-bottom: 60px;
+        width: 757px;
+    }
+    .subscription__application {
+        width: 1100px;
+        margin-bottom: 14px;
+    }
+    .subscription__input {
+        margin-bottom: 0;
+        padding: 24px 80px 24px 60px;
+        height: 80px;
+        width: 1100px;
+        border-radius: 40px;
+    }
+    .subscription__button {
+        height: 80px;
+        padding-left: 53px;
+        padding-right: 53px;
+        margin-left: -260px;
+        border-radius: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .subscription__img {
+        width: 803px;
+        height: 658px;
+        margin-left: -117px;
     }
 }

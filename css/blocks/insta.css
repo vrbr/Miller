@@ -202,7 +202,7 @@
 }
 
 @media (min-width: 1904px) {
-    .insta__container {
+    .insta {
         background-position: 0px 287px, 0 1086px;
     }
     .insta__container::before {
