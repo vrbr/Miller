@@ -7,9 +7,6 @@ const instaSwiper = new Swiper(".insta__swiper", {
     },
     breakpoints: {
         1349: {
-            // grid: {
-            //     rows: 2,
-            // },
             spaceBetween: 0,
         },
     },

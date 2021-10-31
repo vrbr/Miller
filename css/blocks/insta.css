@@ -1,16 +1,19 @@
-.insta__container {
-    position: relative;
+.insta {
     padding-bottom: 100px;
     background: url("../../img/insta/vector-top.svg"), url("../../img/insta/vector-bottom.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px 87px, 0 404px;
+}
+.insta__container {
+    position: relative;
     background-color: #FFF7E1;
 }
 .insta__container::before {
     position: absolute;
     content: "";
     background: url("../../img/insta/bg@1x.png") no-repeat;
+    background-size: contain;
     width: 208px;
     height: 399px;
     top: 42px;
@@ -69,14 +72,14 @@
 }
 
 @media (min-width: 590px) {
-    .insta__container {
+    .insta {
         padding-bottom: 127px;
         background-position: 0px 70px, 0 404px;
     }
 }
 
 @media (min-width: 768px) {
-    .insta__container {
+    .insta {
         padding-top: 30px;
         padding-bottom: 222px;
         background-position: 0px 178px, 0 818px;
@@ -134,12 +137,14 @@
 }
 
 @media (min-width: 1349px) {
+    .insta {
+        padding-bottom: 300px;
+        background-position: 0px 186px, 0 818px;
+    }
     .insta__container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding-bottom: 300px;
-        background-position: 0px 186px, 0 818px;
     }
     .insta__container::before {
         background: url("../../img/insta/bg-laptop@1x.png") no-repeat;
@@ -197,7 +202,7 @@
 }
 
 @media (min-width: 1904px) {
-    .insta__container {
+    .insta {
         background-position: 0px 287px, 0 1086px;
     }
     .insta__container::before {
