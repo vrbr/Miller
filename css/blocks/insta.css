@@ -1,4 +1,5 @@
 .insta {
+    margin-top: -127px;
     padding-bottom: 100px;
     background: url("../../img/insta/vector-top.svg"), url("../../img/insta/vector-bottom.svg");
     background-size: contain;
@@ -7,7 +8,6 @@
 }
 .insta__container {
     position: relative;
-    background-color: #FFF7E1;
 }
 .insta__container::before {
     position: absolute;
@@ -80,9 +80,12 @@
 
 @media (min-width: 768px) {
     .insta {
-        padding-top: 30px;
+        margin-top: -270px;
         padding-bottom: 222px;
         background-position: 0px 178px, 0 818px;
+    }
+    .insta__container {
+        padding-top: 30px
     }
     .insta__container::before {
         background: url("../../img/insta/bg-tab@1x.png") no-repeat;
@@ -138,8 +141,9 @@
 
 @media (min-width: 1349px) {
     .insta {
+        margin-top: -285px;
         padding-bottom: 300px;
-        background-position: 0px 186px, 0 818px;
+        background-position: 0px 100px, 0 818px;
     }
     .insta__container {
         display: flex;
@@ -176,7 +180,7 @@
     }
     .insta__swiper {
         padding: 0 23px 21px 44%;
-        background: linear-gradient(to bottom, rgba(255,255,255,0) 47%,rgba(249,179,0,1) 49%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(249,179,0,1) 0%);
     }
     .insta__slide {
         width: 280px;
@@ -203,7 +207,8 @@
 
 @media (min-width: 1904px) {
     .insta {
-        background-position: 0px 287px, 0 1086px;
+        margin-top: -360px;
+        background-position: 0px 130px, 0 1086px;
     }
     .insta__container::before {
         background-image: url("../../img/insta/bg-desk@1x.png");
