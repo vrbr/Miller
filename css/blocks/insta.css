@@ -1,16 +1,18 @@
-.insta__container {
-    position: relative;
+.insta {
     padding-bottom: 100px;
     background: url("../../img/insta/vector-top.svg"), url("../../img/insta/vector-bottom.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px 87px, 0 404px;
-    background-color: #FFF7E1;
+}
+.insta__container {
+    position: relative;
 }
 .insta__container::before {
     position: absolute;
     content: "";
     background: url("../../img/insta/bg@1x.png") no-repeat;
+    background-size: contain;
     width: 208px;
     height: 399px;
     top: 42px;
