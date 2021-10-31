@@ -54,3 +54,14 @@
         padding-left: 66px;
     }
 }
+
+@media (min-width: 1349px) {
+    .footer__logo {
+        width: 179px;
+        height: 80px;
+    }
+    .footer__link {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
