@@ -137,12 +137,14 @@
 }
 
 @media (min-width: 1349px) {
+    .insta {
+        padding-bottom: 300px;
+        background-position: 0px 186px, 0 818px;
+    }
     .insta__container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding-bottom: 300px;
-        background-position: 0px 186px, 0 818px;
     }
     .insta__container::before {
         background: url("../../img/insta/bg-laptop@1x.png") no-repeat;

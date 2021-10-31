@@ -89,3 +89,66 @@
         line-height: 26px;
     }
 }
+
+@media (min-width: 1349px) {
+    .subscription {
+        margin-top: -200px;
+    }
+    .subscription .container {
+        margin-left: 6.35%;
+        margin-right: 0%;
+        width: 94%;
+    }
+    .subscription__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .subscription__wrapper picture {
+        order: 2;
+    }
+    .subscription__img {
+        width: 569px;
+        height: 467px;
+        margin-top: -125px;
+    }
+    .subscription__title {
+        margin-bottom: 39px;
+    }
+    .subscription__text {
+        margin-bottom: 38px;
+        width: 536px;
+    }
+    .subscription__application {
+        max-width: 100%;
+        width: 779px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .subscription__input {
+        margin-bottom: 0;
+        padding: 17px 80px 17px 40px;
+        height: 56px;
+        width: 670px;
+    }
+    .subscription__input::placeholder {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .subscription__button {
+        height: 56px;
+        margin-left: -50px;
+        padding-right: 33px;
+        padding-left: 33px;
+        font-size: 18px;
+        line-height: 22px;
+        border-radius: 30px;
+    }
+    .subscription__agreement {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .subscription__agreement .carry {
+        display: inline;
+    }
+}
