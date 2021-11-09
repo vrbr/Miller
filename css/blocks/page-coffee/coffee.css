@@ -686,6 +686,9 @@
         top: -115px;
         right: 74px;
     }
+    .coffee__container {
+        padding-bottom: 81px;
+    }
     .breadcrumbs__list {
         padding-top: 40px;
         padding-bottom: 131px;

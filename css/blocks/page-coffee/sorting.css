@@ -326,3 +326,107 @@
         line-height: 16px;
     }
 }
+
+@media (min-width: 1904px) {
+    .sorting {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting__title {
+        margin-bottom: 58px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .sorting__wrapper {
+        max-width: 1660px;
+    }
+    .sorting__card:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    .sorting__card {
+        width: 400px;
+        height: 652px;
+        padding: 20px 41px 52px 38px;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+    .sorting-card__header {
+        margin-bottom: 20px;
+    }
+    .sorting-card__header-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-card__header-title + .sorting-card__header-title {
+        padding-top: 10px;
+    }
+    .sorting-card__header-size {
+        width: 132px;
+        height: 33px;
+        font-size: 18px;
+        line-height: 21px;
+        border-radius: 5px;
+    }
+    .sorting-card__main-img {
+        width: 172px;
+        height: 311px;
+    }
+    .sorting-info__stars {
+        width: 133px;
+        height: 25px;
+    }
+    .sorting-info__grade {
+        margin-bottom: 28px;
+    }
+    .sorting-info__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sorting-info__reviews {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-info__img {
+        margin-bottom: 30px;
+        width: 127px;
+        height: 19px;
+    }
+    .sorting-info__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-info__rating {
+        width: 127px;
+        height: 10px;
+    }
+    .sorting-card__content {
+        margin-bottom: 27px;
+    }
+    .sorting-description__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sorting-description__text {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-description__price {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .sorting-description__button {
+        width: 178px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting__button-more {
+        width: 1660px;
+        height: 70px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
