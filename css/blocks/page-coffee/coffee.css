@@ -14,6 +14,7 @@
 .coffee__container {
     padding-left: 4.8%;
     padding-right: 4.8%;
+    padding-bottom: 40px;
     background: url("../../../img/page-coffee/coffee/bg@1x.png") no-repeat;
 }
 /*breadcrumbs*/
@@ -284,6 +285,7 @@
 
 @media (min-width: 768px) {
     .coffee__container {
+        padding-bottom: 60px;
         background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
     }
     .coffee::after {
@@ -478,6 +480,7 @@
     .coffee__container {
         padding-left: 6.35%;
         padding-right: 6.35%;
+        padding-bottom: 50px;
         background: url("../../../img/page-coffee/coffee/bg-laptop@1x.png") no-repeat;
         background-size: contain;
     }
@@ -682,6 +685,9 @@
         height: 713px;
         top: -115px;
         right: 74px;
+    }
+    .coffee__container {
+        padding-bottom: 81px;
     }
     .breadcrumbs__list {
         padding-top: 40px;
