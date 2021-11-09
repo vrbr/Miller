@@ -27,6 +27,9 @@
     box-sizing: border-box;
     border-radius: 17px;
 }
+.sorting-card-tab {
+    display: none;
+}
 .sorting__card:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -37,6 +40,7 @@
 }
 .sorting-card__header-title {
     margin: 0;
+    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #F9B300;
@@ -137,4 +141,105 @@
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .sorting__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .sorting-card-tab {
+        display: block;
+    }
+    .sorting__card {
+        margin: 0;
+        padding: 21px 33px 42px 35px;
+        box-shadow: 0px 0px 17.0069px rgba(146, 146, 146, 0.25);
+        border-radius: 10px;
+    }
+    .sorting-card__header {
+        margin-bottom: 22px;
+    }
+    .sorting-card__header-size {
+        width: 110px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 5px;
+    }
+    .sorting-card__main-img {
+        width: 144px;
+        height: 260px;
+    }
+    .sorting-info__stars {
+        display: block;
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-info__grade {
+        margin-bottom: 20px;
+    }
+    .sorting-info__number {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sorting-info__reviews {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .sorting-info__img {
+        width: 89px;
+        height: 13px;
+    }
+    .sorting-info__title {
+        margin-bottom: 6px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-info__rating {
+        width: 88px;
+        height: 7px;
+    }
+    .sorting-card__content {
+        margin-bottom: 25px;
+    }
+    .sorting-description__title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .sorting-description__text {
+        margin-bottom: 26px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-description__price {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .sorting-description__button {
+        width: 149px;
+    }
+    .sorting__button-more {
+        width: 700px;
+        height: 70px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sorting__wrapper {
+        max-width: 1084px;
+    }
+    .sorting__button-more {
+        width: 1084px;
+    }
 }

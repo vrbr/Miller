@@ -285,6 +285,7 @@
 
 @media (min-width: 768px) {
     .coffee__container {
+        padding-bottom: 60px;
         background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
     }
     .coffee::after {
