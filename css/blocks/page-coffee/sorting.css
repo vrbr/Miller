@@ -27,7 +27,8 @@
     box-sizing: border-box;
     border-radius: 17px;
 }
-.sorting-card-tab {
+.sorting-card-tab,
+.sorting-card-desc {
     display: none;
 }
 .sorting__card:not(:last-child) {
@@ -241,5 +242,87 @@
     }
     .sorting__button-more {
         width: 1084px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .sorting {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting__title {
+        margin-bottom: 48px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting__wrapper {
+        max-width: 1180px;
+    }
+    .sorting__card {
+        width: 280px;
+        height: 461px;
+        padding: 15px 25px 37px;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+    .sorting__card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .sorting-card-desc {
+        display: block;
+    }
+    .sorting-card__header {
+        margin-bottom: 14px;
+    }
+    .sorting-card__header-title {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .sorting-card__header-title + .sorting-card__header-title {
+        padding-top: 6px;
+    }
+    .sorting-card__header-size {
+        width: 93px;
+        height: 23px;
+        font-size: 12px;
+        line-height: 14px;
+        border-radius: 4px;
+    }
+    .sorting-card__main-img {
+        width: 120px;
+        height: 218px;
+    }
+    .sorting-info__stars {
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-info__img {
+        margin-bottom: 20px;
+    }
+    .sorting-description__title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-description__text {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-description__price {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .sorting-description__button {
+        width: 125px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 14;
+    }
+    .sorting__button-more {
+        width: 1180px;
+        height: 49px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
