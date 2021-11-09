@@ -74,12 +74,14 @@ body {
 }
 @media (min-width: 1349px) {
     body {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .main-body {
         background: url("../../../img/promo/bg-laptop.svg") no-repeat;
         background-size: 514px, 1244px;
         background-position-x: right;
         background-position-y: -197px;
-        font-size: 18px;
-        line-height: 23px;
     }
     .container {
         width: 87.3%;

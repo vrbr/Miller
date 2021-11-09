@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/blocks/global/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <button class="header__nav-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <picture>
+                    <source media="(min-width: 1904px)"
+                        srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)"
+                        srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                    <img class="header__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110"
+                        height="50" alt="Логотип">
+                </picture>
+                <div class="header__interaction">
+                    <button class="header__btn header__interaction-search" type="button"></button>
+                    <button class="header__btn header__interaction-basket" type="button"></button>
+                    <button class="header__btn header__interaction-user" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu__head">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                        <img class="header-menu__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png"
+                            width="110" height="50" alt="Логотип">
+                    </picture>
+                </div>
+                <div class="header-menu__main">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-menu__interaction">
+                        <button class="header-menu__btn header-menu__interaction-basket" type="button"></button>
+                        <button class="header-menu__btn header-menu__interaction-user" type="button"></button>
+                    </div>
+                </div>
+                <div class="header-menu__footer">
+                    <a class="header-menu__mail" href="#">Import@kldrefine.com</a>
+                    <ul class="header-menu__social">
+                        <li class="header-menu__social-item header-menu__social-phone"></li>
+                        <li class="header-menu__social-item header-menu__social-insta"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-search">
+                <form class="header-search__form" action="#">
+                    <img class="header-search__img" src="../img/header/search-form.svg" width="12" height="12" alt="">
+                    <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+                    <button class="header-search__btn" type="button">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="coffee">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="coffee__container"> 
+                <nav class="coffee__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="">Каталог товаров</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link-current">Свежеобжаренный кофе</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h2 class="coffee__title">Свежеобжаренный кофе</h2>
+                <form class="coffee__form" method="" action="#">
+                    <fieldset class="coffee__form-fieldset coffee__info coffee-info">
+                        <legend class="visually-hidden">Степень обжарки</legend>
+                        <h3 class="coffee__form-legend coffee-info__title">Степень обжарки</h3>
+                        <ul class="coffee-info__list">
+                            <li class="coffee-info__item">
+                                <input class="coffee-info__radio" type="radio" name="roasting" id="5" checked>
+                                <label for="5">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="coffee-info__item">
+                                <input class="coffee-info__radio" type="radio" name="roasting" id="4">
+                                <label for="4">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="coffee-info__item">
+                                <input class="coffee-info__radio" type="radio" name="roasting" id="3">
+                                <label for="3">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="coffee-info__item">
+                                <input class="coffee-info__radio" type="radio" name="roasting" id="2">
+                                <label for="2">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="coffee-info__item">
+                                <input class="coffee-info__radio" type="radio" name="roasting" id="1">
+                                <label for="1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.87269 16.9055C-1.04821 13.5188 0.258917 8.2072 4.23274 4.23309C8.74542 -0.278065 14.9852 -1.35354 18.171 1.831C18.1747 1.83517 18.1779 1.83989 18.183 1.84413C17.5454 3.69875 15.515 7.6449 9.42877 9.77837C3.85352 11.7338 1.70286 14.8426 0.87269 16.9055ZM19.0671 2.99033C18.5841 4.1166 17.7437 5.58846 16.2956 7.03615C14.84 8.49207 12.7712 9.92197 9.84076 10.9497C3.89327 13.0348 2.23153 16.4483 1.76789 18.1025C1.78979 18.1246 1.80863 18.1475 1.82992 18.1689C5.01542 21.3536 11.2554 20.2782 15.7678 15.7663C19.783 11.7519 21.0743 6.37135 19.0671 2.99033Z" fill="#505050"/>
+                                    </svg>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <div class="coffee__choose-box">
+                        <fieldset class="coffee__form-fieldset coffee__choose coffee-choose">
+                            <legend class="visually-hidden">География</legend>
+                            <h3 class="coffee__form-legend coffee-choose__title">География</h3>
+                            <ul class="coffee-choose__list">
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="africa">
+                                    <label for="africa">Африка</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="yemen">
+                                    <label for="yemen">Йемен</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="uganda">
+                                    <label for="uganda">Уганда</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="asia">
+                                    <label for="asia">Азия</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="camerica">
+                                    <label for="camerica">Центр. Америка</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="geography" id="lamerica">
+                                    <label for="lamerica">Лат. Америка</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="coffee__form-fieldset coffee__choose coffee-choose">
+                            <legend class="visually-hidden">Особые</legend>
+                            <h3 class="coffee__form-legend coffee-choose__title">Особые</h3>
+                            <ul class="coffee-choose__list">
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="pop">
+                                    <label for="pop">Популярное</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="harvest">
+                                    <label for="harvest">Новый урожай</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="your">
+                                    <label for="your">Ваш выбор</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="micro">
+                                    <label for="micro">Микролот</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="week">
+                                    <label for="week">Сорт недели</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="sale">
+                                    <label for="sale">Скидки</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="special" id="new">
+                                    <label for="new">Новинка</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="coffee__form-fieldset coffee__choose coffee-choose">
+                            <legend class="visually-hidden">Кислинка</legend>
+                            <h3 class="coffee__form-legend coffee-choose__title">Кислинка</h3>
+                            <ul class="coffee-choose__list">
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="sour" id="low">
+                                    <label for="low">Низкая</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="sour" id="average">
+                                    <label for="average">Средняя</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="sour" id="high">
+                                    <label for="high">Высокая</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="coffee__form-fieldset coffee__choose coffee-choose">
+                            <legend class="visually-hidden">Способ обработки</legend>
+                            <h3 class="coffee__form-legend coffee-choose__title">Способ<br>обработки</h3>
+                            <ul class="coffee-choose__list">
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="processing" id="dry">
+                                    <label for="dry">Сухая</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="processing" id="washed">
+                                    <label for="washed">Мытая</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="processing" id="other">
+                                    <label for="other">Прочие</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="coffee__form-fieldset coffee__choose coffee-choose">
+                            <legend class="visually-hidden">Вид кофе</legend>
+                            <h3 class="coffee__form-legend coffee-choose__title">Вид кофе</h3>
+                            <ul class="coffee-choose__list">
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="typeofcoffee" id="arabica">
+                                    <label for="arabica">Арабика</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="typeofcoffee" id="robusta">
+                                    <label for="robusta">Робуста</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="typeofcoffee" id="mix1">
+                                    <label for="mix1">Смесь арабик</label>
+                                </li>
+                                <li class="coffee-choose__item">
+                                    <input class="coffee-choose__radio" type="radio" name="typeofcoffee" id="mix2">
+                                    <label for="mix2">Смесь арабика/<span class="typeofcoffee-span">робуста</span></label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <fieldset class="coffee__form-fieldset coffee__dishes coffee-dishes">
+                        <legend class="visually-hidden">Способ приготовления</legend>
+                        <ul class="coffee-dishes__list">
+                            <li class="coffee-dishes__item dishes__item-cezve">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="cezve">
+                                <label for="cezve">Турка</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-french">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="french">
+                                <label for="french">Френч-пресс</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-moka">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="moka">
+                                <label for="moka">Мока</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-espresso">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="espresso">
+                                <label for="espresso">Эспрессо</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-funnel">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="funnel">
+                                <label for="funnel">Воронка</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-aeropress">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="aeropress">
+                                <label for="aeropress">Аэропресс</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-cup">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="cup">
+                                <label for="cup">Чашка</label>
+                            </li>
+                            <li class="coffee-dishes__item dishes__item-machine">
+                                <input class="coffee-dishes__radio" type="radio" name="dishes" id="machine">
+                                <label for="machine">Автомат</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <picture>
+                    <source media="(min-width: 1904px)" srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)" srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                    <img class="footer__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110" height="50" alt="">
+                </picture>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+</body>
+</html>
