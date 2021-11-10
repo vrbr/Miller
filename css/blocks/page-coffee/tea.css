@@ -96,3 +96,100 @@
         height: 279px;
     }
 }
+
+@media (min-width: 573px) {
+    .tea__container {
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    /* .tea {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 13%, rgba(255,255,255,0) 13%);
+    } */
+    .tea__container {
+        padding-bottom: 60px;
+        background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .tea::after {
+        background: url("../../../img/page-tea/tea-tab-bg@1x.png") no-repeat;
+        width: 670px;
+        height: 572px;
+        top: 131px;
+        left: 98px;
+    }
+    .tea__title {
+        margin-bottom: 556px;
+    }
+    .tea-dishes__list {
+        max-width: 700px;
+    }
+    .tea-dishes__item {
+        height: 220px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .tea-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 20px;
+    }
+    .tea__form label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .tea-dishes__item::after {
+        width: 98px;
+        height: 139px;
+        bottom: 17px;
+    }
+    .tea-dishes__list [type="radio"] + label::before {
+        width: 220px;
+        height: 220px;
+        left: -20px;
+        top: -20px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .tea-dishes__list [type="radio"]:checked + label::after {
+        width: 220px;
+        height: 220px;
+        left: -20px;
+        top: -20px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .tea__container {
+        background: url("../../../img/page-coffee/coffee/bg-tab@2x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .tea::after {
+        background: url("../../../img/page-tea/tea-tab-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 670px;
+        height: 572px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tea-dishes__list {
+        max-width: 1084px;
+    }
+    .tea-dishes__item {
+        width: 23%;
+        height: 250px;
+        margin-bottom: 28px;
+    }
+    .tea-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 0px;
+    }
+    .tea-dishes__item:not(:nth-child(4n + 4)) {
+        margin-right: 28px;
+    }
+    .tea-dishes__list [type="radio"] + label::before,
+    .tea-dishes__list [type="radio"]:checked + label::after {
+        width: 250px;
+        height: 250px;
+    }
+}

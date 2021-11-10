@@ -269,6 +269,7 @@
     .coffee__container {
         padding-bottom: 60px;
         background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
+        background-size: 1904px 725px;
     }
     .coffee {
         background: linear-gradient(0deg, rgba(245,245,245,1) 13%, rgba(255,255,255,0) 13%);
@@ -428,6 +429,7 @@
 @media (min-resolution: 2dppx) and (min-width: 768px) {
     .coffee__container {
         background: url("../../../img/page-coffee/coffee/bg-tab@2x.png") no-repeat;
+        background-size: 1904px 725px;
     }
     .coffee::after {
         background: url("../../../img/page-coffee/coffee/coffee-tab-bg@1x.png") no-repeat;
