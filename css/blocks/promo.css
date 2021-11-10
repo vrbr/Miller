@@ -41,6 +41,7 @@
 
 .promo-slide__img {
     position: absolute;
+    pointer-events: none;
 }
 
 .promo-slide__img-01 {
@@ -50,12 +51,12 @@
 
 .promo-slide__img-02 {
     right: 0;
-    bottom: 0;
+    bottom: 18px;
 }
 
 .promo-slide__img-03 {
     right: 25px;
-    bottom: 0;
+    bottom: 17px;
 }
 
 .promo-slide__img-04 {
@@ -88,11 +89,16 @@
 }
 
 .promo__button {
-    width: 90.4%;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 200px;
     height: 50px;
     font-size: 18px;
     line-height: 22px;
+}
+
+.promo-slide-last .promo__button {
+    margin-top: 237px;
 }
 
 @media (min-width: 768px) {
@@ -134,12 +140,13 @@
     .promo-slide__img-02 {
         width: 582px;
         height: 524px;
+        bottom: 47px;
     }
 
     .promo-slide__img-03 {
         width: 414px;
         height: 444px;
-        bottom: 30px;
+        bottom: 58px;
     }
 
     .promo-slide__img-04 {
@@ -162,9 +169,13 @@
     }
 
     .promo__button {
+        margin-top: 325px;
         height: 70px;
         font-size: 25px;
         line-height: 30px;
+    }
+    .promo-slide-last .promo__button {
+        margin-top: 387px;
     }
 }
 

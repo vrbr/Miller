@@ -1,5 +1,6 @@
 .coffee {
     position: relative;
+    background: linear-gradient(0deg, rgba(245,245,245,1) 15%, rgba(255,255,255,0) 15%);
 }
 .coffee::after {
     position: absolute;
@@ -189,6 +190,7 @@
     height: 110px;
     padding: 10px;
     margin-bottom: 10px;
+    z-index: 10;
 }
 .coffee-dishes__item:not(:nth-child(3n + 3)) {
     margin-right: 10px;
@@ -255,9 +257,10 @@
     height: 110px;
     left: -10px;
     top: -10px;
-    background-color: transparent;
+    background-color: #fff;
     box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
     border-radius: 10px;
+    z-index: -1;
 }
 .coffee-dishes__list [type="radio"]:checked + label::after {
     border-radius: 10px;
@@ -287,6 +290,9 @@
     .coffee__container {
         padding-bottom: 60px;
         background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
+    }
+    .coffee {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 13%, rgba(255,255,255,0) 13%);
     }
     .coffee::after {
         background: url("../../../img/page-coffee/coffee/coffee-tab-bg@1x.png") no-repeat;
