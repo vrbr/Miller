@@ -44,12 +44,7 @@
     right: -7px;
 }
 .coffee__title {
-    margin: 0;
     margin-bottom: 271px;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 31px;
-    color: #FFFFFF;
 }
 /*coffee__form*/
 .coffee__form-fieldset {
@@ -75,22 +70,6 @@
 }
 .coffee-info__item + .coffee-info__item {
     margin-top: 17px;
-}
-.coffee__form [type="radio"] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-.coffee__form label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
 }
 .coffee__form [type="radio"] + label::before {
     position: absolute;
@@ -317,8 +296,6 @@
     }
     .coffee__title {
         margin-bottom: 558px;
-        font-size: 50px;
-        line-height: 62px;
     }
     .coffee-info, .coffee__choose-box {
         position: relative;
@@ -713,8 +690,6 @@
     }
     .coffee__title {
         margin-bottom: 146px;
-        font-size: 70px;
-        line-height: 87px;
     }
     .coffee__form {
         width: 1657px;

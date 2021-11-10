@@ -58,6 +58,29 @@ body {
     font-size: 20px;
     line-height: 25px;
 }
+.catalog-title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+.catalog-form [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.catalog-form label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
 
 @media (min-width: 768px) {
     body {
@@ -70,6 +93,10 @@ body {
     .section-title {
         font-size: 40px;
         line-height: 50px;
+    }
+    .catalog-title {
+        font-size: 50px;
+        line-height: 62px;
     }
 }
 @media (min-width: 1349px) {
@@ -99,5 +126,9 @@ body {
     .section-title {
         font-size: 50px;
         line-height: 62px;
+    }
+    .catalog-title {
+        font-size: 70px;
+        line-height: 87px;
     }
 }
