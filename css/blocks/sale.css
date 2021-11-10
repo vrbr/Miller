@@ -1,5 +1,15 @@
 .sale {
+    position: relative;
     margin-bottom: 13px;
+}
+.sale::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/sale/sale-bg@1x.png") no-repeat;
+    width: 136px;
+    height: 500px;
+    left: 0;
+    top: -187px;
 }
 .sale__title {
     margin-top: 60px;
@@ -21,6 +31,7 @@
     width: 250px !important;
     height: 407px;
     color: #222222;
+    background-color: #fff;
     box-shadow: 0px 0px 12.5px rgba(146, 146, 146, 0.25);
     border-radius: 12px;
     box-sizing: border-box;
@@ -170,9 +181,24 @@
     display: none;
 }
 
+@media (min-resolution: 2dppx) and (min-width: 375px) {
+    .sale::after {
+        background: url("../../img/sale/sale-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 136px;
+        height: 500px;
+    }
+}
+
 @media (min-width: 768px) {
     .sale {
         margin-bottom: 150px;
+    }
+    .sale::after {
+        background: url("../../img/sale/sale-bg-tab@1x.png") no-repeat;
+        width: 279px;
+        height: 1019px;
+        top: -333px;
     }
     .sale-swiper {
         padding-left: 154px;
@@ -286,10 +312,26 @@
     }
 }
 
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .sale::after {
+        background: url("../../img/sale/sale-bg-tab@2x.png") no-repeat;
+        background-size: cover;
+        width: 279px;
+        height: 1019px;
+    }
+}
+
 @media (min-width: 1349px) {
     .sale {
         position: relative;
         margin-bottom: 0;
+    }
+    .sale::after {
+        background: url("../../img/sale/sale-bg-laptop@1x.png") no-repeat;
+        background-size: cover;
+        width: 355px;
+        height: 1026px;
+        top: -523px;
     }
     .sale__title {
         margin-top: 0;
@@ -415,7 +457,23 @@
     }
 }
 
+@media (min-resolution: 2dppx) and (min-width: 1349px) {
+    .sale::after {
+        background: url("../../img/sale/sale-bg-laptop@2x.png") no-repeat;
+        background-size: cover;
+        width: 355px;
+        height: 1026px;
+    }
+}
+
 @media (min-width: 1904px) {
+    .sale::after {
+        background: url("../../img/sale/sale-bg-desc@1x.png") no-repeat;
+        background-size: cover;
+        width: 511px;
+        height: 1472px;
+        top: -823px;
+    }
     .sale-swiper {
         padding-right: 7px;
     }
@@ -547,5 +605,14 @@
         margin-right: 262px;
         font-size: 20px;
         line-height: 24px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .sale::after {
+        background: url("../../img/sale/sale-bg-desc@1x.png") no-repeat;
+        background-size: cover;
+        width: 511px;
+        height: 1472px;
     }
 }

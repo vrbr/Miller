@@ -1082,6 +1082,34 @@
             </div>
             <button class="sorting__button-more">Показать еще</button>
         </section>
+        <section class="subscription subscription-catalog">
+            <div class="container">
+                <div class="subscription__wrapper">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                                    srcset="../img/subscription/bg-desk@1x.png 1x, ../img/subscription/bg-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                                    srcset="../img/subscription/bg-laptop@1x.png 1x, ../img/subscription/bg-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                    srcset="../img/subscription/bg-tab@1x.png 1x, ../img/subscription/bg-tab@2x.png 2x">
+                        <img class="subscription__img" src="../img/subscription/bg@1x.png" srcset="../img/subscription/bg@2x.png" width="361" height="297" alt="">
+                    </picture>
+                    
+                    <form action="#" class="subscription__form" method="POST">
+                        <h2 class="subscription__title section-title">Подписка на новости и рассылку</h2>
+                        <p class="subscription__text">Подпишитесь на нашу рассылку прямо сейчас
+                            и будьте в курсе новых поставок, скидок
+                            и эксклюзивных предложений.</p>
+                        <div class="subscription__application">
+                            <input class="subscription__input" type="email" name="email" placeholder="Ваш email" tabindex="0" id="email" required>
+                            <input class="button subscription__button" type="submit" name="submit" value="Подписаться">
+                        </div>
+                        <p class="subscription__agreement">Нажимая на кнопку “Подписаться”, вы принимаете <span class="carry">правила
+                            <a class="subscription__link" href="#">пользовательского соглашения</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

@@ -1,0 +1,19 @@
+.subscription.subscription-catalog {
+    margin-top: 0;
+    padding-top: 10px;
+    background: url("../../../img/subscription/page-coffee-bg.svg") no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 1349px) {
+    .subscription.subscription-catalog {
+        background: url("../../../img/subscription/page-coffee-desc-bg.svg") no-repeat;
+        background-size: contain;
+    }
+    .subscription .subscription__title {
+        padding-top: 49px;
+    }
+    .subscription .subscription__img {
+        margin-top: -54px;
+    }
+}
