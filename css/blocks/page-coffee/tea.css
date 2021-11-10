@@ -95,6 +95,12 @@
         width: 327px;
         height: 279px;
     }
+    .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-01@2x.png");
+        width: 49px;
+        height: 68px;
+        background-size: cover;
+    }
 }
 
 @media (min-width: 573px) {
@@ -138,6 +144,7 @@
         line-height: 24px;
     }
     .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-tab-01@1x.png");
         width: 98px;
         height: 139px;
         bottom: 17px;
@@ -169,6 +176,12 @@
         background-size: cover;
         width: 670px;
         height: 572px;
+    }
+    .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-tab-01@2x.png");
+        width: 98px;
+        height: 139px;
+        bottom: 17px;
     }
 }
 
@@ -236,6 +249,7 @@
         height: 227px;
     }
     .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-laptop-01@1x.png");
         width: 101px;
         height: 141px;
         bottom: 66px;
@@ -254,5 +268,61 @@
     .tea::after {
         background: url("../../../img/page-tea/tea-laptop-bg@2x.png") no-repeat;
         background-size: cover;
+    }
+    .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-laptop-01@2x.png");
+        width: 101px;
+        height: 141px;
+        bottom: 66px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .tea::after {
+        background: url("../../../img/page-tea/tea-desc-bg@1x.png") no-repeat;
+        width: 689px;
+        height: 655px;
+        top: 102px;
+        right: 0px;
+    }
+    .tea__title {
+        margin-bottom: 120px;
+    }
+    .tea-dishes__list {
+        max-width: 1660px;
+        width: 1660px;
+    }
+    .tea__form label {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .tea-dishes__item {
+        width: 400px;
+        height: 320px;
+        padding: 40px;
+    }
+    .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-desc-01@1x.png");
+        width: 143px;
+        height: 200px;
+        bottom: 90px;
+    }
+    .tea-dishes__list [type="radio"] + label::before, .tea-dishes__list [type="radio"]:checked + label::after {
+        width: 400px;
+        height: 320px;
+        left: -40px;
+        top: -40px;
+    }
+}
+
+@media (min-width: 1904px) and (min-resolution: 2dppx) {
+    .tea::after {
+        background: url("../../../img/page-tea/tea-desc-bg@2x.png") no-repeat;
+        background-size: cover;
+    }
+    .tea-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-desc-01@2x.png");
+        width: 143px;
+        height: 200px;
     }
 }
