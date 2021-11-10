@@ -193,3 +193,66 @@
         height: 250px;
     }
 }
+
+@media (min-width: 1349px) {
+    .tea__container {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+        padding-bottom: 50px;
+        background: url("../../../img/page-coffee/coffee/bg-laptop@1x.png") no-repeat;
+        background-size: contain;
+    }
+    .tea::after {
+        background: url("../../../img/page-tea/tea-laptop-bg@1x.png") no-repeat;
+        width: 489px;
+        height: 463px;
+        top: 64px;
+        right: 0;
+        left: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+    .tea__title {
+        margin-bottom: 77px;
+    }
+    .tea-dishes__list {
+        max-width: 1180px;
+    }
+    .tea-dishes__item:not(:nth-child(4n + 4)) {
+        margin-right: 20px;
+    }
+    .tea-dishes__item-order {
+        order: 8;
+    }
+    .tea__form label {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .tea-dishes__item {
+        width: 280px;
+        height: 227px;
+    }
+    .tea-dishes__item::after {
+        width: 101px;
+        height: 141px;
+        bottom: 66px;
+    }
+    .tea-dishes__list [type="radio"] + label::before, .tea-dishes__list [type="radio"]:checked + label::after {
+        width: 280px;
+        height: 227px;
+    }
+}
+
+@media (min-width: 1349px) and (min-resolution: 2dppx) {
+    .tea__container {
+        background: url("../../../img/page-coffee/coffee/bg-laptop@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .tea::after {
+        background: url("../../../img/page-tea/tea-laptop-bg@2x.png") no-repeat;
+        background-size: cover;
+    }
+}
