@@ -108,4 +108,41 @@
     .sorting-tea {
         padding-bottom: 38px;
     }
+    .sorting__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-tea__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .sorting-tea__card {
+        margin: 0;
+        height: 546px;
+        padding: 30px 38px 42px;
+        box-shadow: 0px 0px 17.0069px rgba(146, 146, 146, 0.25);
+        border-radius: 10px;
+    }
+    .sorting-tea-card__header {
+        margin-bottom: 8px;
+    }
+    .sorting-tea-header__stars {
+        margin-bottom: 14px;
+    }
+    .sorting-tea-header__size {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-tea-footer__text {
+        margin-bottom: 27px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .sorting-tea-card-tab {
+        display: block;
+    }
 }
