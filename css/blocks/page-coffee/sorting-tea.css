@@ -228,10 +228,72 @@
         font-size: 12px;
         line-height: 15px;
     }
-    .sorting__button-more {
-        width: 1180px;
-        height: 49px;
+}
+
+@media (min-width: 1904px) {
+    .sorting-tea {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting-tea__wrapper {
+        max-width: 1660px;
+    }
+    .sorting-tea__card {
+        width: 400px;
+        height: 651px;
+        box-shadow: none;
+        border-radius: 14px;
+        padding: 30px 40px 50px;
+    }
+    .sorting-tea__card:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    .sorting-tea-header__stars {
+        margin-bottom: 8px;
+        width: 133px;
+        height: 25px;
+    }
+    .sorting-tea-card__header {
+        margin-bottom: 15px;
+    }
+    .sorting-tea-header__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sorting-tea-header__reviews {
         font-size: 14px;
         line-height: 16px;
+    }
+    .sorting-tea-header__size {
+        width: 132px;
+        height: 33px;
+        padding-right: 12px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-tea-card__img {
+        width: 223px;
+        height: 312px;
+    }
+    .sorting-tea-footer__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sorting-tea-footer__text {
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-tea-footer__price {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .sorting-tea-footer__button {
+        width: 178px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
