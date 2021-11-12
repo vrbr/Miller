@@ -100,7 +100,8 @@
     border: none;
     outline: none;
 }
-.sorting-tea-card-tab {
+.sorting-tea-card-tab,
+.sorting-tea-card-desk {
     display: none;
 }
 
@@ -144,5 +145,93 @@
     }
     .sorting-tea-card-tab {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sorting-tea__wrapper {
+        max-width: 1084px;
+    }
+    .sorting-tea__button-more {
+        width: 1084px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .sorting-tea-card-desk {
+        display: block;
+    }
+    .sorting-tea {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+        padding-bottom: 93px;
+    }
+    .sorting-tea__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-tea__wrapper {
+        max-width: 1180px;
+    }
+    .sorting-tea__card {
+        width: 280px;
+        height: 461px;
+        padding: 18px 25px 38px;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+    .sorting-tea__card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .sorting-tea-header__stars {
+        margin-bottom: 8px;
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-tea-header__number {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sorting-tea-header__reviews {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .sorting-tea-header__size {
+        width: 93px;
+        height: 23px;
+        padding-right: 10px;
+        padding-left: 19px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-tea-card__img {
+        width: 158px;
+        height: 221px;
+    }
+    .sorting-tea-footer__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-tea-footer__text {
+        margin-bottom: 21px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-tea-footer__price {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .sorting-tea-footer__button {
+        width: 125px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .sorting__button-more {
+        width: 1180px;
+        height: 49px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
