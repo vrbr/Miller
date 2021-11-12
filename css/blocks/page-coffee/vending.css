@@ -40,7 +40,7 @@
     margin-bottom: 10px;
     z-index: 10;
 }
-.vending-dishes__item span {
+.vending-dishes__item .vending-span {
     display: block;
     padding-top: 7px;
 }
@@ -105,5 +105,110 @@
         width: 128px;
         height: 57px;
         background-size: cover;
+    }
+}
+
+@media (min-width: 573px) {
+    .vending__container {
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    .vending {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 26%, rgba(255,255,255,0) 26%);
+    }
+    .vending__container {
+        padding-bottom: 60px;
+        background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-tab-bg@1x.png") no-repeat;
+        width: 600px;
+        height: 550px;
+        top: 190px;
+        left: 212px;
+    }
+    .vending__title {
+        margin-bottom: 557px;
+    }
+    .vending-dishes__list {
+        max-width: 700px;
+    }
+    .vending-dishes__item {
+        width: 340px;
+        height: 224px;
+        margin-bottom: 20px;
+        padding: 20px 30px 23px;
+    }
+    .vending-dishes__item:nth-child(odd) {
+        margin-right: 20px;
+    }
+    .vending-dishes__item label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-tab-01@1x.jpg");
+        width: 262px;
+        height: 116px;
+        border-radius: 10px;
+        bottom: 33px;
+    }
+    .vending-dishes__list [type="radio"] + label::before {
+        width: 340px;
+        height: 224px;
+        left: -30px;
+        top: -20px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 10px;
+    }
+    .vending-dishes__list [type="radio"]:checked + label::after {
+        width: 340px;
+        height: 224px;
+        left: -30px;
+        top: -20px;
+        border-radius: 10px;
+    }
+    .vending-dishes__item .vending-span,
+    .vending-dishes__item .vending-span-tab {
+        display: block;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vending-dishes__list {
+        max-width: 1084px;
+    }
+    .vending-dishes__item {
+        width: 340px;
+        height: 224px;
+        margin-bottom: 20px;
+    }
+    .vending-dishes__item:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .vending-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 32px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .vending__container {
+        background: url("../../../img/page-coffee/coffee/bg-tab@2x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-tab-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 600px;
+        height: 550px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-tab-01@2x.jpg");
+        width: 262px;
+        height: 116px;
     }
 }
