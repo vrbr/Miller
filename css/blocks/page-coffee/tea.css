@@ -1,6 +1,6 @@
 .tea {
     position: relative;
-    /* background: linear-gradient(0deg, rgba(245,245,245,1) 15%, rgba(255,255,255,0) 15%); */
+    background: linear-gradient(0deg, rgba(245,245,245,1) 30%, rgba(255,255,255,0) 30%);
 }
 .tea::after {
     position: absolute;
@@ -110,9 +110,9 @@
 }
 
 @media (min-width: 768px) {
-    /* .tea {
-        background: linear-gradient(0deg, rgba(245,245,245,1) 13%, rgba(255,255,255,0) 13%);
-    } */
+    .tea {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 28%, rgba(255,255,255,0) 28%);
+    }
     .tea__container {
         padding-bottom: 60px;
         background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
@@ -208,6 +208,9 @@
 }
 
 @media (min-width: 1349px) {
+    .tea {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 16%, rgba(255,255,255,0) 16%);
+    }
     .tea__container {
         padding-left: 6.35%;
         padding-right: 6.35%;
