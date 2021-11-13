@@ -89,7 +89,8 @@
     border: none;
     outline: none;
 }
-.sorting-vending-card-tab {
+.sorting-vending-card-tab,
+.sorting-vending-card-desc {
     display: none;
 }
 
@@ -135,5 +136,57 @@
 @media (min-width: 1200px) {
     .sorting-vending__wrapper {
         max-width: 1084px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .sorting-vending-card-desc {
+        display: flex;
+    }
+    .sorting-vending {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+        padding-bottom: 93px;
+    }
+    .sorting-vending__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-vending__wrapper {
+        max-width: 1180px;
+    }
+    .sorting-vending__card {
+        width: 280px;
+        height: 456px;
+        padding: 20px 25px 30px;
+        border-radius: 14px;
+    }
+    .sorting-vending__card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .sorting-vending-header__stars {
+        margin-bottom: 8px;
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-vending-card__img {
+        width: 230px;
+        height: 177px;
+    }
+    .sorting-vending-footer__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-vending-footer__button {
+        width: 230px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 15px;
     }
 }
