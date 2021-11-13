@@ -89,3 +89,51 @@
     border: none;
     outline: none;
 }
+.sorting-vending-card-tab {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sorting-vending-card-tab {
+        display: flex;
+    }
+    .sorting-vending {
+        padding-bottom: 50px;
+    }
+    .sorting-vending__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .sorting-vending__card {
+        margin: 0;
+        height: 546px;
+        padding: 30px 33px 42px;
+        border-radius: 10px;
+    }
+    .sorting-vending-header__size {
+        padding-left: 23px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-vending-card__img {
+        width: 274px;
+        height: 211px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 23px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .sorting-vending-footer__button {
+        width: 272px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sorting-vending__wrapper {
+        max-width: 1084px;
+    }
+}
