@@ -274,8 +274,67 @@
         background: url("../../../img/page-health/health-laptop-bg@2x.png") no-repeat;
         background-size: cover;
     }
-    .tea__container {
+    .health__container {
         background: url("../../../img/page-coffee/coffee/bg-laptop@2x.png") no-repeat;
         background-size: contain;
+    }
+    .health-dishes__item::after {
+        background-image: url("../../../img/page-health/health/health-laptop@2x.png");
+        width: 126px;
+        height: 196px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .health__title {
+        margin-bottom: 81px;
+    }
+    .health::after {
+        background: url("../../../img/page-health/health-desc-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 518px;
+        height: 364px;
+        top: 340px;
+        right: 113px;
+    }
+    .health-dishes__list {
+        max-width: 1660px;
+        width: 1660px;
+    }
+    .health-dishes__item {
+        width: 540px;
+        height: 320px;
+        padding: 20px 45px;
+    }
+    .health__form label {
+        padding-left: 225px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .health-dishes__item::after {
+        background-image: url("../../../img/page-health/health/health-desc@1x.png");
+        width: 182px;
+        height: 279px;
+        left: 145px;
+    }
+    .health-dishes__list [type="radio"] + label::before, .health-dishes__list [type="radio"]:checked + label::after {
+        width: 540px;
+        height: 320px;
+        left: -40px;
+        top: -20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .health::after {
+        background: url("../../../img/page-health/health-desc-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 518px;
+        height: 364px;
+    }
+    .health-dishes__item::after {
+        background-image: url("../../../img/page-health/health/health-desc@2x.png");
+        width: 182px;
+        height: 279px;
     }
 }
