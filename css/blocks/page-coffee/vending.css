@@ -1,0 +1,369 @@
+.vending {
+    position: relative;
+    background: linear-gradient(0deg, rgba(245,245,245,1) 30%, rgba(255,255,255,0) 30%);
+}
+.vending::after {
+    position: absolute;
+    content: "";
+    background: url("../../../img/page-vending/vending-bg@1x.png") no-repeat;
+    background-size: cover;
+    width: 293px;
+    height: 269px;
+    top: 93px;
+    left: 94px;
+}
+.vending__container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    padding-bottom: 40px;
+    background: url("../../../img/page-coffee/coffee/bg@1x.png") no-repeat;
+}
+.vending__title {
+    margin-bottom: 270px;
+}
+.vending__form-fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+.vending-dishes__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 340px;
+    margin: 0 auto;
+}
+.vending-dishes__item {
+    position: relative;
+    width: 160px;
+    height: 110px;
+    padding: 10px 9px 10px;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+.vending-dishes__item .vending-span {
+    display: block;
+    padding-top: 7px;
+}
+.vending-dishes__item:nth-child(odd) {
+    margin-right: 10px;
+}
+.vending-dishes__item label {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+}
+.vending-dishes__item::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/page-vending/vending-01@1x.jpg");
+    width: 128px;
+    height: 57px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    pointer-events: none;
+}
+.vending__form [type="radio"] + label::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 110px;
+    left: -9px;
+    top: -10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+    z-index: -1;
+}
+.vending__form [type="radio"]:checked + label::after {
+    position: absolute;
+    content: "";
+    background-color: #F9B300;
+    border-radius: 10px;
+    left: -9px;
+    top: -10px;
+    width: 160px;
+    height: 110px;
+    z-index: -1;
+}
+
+@media (min-resolution: 2dppx) and (min-width: 375px) {
+    .vending::after {
+        background: url("../../../img/page-vending/vending-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 293px;
+        height: 269px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-01@2x.jpg");
+        width: 128px;
+        height: 57px;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 573px) {
+    .vending__container {
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    .vending {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 26%, rgba(255,255,255,0) 26%);
+    }
+    .vending__container {
+        padding-bottom: 60px;
+        background: url("../../../img/page-coffee/coffee/bg-tab@1x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-tab-bg@1x.png") no-repeat;
+        width: 600px;
+        height: 550px;
+        top: 190px;
+        left: 212px;
+    }
+    .vending__title {
+        margin-bottom: 557px;
+    }
+    .vending-dishes__list {
+        max-width: 700px;
+    }
+    .vending-dishes__item {
+        width: 340px;
+        height: 224px;
+        margin-bottom: 20px;
+        padding: 20px 30px 23px;
+    }
+    .vending-dishes__item:nth-child(odd) {
+        margin-right: 20px;
+    }
+    .vending-dishes__item label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-tab-01@1x.jpg");
+        width: 262px;
+        height: 116px;
+        border-radius: 10px;
+        bottom: 33px;
+    }
+    .vending-dishes__list [type="radio"] + label::before {
+        width: 340px;
+        height: 224px;
+        left: -30px;
+        top: -20px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 10px;
+    }
+    .vending-dishes__list [type="radio"]:checked + label::after {
+        width: 340px;
+        height: 224px;
+        left: -30px;
+        top: -20px;
+        border-radius: 10px;
+    }
+    .vending-dishes__item .vending-span,
+    .vending-dishes__item .vending-span-tab {
+        display: block;
+        padding-top: 10px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+    .vending__container {
+        background: url("../../../img/page-coffee/coffee/bg-tab@2x.png") no-repeat;
+        background-size: 1904px 725px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-tab-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 600px;
+        height: 550px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-tab-01@2x.jpg");
+        width: 262px;
+        height: 116px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vending-dishes__list {
+        max-width: 1084px;
+    }
+    .vending-dishes__item {
+        width: 340px;
+        height: 224px;
+        margin-bottom: 20px;
+    }
+    .vending-dishes__item:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .vending-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 32px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .vending {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 16%, rgba(255,255,255,0) 16%);
+    }
+    .vending__container {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+        padding-bottom: 50px;
+        background: url("../../../img/page-coffee/coffee/bg-laptop@1x.png") no-repeat;
+        background-size: contain;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-laptop-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 475px;
+        height: 435px;
+        top: 166px;
+        right: 0;
+        left: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+    .vending__title {
+        margin-bottom: 97px;
+    }
+    .vending-dishes__list {
+        max-width: 1180px;
+    }
+    .vending-dishes__item {
+        padding: 15px 22px;
+        width: 280px;
+        height: 224px;
+    }
+    .vending-dishes__item-order {
+        order: 8;
+    }
+    .vending-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 0;
+    }
+    .vending-dishes__item:not(:nth-child(4n + 4)) {
+        margin-right: 20px;
+    }
+    .vending-dishes__item label {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-laptop-01@1x.jpg");
+        width: 234px;
+        height: 123px;
+        border-radius: 14px;
+        bottom: 70px;
+    }
+    .vending-dishes__list [type="radio"] + label::before {
+        width: 280px;
+        height: 224px;
+        left: -20px;
+        top: -15px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 14px;
+    }
+    .vending-dishes__list [type="radio"]:checked + label::after {
+        width: 280px;
+        height: 224px;
+        left: -20px;
+        top: -15px;
+        border-radius: 14px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1349px) {
+    .vending__container {
+        background: url("../../../img/page-coffee/coffee/bg-laptop@2x.png") no-repeat;
+        background-size: contain;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-laptop-bg@2x.png") no-repeat;
+        width: 475px;
+        height: 435px;
+        background-size: cover;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-laptop-01@2x.jpg");
+        width: 234px;
+        height: 123px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .vending {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 12%, rgba(255,255,255,0) 12%);
+    }
+    .vending__title {
+        margin-bottom: 120px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-desc-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 671px;
+        height: 615px;
+        top: 186px;
+        right: -23px;
+        z-index: 9;
+    }
+    .vending-dishes__list {
+        max-width: 1660px;
+        width: 1660px;
+    }
+    .vending-dishes__item {
+        width: 400px;
+        height: 320px;
+        padding: 20px 35px 25px;
+    }
+    .vending-dishes__item label {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-desc-01@1x.jpg");
+        width: 331px;
+        height: 175px;
+        bottom: 100px;
+        border-radius: 20px;
+    }
+    .vending-dishes__list [type="radio"] + label::before {
+        width: 400px;
+        height: 320px;
+        left: -35px;
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .vending-dishes__list [type="radio"]:checked + label::after {
+        width: 400px;
+        height: 320px;
+        left: -35px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .vending::after {
+        background: url("../../../img/page-vending/vending-desc-bg@2x.png") no-repeat;
+        background-size: cover;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-desc-01@2x.jpg");
+        width: 331px;
+        height: 175px;
+        border-radius: 20px;
+    }
+}
