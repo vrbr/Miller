@@ -1,0 +1,114 @@
+.health {
+    position: relative;
+    background: linear-gradient(0deg, rgba(245,245,245,1) 18%, rgba(255,255,255,0) 18%);
+}
+.health::after {
+    position: absolute;
+    content: "";
+    background: url("../../../img/page-health/health-bg@1x.png") no-repeat;
+    background-size: cover;
+    width: 234px;
+    height: 188px;
+    top: 123px;
+    right: 0;
+}
+.health__container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    padding-bottom: 40px;
+    background: url("../../../img/page-coffee/coffee/bg@1x.png") no-repeat;
+}
+.health__title {
+    margin-bottom: 228px;
+}
+.health__form-fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+.health-dishes__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 340px;
+    margin: 0 auto;
+}
+.health-dishes__item {
+    position: relative;
+    width: 31.3%;
+    height: 125px;
+    padding: 15px 11px;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+.health-dishes__item:not(:nth-child(3n + 3)) {
+    margin-right: 10px;
+}
+.health-dishes__item label {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.health-dishes__item::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/page-tea/tea-01@1x.png");
+    width: 49px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 11px;
+    pointer-events: none;
+}
+.health__form [type="radio"] + label::before {
+    position: absolute;
+    content: "";
+    width: 107px;
+    height: 125px;
+    left: -10px;
+    top: -15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+    z-index: -1;
+}
+.health__form [type="radio"]:checked + label::after {
+    position: absolute;
+    content: "";
+    background-color: #F9B300;
+    border-radius: 10px;
+    left: -10px;
+    top: -15px;
+    width: 107px;
+    height: 125px;
+    z-index: -1;
+}
+.health-dishes__span {
+    display: block;
+    padding-top: 5px;
+}
+
+@media (min-resolution: 2dppx) and (min-width: 375px) {
+    .health::after {
+        background: url("../../../img/page-health/health-bg@2x.png") no-repeat;
+        background-size: cover;
+        width: 234px;
+        height: 188px;
+    }
+    .health-dishes__item::after {
+        background-image: url("../../../img/page-tea/tea-01@2x.png");
+        width: 49px;
+        height: 68px;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 573px) {
+    .health__container {
+        background-size: contain;
+    }
+}
