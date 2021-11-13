@@ -1,0 +1,250 @@
+.sorting-vending {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    padding-bottom: 40px;
+    background-color: #F5F5F5;
+}
+.sorting-vending__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.sorting-vending__wrapper {
+    margin-bottom: 30px;
+}
+.sorting-vending__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 24px 31px 47px;
+    width: 340px;
+    height: 554px;
+    color: #222;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 17px;
+}
+.sorting-vending__card:not(:last-child) {
+    margin-bottom: 20px;
+}
+.sorting-vending-card__header {
+    display: flex;
+    justify-content: space-between;
+}
+.sorting-vending-header__stars {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: -4px;
+    width: 113px;
+    height: 21px;
+}
+.sorting-vending-header__number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sorting-vending-header__reviews {
+    font-size: 12px;
+    line-height: 14px;
+    color: #5B5B5B;
+}
+.sorting-vending-header__size {
+    width: 113px;
+    height: 28px;
+    padding-right: 11px;
+    padding-left: 20px;
+    background: #FFF7E1;
+    border: 1px solid #F9B300;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.sorting-vending-card__img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.sorting-vending-footer__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+}
+.sorting-vending-footer__text {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sorting-vending-footer__button {
+    width: 279px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    outline: none;
+}
+.sorting-vending-card-tab,
+.sorting-vending-card-desc {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sorting-vending-card-tab {
+        display: flex;
+    }
+    .sorting-vending {
+        padding-bottom: 50px;
+    }
+    .sorting-vending__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .sorting-vending__card {
+        margin: 0;
+        height: 546px;
+        padding: 30px 33px 42px;
+        border-radius: 10px;
+    }
+    .sorting-vending-header__size {
+        padding-left: 23px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-vending-card__img {
+        width: 274px;
+        height: 211px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 23px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .sorting-vending-footer__button {
+        width: 272px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sorting-vending__wrapper {
+        max-width: 1084px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .sorting-vending-card-desc {
+        display: flex;
+    }
+    .sorting-vending {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+        padding-bottom: 93px;
+    }
+    .sorting-vending__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-vending__wrapper {
+        max-width: 1180px;
+    }
+    .sorting-vending__card {
+        width: 280px;
+        height: 456px;
+        padding: 20px 25px 30px;
+        border-radius: 14px;
+    }
+    .sorting-vending__card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .sorting-vending-header__stars {
+        margin-bottom: 8px;
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-vending-card__img {
+        width: 230px;
+        height: 177px;
+    }
+    .sorting-vending-footer__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-vending-footer__button {
+        width: 230px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .sorting-vending {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting-vending__wrapper {
+        max-width: 1660px;
+    }
+    .sorting-vending__card {
+        width: 400px;
+        height: 651px;
+        border-radius: 20px;
+        padding: 30px 40px 50px;
+    }
+    .sorting-vending__card:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    .sorting-vending-header__stars {
+        width: 133px;
+        height: 25px;
+    }
+    .sorting-vending-header__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sorting-vending-header__reviews {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-vending-header__size {
+        width: 132px;
+        height: 33px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-vending-card__img {
+        width: 320px;
+        height: 250px;
+    }
+    .sorting-vending-footer__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-vending-footer__button {
+        width: 320px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
