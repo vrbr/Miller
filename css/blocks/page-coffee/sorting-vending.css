@@ -190,3 +190,61 @@
         line-height: 15px;
     }
 }
+
+@media (min-width: 1904px) {
+    .sorting-vending {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting-vending__wrapper {
+        max-width: 1660px;
+    }
+    .sorting-vending__card {
+        width: 400px;
+        height: 651px;
+        border-radius: 20px;
+        padding: 30px 40px 50px;
+    }
+    .sorting-vending__card:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    .sorting-vending-header__stars {
+        width: 133px;
+        height: 25px;
+    }
+    .sorting-vending-header__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sorting-vending-header__reviews {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-vending-header__size {
+        width: 132px;
+        height: 33px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-vending-card__img {
+        width: 320px;
+        height: 250px;
+    }
+    .sorting-vending-footer__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sorting-vending-footer__text {
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-vending-footer__button {
+        width: 320px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
