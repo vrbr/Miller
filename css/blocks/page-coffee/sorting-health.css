@@ -1,0 +1,299 @@
+.sorting-health {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    padding-bottom: 40px;
+    background-color: #F5F5F5;
+}
+.sorting-health__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.sorting-health__wrapper {
+    margin-bottom: 30px;
+}
+.sorting-health__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 26px 34px 43px;
+    width: 340px;
+    height: 553px;
+    color: #222;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 17px;
+}
+.sorting-health__card:not(:last-child) {
+    margin-bottom: 20px;
+}
+.sorting-health-card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.sorting-health-header__stars {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: -4px;
+    width: 113px;
+    height: 21px;
+}
+.sorting-health-header__number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sorting-health-header__reviews {
+    font-size: 12px;
+    line-height: 14px;
+    color: #5B5B5B;
+}
+.sorting-health-header__size {
+    width: 112px;
+    height: 28px;
+    padding-right: 11px;
+    padding-left: 22px;
+    background: #FFF7E1;
+    border: 1px solid #F9B300;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.sorting-health-card__img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.sorting-health-footer__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+}
+.sorting-health-footer__text {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 16px;  
+}
+.sorting-health-footer__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sorting-health-footer__price {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 31px;
+}
+.sorting-health-footer__button {
+    width: 151px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    outline: none;
+}
+.sorting-health-card-laptop,
+.sorting-health-card-desc {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sorting-health {
+        padding-bottom: 50px;
+    }
+    .sorting__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-health__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .sorting-health__card {
+        margin: 0;
+        height: 546px;
+        padding: 30px 38px 42px;
+        box-shadow: 0px 0px 17.0069px rgba(146, 146, 146, 0.25);
+        border-radius: 10px;
+    }
+    .sorting-health-card__header {
+        margin-bottom: 8px;
+    }
+    .sorting-health-header__stars {
+        margin-bottom: 14px;
+    }
+    .sorting-health-header__size {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-health-footer__text {
+        margin-bottom: 27px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .sorting-health-card-laptop {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sorting-health__wrapper {
+        max-width: 1084px;
+    }
+    .sorting-health__button-more {
+        width: 1084px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .sorting-health-card-desc {
+        display: flex;
+    }
+    .sorting-health {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+        padding-bottom: 93px;
+    }
+    .sorting-health__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .sorting-health__wrapper {
+        max-width: 1180px;
+    }
+    .sorting-health__card {
+        width: 280px;
+        height: 461px;
+        padding: 18px 25px 38px;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+    .sorting-health__card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .sorting-health-header__stars {
+        margin-bottom: 8px;
+        width: 94px;
+        height: 18px;
+    }
+    .sorting-health-header__number {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sorting-health-header__reviews {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .sorting-health-header__size {
+        width: 93px;
+        height: 23px;
+        padding-right: 10px;
+        padding-left: 19px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-health-card__img {
+        width: 128px;
+        height: 196px;
+    }
+    .sorting-health-footer__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sorting-health-footer__text {
+        margin-bottom: 21px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sorting-health-footer__price {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .sorting-health-footer__button {
+        width: 125px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .sorting-health {
+        padding-left: 6.3%;
+        padding-right: 6.3%;
+    }
+    .sorting-health__wrapper {
+        max-width: 1660px;
+    }
+    .sorting-health__card {
+        width: 400px;
+        height: 651px;
+        box-shadow: none;
+        border-radius: 14px;
+        padding: 30px 40px 50px;
+    }
+    .sorting-health__card:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    .sorting-health-header__stars {
+        margin-bottom: 8px;
+        width: 133px;
+        height: 25px;
+    }
+    .sorting-health-card__header {
+        margin-bottom: 15px;
+    }
+    .sorting-health-header__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sorting-health-header__reviews {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sorting-health-header__size {
+        width: 132px;
+        height: 33px;
+        padding-right: 12px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-health-card__img {
+        width: 182px;
+        height: 279px;
+    }
+    .sorting-health-footer__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .sorting-health-footer__text {
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .sorting-health-footer__price {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .sorting-health-footer__button {
+        width: 178px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
