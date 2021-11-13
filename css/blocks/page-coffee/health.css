@@ -209,3 +209,73 @@
         bottom: 17px;
     }
 }
+
+@media (min-width: 1349px) {
+    .health {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 16%, rgba(255,255,255,0) 16%);
+    }
+    .health::after {
+        background: url("../../../img/page-health/health-laptop-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 365px;
+        height: 257px;
+        top: 258px;
+        right: 83px;
+    }
+    .health__container {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+        padding-bottom: 50px;
+        background: url("../../../img/page-coffee/coffee/bg-laptop@1x.png") no-repeat;
+        background-size: contain;
+    }
+    .health__title {
+        margin-bottom: 60px;
+    }
+    .health-dishes__list {
+        max-width: 1180px;
+    }
+    .health-dishes__item {
+        width: 380px;
+        height: 225px;
+    }
+    .health-dishes__item-order {
+        order: 5;
+    }
+    .health-dishes__item:not(:nth-child(4n + 4)) {
+        margin-right: 0;
+    }
+    .health-dishes__item:not(:nth-child(3n + 3)) {
+        margin-right: 20px;
+    }
+    .health__form label {
+        display: flex;
+        align-items: center;
+        padding-left: 150px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+    }
+    .health-dishes__list [type="radio"] + label::before, .health-dishes__list [type="radio"]:checked + label::after {
+        width: 380px;
+        height: 225px;
+    }
+    .health-dishes__item::after {
+        background-image: url("../../../img/page-health/health/health-laptop@1x.png");
+        width: 126px;
+        height: 196px;
+        bottom: 17px;
+        left: 95px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1349px) {
+    .health::after {
+        background: url("../../../img/page-health/health-laptop-bg@2x.png") no-repeat;
+        background-size: cover;
+    }
+    .tea__container {
+        background: url("../../../img/page-coffee/coffee/bg-laptop@2x.png") no-repeat;
+        background-size: contain;
+    }
+}
