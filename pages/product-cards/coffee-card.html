@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/blocks/global/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <button class="header__nav-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <picture>
+                    <source media="(min-width: 1904px)"
+                        srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)"
+                        srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
+                        height="50" alt="Логотип">
+                </picture>
+                <div class="header__interaction">
+                    <button class="header__btn header__interaction-search" type="button"></button>
+                    <button class="header__btn header__interaction-basket" type="button"></button>
+                    <button class="header__btn header__interaction-user" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu__head">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
+                            width="110" height="50" alt="Логотип">
+                    </picture>
+                </div>
+                <div class="header-menu__main">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-menu__interaction">
+                        <button class="header-menu__btn header-menu__interaction-basket" type="button"></button>
+                        <button class="header-menu__btn header-menu__interaction-user" type="button"></button>
+                    </div>
+                </div>
+                <div class="header-menu__footer">
+                    <a class="header-menu__mail" href="#">Import@kldrefine.com</a>
+                    <ul class="header-menu__social">
+                        <li class="header-menu__social-item header-menu__social-phone"></li>
+                        <li class="header-menu__social-item header-menu__social-insta"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-search">
+                <form class="header-search__form" action="#">
+                    <img class="header-search__img" src="../../img/header/search-form.svg" width="12" height="12" alt="">
+                    <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+                    <button class="header-search__btn" type="button">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="coffee-card__info">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="coffee-card__container">
+                <nav class="coffee__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../../index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="">Каталог товаров</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../catalog-coffee.html">Свежеобжаренный кофе</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link-current">Карточка товара название</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="subscription subscription-catalog">
+            <div class="container">
+                <div class="subscription__wrapper">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                                    srcset="../../img/subscription/bg-desk@1x.png 1x, ../../img/subscription/bg-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                                    srcset="../../img/subscription/bg-laptop@1x.png 1x, ../../img/subscription/bg-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                    srcset="../../img/subscription/bg-tab@1x.png 1x, ../../img/subscription/bg-tab@2x.png 2x">
+                        <img class="subscription__img" src="../../img/subscription/bg@1x.png" srcset="../../img/subscription/bg@2x.png" width="361" height="297" alt="">
+                    </picture>
+                    
+                    <form action="#" class="subscription__form" method="POST">
+                        <h2 class="subscription__title section-title">Подписка на новости и рассылку</h2>
+                        <p class="subscription__text">Подпишитесь на нашу рассылку прямо сейчас
+                            и будьте в курсе новых поставок, скидок
+                            и эксклюзивных предложений.</p>
+                        <div class="subscription__application">
+                            <input class="subscription__input" type="email" name="email" placeholder="Ваш email" tabindex="0" id="email" required>
+                            <input class="button subscription__button" type="submit" name="submit" value="Подписаться">
+                        </div>
+                        <p class="subscription__agreement">Нажимая на кнопку “Подписаться”, вы принимаете <span class="carry">правила
+                            <a class="subscription__link" href="#">пользовательского соглашения</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <picture>
+                    <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
+                </picture>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+</body>
+</html>

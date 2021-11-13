@@ -1,0 +1,37 @@
+.coffee-card__info {
+    background-color: #FFF7E1;
+}
+.coffee-card__container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+}
+.coffee-card__container .breadcrumbs__list {
+    padding-bottom: 12px;
+}
+.coffee-card__container .breadcrumbs__link {
+    color: #000;
+}
+.coffee-card__container .breadcrumbs__item:last-child {
+    margin-left: 0;
+}
+.coffee-card__container .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
+    background: #000;
+}
+
+@media (min-width: 768px) {
+    .coffee-card__container .breadcrumbs__list {
+        padding-bottom: 59px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .coffee-card__container .breadcrumbs__list {
+        padding-bottom: 33px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .coffee-card__container .breadcrumbs__list {
+        padding-bottom: 40px;
+    }
+}
