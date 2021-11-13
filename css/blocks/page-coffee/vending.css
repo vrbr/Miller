@@ -256,6 +256,9 @@
         margin-right: 20px;
     }
     .vending-dishes__item label {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
         font-size: 18px;
         line-height: 22px;
     }
@@ -264,7 +267,7 @@
         width: 234px;
         height: 123px;
         border-radius: 14px;
-        bottom: 33px;
+        bottom: 70px;
     }
     .vending-dishes__list [type="radio"] + label::before {
         width: 280px;
@@ -298,5 +301,69 @@
         background-image: url("../../../img/page-vending/vending-laptop-01@2x.jpg");
         width: 234px;
         height: 123px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .vending {
+        background: linear-gradient(0deg, rgba(245,245,245,1) 12%, rgba(255,255,255,0) 12%);
+    }
+    .vending__title {
+        margin-bottom: 120px;
+    }
+    .vending::after {
+        background: url("../../../img/page-vending/vending-desc-bg@1x.png") no-repeat;
+        background-size: cover;
+        width: 671px;
+        height: 615px;
+        top: 186px;
+        right: -23px;
+        z-index: 9;
+    }
+    .vending-dishes__list {
+        max-width: 1660px;
+        width: 1660px;
+    }
+    .vending-dishes__item {
+        width: 400px;
+        height: 320px;
+        padding: 20px 35px 25px;
+    }
+    .vending-dishes__item label {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-desc-01@1x.jpg");
+        width: 331px;
+        height: 175px;
+        bottom: 100px;
+        border-radius: 20px;
+    }
+    .vending-dishes__list [type="radio"] + label::before {
+        width: 400px;
+        height: 320px;
+        left: -35px;
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .vending-dishes__list [type="radio"]:checked + label::after {
+        width: 400px;
+        height: 320px;
+        left: -35px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1904px) {
+    .vending::after {
+        background: url("../../../img/page-vending/vending-desc-bg@2x.png") no-repeat;
+        background-size: cover;
+    }
+    .vending-dishes__item::after {
+        background-image: url("../../../img/page-vending/vending-desc-01@2x.jpg");
+        width: 331px;
+        height: 175px;
+        border-radius: 20px;
     }
 }
