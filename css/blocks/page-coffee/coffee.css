@@ -21,11 +21,12 @@
 /*breadcrumbs*/
 .breadcrumbs__list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 20px;
 }
-.breadcrumbs__item + .breadcrumbs__item {
-    margin-left: 12px;
+.breadcrumbs__item {
+    margin-right: 12px;
 }
 .breadcrumbs__link {
     position: relative;
@@ -33,7 +34,7 @@
     font-size: 10px;
     line-height: 12px;
 }
-.breadcrumbs__link:not(.breadcrumbs__link-current)::after {
+.breadcrumbs__link:not(.breadcrumbs__link-current)::before {
     position: absolute;
     content: "";
     width: 2px;
@@ -287,10 +288,10 @@
         font-size: 20px;
         line-height: 24px;
     }
-    .breadcrumbs__item + .breadcrumbs__item {
-        margin-left: 20px;
+    .breadcrumbs__item {
+        margin-right: 20px;
     }
-    .breadcrumbs__link:not(.breadcrumbs__link-current)::after {
+    .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
         width: 4px;
         height: 4px;
         right: -12px;
@@ -482,14 +483,14 @@
     .breadcrumbs__list {
         padding-bottom: 100px;
     }
-    .breadcrumbs__item + .breadcrumbs__item {
-        margin-left: 11px;
+    .breadcrumbs__item {
+        margin-right: 11px;
     }
     .breadcrumbs__link {
         font-size: 12px;
         line-height: 14px;
     }
-    .breadcrumbs__link:not(.breadcrumbs__link-current)::after {
+    .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
         width: 3px;
         height: 3px;
         right: -7px;
@@ -678,14 +679,14 @@
         padding-top: 40px;
         padding-bottom: 131px;
     }
-    .breadcrumbs__item + .breadcrumbs__item {
-        margin-left: 14px;
+    .breadcrumbs__item {
+        margin-right: 14px;
     }
     .breadcrumbs__link {
         font-size: 18px;
         line-height: 21px;
     }
-    .breadcrumbs__link:not(.breadcrumbs__link-current)::after {
+    .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
         width: 4px;
         height: 4px;
         right: -9px;

@@ -22,3 +22,5 @@
 @import './blocks/page-coffee/sorting-vending.css';
 @import './blocks/page-coffee/health.css';
 @import './blocks/page-coffee/sorting-health.css';
+
+@import './blocks/product-card/coffee-card.css';
