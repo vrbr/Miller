@@ -120,6 +120,8 @@
                 <div class="coffee-card__details">
                     <div class="coffee-card__img-box">
                         <picture>
+                            <source media="(min-width: 1349px)" srcset="../../img/page-coffee/coffee-card/slide-laptop@1x.png 1x, ../../img/page-coffee/coffee-card/slide-laptop@2x.png 2x">
+                            <source media="(min-width: 1200px)" srcset="../../img/page-coffee/coffee-card/slide-tab2@1x.png 1x, ../../img/page-coffee/coffee-card/slide-tab2@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="../../img/page-coffee/coffee-card/slide-tab@1x.png 1x, ../../img/page-coffee/coffee-card/slide-tab@2x.png 2x">
                             <img class="coffee-card__img" src="../../img/page-coffee/coffee-card/slide@1x.png" srcset="../../img/page-coffee/coffee-card/slide@2x.png" width="141" height="259" alt="">
                         </picture>
@@ -144,11 +146,17 @@
                         <div class="card-box__description">
                             <p class="card-box__description-text">Компания Нью Рефайнинг Груп находится
                                 в г. Калининграде и имеет свой склад
-                                и представительство в Москве.<span class="card-box__points">..</span></p>
+                                и представительство в Москве.<span class="card-box__points">..</span></span>
                             <details class="card-box__details">
                                 <summary class="card-box__more">Читать полностью</summary>
                                 <p class="card-box__more-text">Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.</p>
                             </details>
+                        </div>
+                        <div class="card-box__description-laptop">
+                            <p class="card-box__description-text">Компания Нью Рефайнинг Груп находится
+                                в г. Калининграде и имеет свой склад
+                                и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.
+                            </p>
                         </div>
                         <div class="card-box__info-boxes">
                             <div class="card-box__info-box">
@@ -177,6 +185,26 @@
                                 <button type="button" class="card-box__choice-buttons card-box__choice-more">+</button>
                             </div>
                             <button class="button card-box__choice-button" type="submit">Купить за 250 ₽</button>
+                        </form>
+                        <form class="card-box__choice-laptop" method="" action="">
+                            <ul class="card-box__choice-inputs-list">
+                                <li class="card-box__choice-inputs-item">
+                                    <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="250" checked>
+                                    <label for="250">250 г.</label>
+                                </li>
+                                <li class="card-box__choice-inputs-item">
+                                    <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="1000">
+                                    <label for="1000">1000 г.</label>
+                                </li>
+                            </ul>
+                            <div class="card-box__choice-laptop-buttons">
+                                <div class="card-box__choice-number">
+                                    <button type="button" class="card-box__choice-number-buttons card-box__choice-number-less">-</button>
+                                    <input class="card-box__choice-number-input" type="text" value="1">
+                                    <button type="button" class="card-box__choice-number-buttons card-box__choice-number-more">+</button>
+                                </div>
+                                <button class="button card-box__choice-laptop-button" type="submit">Купить за 250 ₽</button>
+                            </div>
                         </form>
                     </div>
                 </div>

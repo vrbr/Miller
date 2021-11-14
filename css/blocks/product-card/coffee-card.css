@@ -183,6 +183,10 @@
     height: 40px;
     border: none;
 }
+.card-box__description-laptop,
+.card-box__choice-laptop {
+    display: none;
+}
 
 @media (min-width: 768px) {
     .coffee-card__container .breadcrumbs__list {
@@ -310,9 +314,308 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .coffee-card__details {
+        display: flex;
+        width: 1085px;
+        padding: 42px 149px 86px 86px;
+        box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+        border-radius: 14px;
+    }
+    .coffee-card__info-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .coffee-card__img-box {
+        padding-right: 89px;
+    }
+    .coffee-card__img {
+        width: 284px;
+        height: 498px;
+    }
+    .card-box__descr {
+        margin-bottom: 22px;
+        order: 1;
+    }
+    .card-box__descr-img {
+        margin-left: 0;
+        width: 104px;
+        height: 16px;
+    }
+    .card-box__descr-name {
+        padding-top: 9px;
+        padding-bottom: 15px;
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .card-box__descr-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .card-box__ratings {
+        display: flex;
+        margin-bottom: 22px;
+        order: 2;
+    }
+    .card-box__stars {
+        width: 118px;
+        height: 22px;
+        margin-bottom: 0;
+    }
+    .card-box__number {
+        margin-right: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-box__reviews {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .card-box__description {
+        display: none;
+    }
+    .card-box__description-laptop {
+        display: block;
+        margin-bottom: 41px;
+        order: 3;
+    }
+    .card-box__description-text {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .card-box__points {
+        display: none;
+    }
+    .card-box__info-boxes {
+        margin-bottom: 50px;
+        justify-content: space-between;
+        order: 4;
+    }
+    .card-box__info-box {
+        flex: none;
+    }
+    .card-box__info-box:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .card-box__info-title {
+        margin-bottom: 9px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card-box__info-rating {
+        width: 125px;
+        height: 9px;
+    }
+    .card-box__choice {
+        display: none;
+    }
+    .card-box__choice-laptop {
+        display: block;
+        order: 5;
+    }
+    .card-box__titles {
+        position: absolute;
+        margin: 0;
+        top: 35px;
+        right: 10px;
+    }
+    .card-box__title + .card-box__title {
+        padding-top: 9px;
+    }
+    .card-box__title {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .card-box__choice-inputs-list,
+    .card-box__choice-laptop-buttons {
+        display: flex;
+    }
+    .card-box__choice-inputs-list {
+        margin-bottom: 45px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+    }
+    .card-box__choice-inputs-list [type="radio"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .card-box__choice-inputs-item {
+        padding-left: 30px;
+    }
+    .card-box__choice-inputs-item:first-child {
+        margin-right: 36px;
+    }
+    .card-box__choice-inputs-item label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+    }
+    .card-box__choice-inputs-item [type="radio"] + label::before {
+        position: absolute;
+        content: "";
+        background-color: #E4E4E4;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -30px;
+    }
+    .card-box__choice-inputs-item [type="radio"]:checked + label::after {
+        position: absolute;
+        content: "";
+        background-color: #F9B300;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -30px;
+    }
+    .card-box__choice-number,
+    .card-box__choice-laptop-button {
+        width: 169px;
+        height: 45px;
+    }
+    .card-box__choice-number {
+        display: flex;
+        border: 1px solid #D6D6D6;
+        border-radius: 4px;
+        margin-right: 20px;
+    }
+    .card-box__choice-number-input {
+        width: 42px;
+        border: none;
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        background: #F6F6F6;
+    }
+    .card-box__choice-number-buttons {
+        width: 64px;
+        border: none;
+        padding: 0;
+        font-size: 20px;
+        background: #F6F6F6;
+    }
+    .card-box__choice-laptop-button {
+        border: none;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
 @media (min-width: 1349px) {
+    .coffee-card__container {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+    }
     .coffee-card__container .breadcrumbs__list {
         padding-bottom: 33px;
+    }
+    .coffee-card__details {
+        width: 1180px;
+        padding: 46px 144px 108px 94px;
+        box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+    }
+    .coffee-card__img {
+        width: 309px;
+        height: 542px;
+    }
+    .card-box__ratings {
+        margin-bottom: 25px;
+    }
+    .card-box__stars {
+        width: 128px;
+        height: 24px;
+    }
+    .card-box__number {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .card-box__reviews {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card-box__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .card-box__title + .card-box__title {
+        padding-top: 10px;
+    }
+    .card-box__descr {
+        margin-bottom: 24px;
+    }
+    .card-box__descr-img {
+        width: 113px;
+        height: 17px;
+    }
+    .card-box__descr-name {
+        padding-top: 10px;
+        padding-bottom: 16px;
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .card-box__descr-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card-box__description-laptop {
+        margin-bottom: 47px;
+    }
+    .card-box__description-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .card-box__info-boxes {
+        margin-bottom: 55px;
+    }
+    .card-box__info-title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .card-box__info-rating {
+        width: 136px;
+        height: 10px;
+    }
+    .card-box__choice-inputs-list {
+        margin-bottom: 50px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .card-box__choice-inputs-item [type="radio"] + label::before,
+    .card-box__choice-inputs-item [type="radio"]:checked + label::after {
+        width: 18px;
+        height: 18px;
+        top: 2px;
+        left: -30px;
+    }
+    .card-box__choice-number, .card-box__choice-laptop-button {
+        width: 184px;
+        height: 49px;
+    }
+    .card-box__choice-number {
+        margin-right: 15px;
+    }
+    .card-box__choice-number-buttons {
+        font-size: 22px;
+    }
+    .card-box__choice-number-input {
+        width: 56px;
+        font-size: 18px;
+    }
+    .card-box__choice-laptop-button {
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 
