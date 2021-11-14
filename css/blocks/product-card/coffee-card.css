@@ -4,6 +4,7 @@
 .coffee-card__container {
     padding-left: 4.8%;
     padding-right: 4.8%;
+    padding-bottom: 30px;
 }
 .coffee-card__container .breadcrumbs__list {
     padding-bottom: 12px;
@@ -189,6 +190,9 @@
 }
 
 @media (min-width: 768px) {
+    .coffee-card__container {
+        padding-bottom: 40px;
+    }
     .coffee-card__container .breadcrumbs__list {
         padding-bottom: 59px;
     }
@@ -620,6 +624,9 @@
 }
 
 @media (min-width: 1904px) {
+    .coffee-card__container {
+        padding-bottom: 70px;
+    }
     .coffee-card__container .breadcrumbs__list {
         padding-bottom: 40px;
     }

@@ -1,0 +1,186 @@
+.coffee-instruction__wrapper {
+    padding: 10px 4.8%;
+    background-color: #fff;
+}
+.coffee-instruction__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+.coffee-instruction__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F9B300;
+    background-color: #F0F0F0;
+    border: 1px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.coffee-instruction__taste {
+    padding: 20px 4.8% 9px;
+}
+.coffee-taste__wrapper {
+    padding: 19px 16px 28px 14px;
+    color: #222222;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+}
+.coffee-taste__title {
+    margin: 0;
+    margin-bottom: 27px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+.coffee-taste__list {
+    display: flex;
+    padding-left: 40px;
+}
+.coffee-taste__item {
+    position: relative;
+    padding-right: 26%;
+    font-size: 12px;
+    line-height: 16px;
+}
+.coffee-taste__item:last-child {
+    padding-right: 0;
+}
+.coffee-taste__item::before {
+    position: absolute;
+    content: "";
+    background: url("../../../img/page-coffee/instruction/taste-icon.svg");
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    bottom: -6px;
+}
+
+@media (min-width: 768px) {
+    .coffee-instruction__wrapper {
+        padding: 20px 4.8%;
+    }
+    .coffee-instruction__list {
+        grid-row-gap: 20px;
+    }
+    .coffee-instruction__item {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .coffee-instruction__taste {
+        padding: 100px 4.8% 20px;
+    }
+    .coffee-taste__wrapper {
+        padding: 41px 35px 64px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+    }
+    .coffee-taste__title {
+        margin-bottom: 54px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .coffee-taste__list {
+        padding-left: 80px;
+    }
+    .coffee-taste__item {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .coffee-taste__item::before {
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        left: -80px;
+        bottom: -14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .coffee-instruction__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .coffee-instruction__taste {
+        padding-top: 60px;
+    }
+    .coffee-instruction__item {
+        height: 42px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .coffee-taste__wrapper {
+        padding: 40px 64px 46px 55px;
+    }
+    .coffee-taste__list {
+        flex-direction: column;
+    }
+    .coffee-taste__item {
+        padding-right: 0;
+    }
+    .coffee-taste__item::before {
+        width: 50px;
+        height: 50px;
+        left: -80px;
+        bottom: -6px;
+    }
+    .coffee-taste__item + .coffee-taste__item {
+        padding-top: 47px;
+    }
+    .coffee-taste__title {
+        margin-bottom: 44px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .coffee-instruction__wrapper,
+    .coffee-instruction__taste {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+    }
+}
+
+@media (min-width: 1904px) {
+    .coffee-instruction__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .coffee-instruction__item {
+        height: 60px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .coffee-taste__wrapper {
+        padding: 60px 89px 74px 80px;
+    }
+    .coffee-taste__title {
+        margin-bottom: 50px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .coffee-taste__list {
+        padding-left: 120px;
+    }
+    .coffee-taste__item {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .coffee-taste__item + .coffee-taste__item {
+        padding-top: 68px;
+    }
+    .coffee-taste__item::before {
+        width: 70px;
+        height: 70px;
+        left: -120px;
+        bottom: -18px;
+    }
+}
