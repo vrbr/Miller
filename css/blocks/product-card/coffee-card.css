@@ -623,4 +623,106 @@
     .coffee-card__container .breadcrumbs__list {
         padding-bottom: 40px;
     }
+    .coffee-card__details {
+        width: 1660px;
+        padding: 73px 220px 148px 132px;
+        box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+        border-radius: 20px;
+    }
+    .coffee-card__img {
+        width: 437px;
+        height: 767px;
+    }
+    .card-box__ratings {
+        margin-bottom: 33px;
+    }
+    .card-box__stars {
+        margin-right: 20px;
+        width: 185px;
+        height: 34px;
+    }
+    .card-box__number {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .card-box__reviews {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .card-box__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-box__descr {
+        margin-bottom: 38px;
+    }
+    .card-box__descr-img {
+        width: 185px;
+        height: 27px;
+    }
+    .card-box__descr-name {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .card-box__descr-text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .card-box__description-laptop {
+        margin-bottom: 55px;
+    }
+    .card-box__description-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .card-box__info-boxes {
+        margin-bottom: 78px;
+    }
+    .card-box__info-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-box__info-rating {
+        width: 180px;
+        height: 14px;
+    }
+    .card-box__choice-inputs-list {
+        margin-bottom: 67px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .card-box__choice-inputs-item {
+        padding-left: 40px;
+    }
+    .card-box__choice-inputs-item:first-child {
+        margin-right: 46px;
+    }
+    .card-box__choice-inputs-item [type="radio"] + label::before,
+    .card-box__choice-inputs-item [type="radio"]:checked + label::after {
+        width: 25px;
+        height: 25px;
+        top: 4px;
+        left: -40px;
+    }
+    .card-box__choice-number {
+        margin-right: 20px;
+        width: 260px;
+        height: 70px;
+    }
+    .card-box__choice-number-buttons {
+        width: 94px;
+        font-size: 30px;
+    }
+    .card-box__choice-number-input {
+        width: 72px;
+        font-size: 25px;
+    }
+    .card-box__choice-laptop-button {
+        width: 400px;
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
