@@ -66,7 +66,7 @@
     bottom: -6px;
 }
 /*instruction*/
-.coffee-instructions {
+.coffee-specifications__info {
     border-bottom: 1px solid #B3B3B3;
 }
 .coffee-instruction__specifications {
@@ -122,6 +122,65 @@
     width: 340px;
     height: 170px;
     margin: 0 auto;
+}
+/*howtocook*/
+.coffee-instructions__howtocook {
+    border-bottom: 1px solid #B3B3B3;
+}
+.coffee-instructions__howtocook-container {
+    padding: 30px 4.8% 20px;
+}
+.coffee-instructions__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+.coffee-instructions__howtocook-title {
+    margin-bottom: 20px;
+}
+.coffee-instructions__howtocook .coffee-dishes__list {
+    padding-bottom: 20px;
+}
+.coffee-instructions__howtocook [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.coffee-instructions__howtocook label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+.coffee-instructions__howtocook [type="radio"] + label::before {
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 110px;
+    left: -10px;
+    top: -10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+    z-index: -1;
+}
+.coffee-instructions__howtocook [type="radio"]:checked + label::after {
+    position: absolute;
+    content: "";
+    background-color: #F9B300;
+    border-radius: 10px;
+    left: -10px;
+    top: -10px;
+    width: 106px;
+    height: 110px;
+    z-index: -1;
 }
 
 @media (min-width: 768px) {
@@ -193,12 +252,41 @@
         width: 700px;
         height: 348px;
     }
+    .coffee-instructions__howtocook-container {
+        padding: 40px 4.8% 80px;
+    }
+    .coffee-instructions__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .coffee-instructions__howtocook-title {
+        margin-bottom: 35px;
+    }
+    .coffee-instructions__howtocook label {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .coffee-instructions__howtocook [type="radio"] + label::before {
+        width: 220px;
+        height: 220px;
+        left: -20px;
+        top: -20px;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .coffee-instructions__howtocook [type="radio"]:checked + label::after {
+        width: 220px;
+        height: 220px;
+        left: -20px;
+        top: -20px;
+        border-radius: 20px;
+    }
 }
 
 @media (min-width: 1200px) {
     .coffee-instruction__list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
     }
     .coffee-instruction__taste {
         padding: 60px 0 0;
@@ -287,6 +375,25 @@
         width: 280px;
         height: 296px;
     }
+    .coffee-instructions__howtocook {
+        grid-column: 1/-1;
+    }
+    .coffee-instructions__howtocook-container,
+    .coffee-instructions__howtocook .coffee-dishes__list {
+        padding: 0;
+    }
+    .coffee-instructions__title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .coffee-instructions__howtocook-title {
+        margin-bottom: 40px;
+    }
+    .coffee-instructions__howtocook [type="radio"] + label::before,
+    .coffee-instructions__howtocook [type="radio"]:checked + label::after {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (min-width: 1349px) {
@@ -298,6 +405,24 @@
     .coffee-specifications__texts {
         margin-right: 120px;
         max-width: 855px;
+    }
+    .coffee-instructions__howtocook .coffee-dishes__list {
+        width: 100%;
+    }
+    .coffee-instructions__howtocook label {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .coffee-instructions__howtocook [type="radio"] + label::before {
+        width: 134px;
+        height: 134px;
+        box-shadow: 0px 0px 21.2553px rgba(149, 149, 149, 0.25);
+        border-radius: 14px;
+    }
+    .coffee-instructions__howtocook [type="radio"]:checked + label::after {
+        width: 134px;
+        height: 134px;
+        border-radius: 14px;
     }
 }
 
@@ -366,5 +491,29 @@
     .coffee-specifications__img {
         width: 397px;
         height: 418px;
+    }
+    .coffee-instructions__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .coffee-instructions__howtocook-title {
+        margin-bottom: 60px;
+    }
+    .coffee-instructions__howtocook label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .coffee-instructions__howtocook [type="radio"] + label::before {
+        width: 189px;
+        height: 190px;
+        left: -20px;
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .coffee-instructions__howtocook [type="radio"]:checked + label::after {
+        width: 189px;
+        height: 190px;
+        left: -20px;
+        border-radius: 20px;
     }
 }

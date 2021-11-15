@@ -390,7 +390,7 @@
     }
     .dishes__item-cezve::after {
         width: 143px;
-        height: 139px;
+        height: 143px;
     }
     .dishes__item-french::after {
         width: 109px;
@@ -615,7 +615,7 @@
     }
     .dishes__item-cezve::after {
         width: 58px;
-        height: 54px;
+        height: 58px;
     }
     .dishes__item-french::after {
         width: 45px;
@@ -623,7 +623,7 @@
     }
     .dishes__item-moka::after {
         width: 52px;
-        height: 59px;
+        height: 61px;
         bottom: 26px;
     }
     .dishes__item-espresso::after {
@@ -643,8 +643,8 @@
     }
     .dishes__item-cup::after {
         width: 47px;
-        height: 46px;
-        bottom: 39px;
+        height: 50px;
+        bottom: 34px;
     }
     .dishes__item-machine::after {
         width: 42px;
@@ -785,7 +785,7 @@
     }
     .dishes__item-cezve::after {
         width: 82px;
-        height: 77px;
+        height: 82px;
         bottom: 44px;
     }
     .dishes__item-french::after {
@@ -795,7 +795,7 @@
     }
     .dishes__item-moka::after {
         width: 74px;
-        height: 84px;
+        height: 87px;
         bottom: 36px;
     }
     .dishes__item-espresso::after {
@@ -815,7 +815,7 @@
     }
     .dishes__item-cup::after {
         width: 67px;
-        height: 66px;
+        height: 69px;
         bottom: 54px;
     }
     .dishes__item-machine::after {
