@@ -1,15 +1,15 @@
-.coffee-instruction__wrapper {
+.instruction__wrapper {
     padding: 10px 4.8%;
     background-color: #fff;
 }
-.coffee-instruction__list {
+.instruction__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
 }
-.coffee-instruction__item {
+.instruction__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,13 +304,13 @@
 }
 
 @media (min-width: 768px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding: 20px 4.8%;
     }
-    .coffee-instruction__list {
+    .instruction__list {
         grid-row-gap: 20px;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 70px;
         font-size: 25px;
         line-height: 30px;
@@ -483,7 +483,7 @@
 }
 
 @media (min-width: 1200px) {
-    .coffee-instruction__list {
+    .coffee-card__instruction .instruction__list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
@@ -491,7 +491,7 @@
         padding: 0;
         grid-column: 1/2;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 42px;
         font-size: 18px;
         line-height: 22px;
@@ -688,7 +688,7 @@
 }
 
 @media (min-width: 1349px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding: 20px 6.35%;
     }
     .coffee-specifications__texts {
@@ -741,11 +741,11 @@
 }
 
 @media (min-width: 1904px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 60px;
         font-size: 25px;
         line-height: 30px;

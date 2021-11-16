@@ -1,0 +1,15 @@
+/*instruction*/
+.tea-card__instruction .instruction__item:first-child {
+    grid-column: 1/-1;
+}
+
+@media (min-width: 1200px) {
+    /*instruction*/
+    .tea-card__instruction .instruction__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .tea-card__instruction .instruction__item:first-child {
+        grid-column: 1/2;
+    }
+}
