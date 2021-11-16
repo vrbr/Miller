@@ -213,6 +213,95 @@
 .coffee-instructions__additionally-text--desc {
     display: none;
 }
+/*reviews*/
+.coffee-instructions__reviews {
+    background: url("../../../img/page-coffee/instruction/vector-bg.svg") no-repeat;
+    background-size: contain;
+    background-color: #F5F5F5;
+}
+.coffee-instructions__reviews-container {
+    padding: 0 4.8% 34px;
+}
+.coffee-instructions__reviews__title {
+    margin-bottom: 20px;
+}
+.coffee-instructions__reviews-box {
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+}
+.coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+    margin-top: 20px;
+}
+.coffee-reviews__main {
+    padding: 20px 51px 20px 20px;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+.coffee-reviews__quotes {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+}
+.coffee-reviews__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+.coffee-reviews__stars {
+    display: block;
+    margin-bottom: 20px;
+}
+.coffee-reviews__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.coffee-reviews__footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 51px 10px 20px;
+    background: #FFF7E1;
+    border-radius: 0px 0px 10px 10px;
+}
+.coffee-reviews__footer-avatar {
+    display: block;
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.coffee-reviews__name,
+.coffee-reviews__city {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.coffee-reviews__name {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.coffee-reviews__city {
+    opacity: 0.12;
+}
+.coffee-instructions__reviews-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.coffee-reviews__data {
+    display: none;
+}
 
 @media (min-width: 768px) {
     .coffee-instruction__wrapper {
@@ -255,6 +344,9 @@
         bottom: -14px;
     }
     /*instruction*/
+    .coffee-instructions__reviews-container {
+        padding-bottom: 102px;
+    }
     .coffee-specifications__wrapper {
         padding: 50px 33px 70px;
         box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
@@ -314,7 +406,7 @@
     }
     /*additionally*/
     .coffee-instructions__additionally-container {
-        padding: 30px 4.8% 70px;
+        padding: 40px 4.8% 70px;
     }
     .coffee-instructions__additionally__title {
         margin-bottom: 40px;
@@ -334,6 +426,60 @@
         font-size: 30px;
         line-height: 36px;
     }
+    /*reviews*/
+    .coffee-instructions__reviews__title {
+        margin-bottom: 70px;
+    }
+    .coffee-instructions__reviews-box {
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 10px;
+    }
+    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+        margin-top: 30px;
+    }
+    .coffee-reviews__main {
+        padding: 50px 106px 50px 50px;
+    }
+    .coffee-reviews__quotes {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .coffee-reviews__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .coffee-reviews__stars {
+        margin-bottom: 40px;
+        width: 113px;
+        height: 21px;
+    }
+    .coffee-reviews__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .coffee-reviews__footer {
+        padding: 11px 106px 12px 50px;
+    }
+    .coffee-reviews__footer-avatar {
+        width: 90px;
+        height: 90px;
+    }
+    .coffee-reviews__name {
+        margin-bottom: 11px;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .coffee-reviews__city {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .coffee-instructions__reviews-button {
+        margin-top: 30px;
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -342,7 +488,7 @@
         grid-template-rows: 1fr;
     }
     .coffee-instruction__taste {
-        padding: 60px 0 0;
+        padding: 0;
         grid-column: 1/2;
     }
     .coffee-instruction__item {
@@ -376,22 +522,18 @@
         margin-bottom: 44px;
     }
     /*instructions*/
-    .coffee-instructions {
+    .coffee-instruction__tasteandspecifications {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 65px;
-        padding-left: 4.8%;
-        padding-right: 4.8%;
+        grid-gap: 20px;
+        padding: 60px 4.8% 65px;
     }
     .coffee-instruction__specifications {
-        padding: 60px 0 0;
-        grid-column: 2/5;
+        padding: 0;
     }
     .coffee-specifications__wrapper {
         padding: 43px 100px 41px 56px;
-        box-shadow: 0px 0px 21.2552px rgba(149, 149, 149, 0.25);
+        box-shadow: 0px 0px 21px rgba(149, 149, 149, 0.25);
         border-radius: 14px;
         min-height: 346px;
     }
@@ -413,7 +555,8 @@
     .coffee-specifications__info {
         display: flex;
         justify-content: space-between;
-        grid-column: 1/5;
+        padding-left: 4.8%;
+        padding-right: 4.8%;
     }
     .coffee-specifications__texts {
         margin-right: 30px;
@@ -430,15 +573,13 @@
         width: 280px;
         height: 296px;
     }
-    .coffee-instructions__howtocook {
-        grid-column: 1/5;
+    .coffee-instructions__howtocook,
+    .coffee-instructions__additionally {
+        padding: 40px 4.8% 60px;
     }
     .coffee-instructions__howtocook-container,
     .coffee-instructions__howtocook .coffee-dishes__list {
         padding: 0;
-    }
-    .coffee-instructions__howtocook .coffee-dishes__list {
-        padding-bottom: 50px;
     }
     .coffee-instructions__title {
         font-size: 28px;
@@ -453,12 +594,8 @@
         height: 250px;
     }
     /*additionally*/
-    .coffee-instructions__additionally {
-        grid-column: 1/5;
-    }
     .coffee-instructions__additionally-container {
         padding: 0;
-        padding-bottom: 100px;
     }
     .coffee-instructions__additionally-text--desc {
         display: block;
@@ -471,24 +608,105 @@
     }
     .coffee-instructions__additionally-img {
         margin-left: 0;
-        width: 1140px;
-        height: 375px;
+        width: 1085px;
+        height: 357px;
+    }
+    /*reviews*/
+    .coffee-instructions__reviews {
+        padding-left: 4.8%;
+        padding-right: 4.8%;
+    }
+    .coffee-instructions__reviews-container {
+        padding: 0 0 64px;
+    }
+    .coffee-instructions__reviews__title {
+        margin-bottom: 80px;
+    }
+    .coffee-instructions__reviews-box {
+        box-shadow: 0px 0px 21px rgba(149, 149, 149, 0.25);
+        border-radius: 14px;
+    }
+    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+        margin-top: 50px;
+    }
+    .coffee-reviews__main {
+        position: relative;
+        padding: 33px 100px 69px 58px;
+        border-radius: 14px 14px 0px 0px;
+    }
+    .coffee-reviews__data {
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 69px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .coffee-reviews__quotes {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .coffee-reviews__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .coffee-reviews__stars {
+        margin-bottom: 20px;
+        width: 128px;
+        height: 24px;
+    }
+    .coffee-reviews__text {
+        max-width: 740px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .coffee-reviews__footer {
+        padding: 17px 69px 18px 58px;
+        border-radius: 0px 0px 14px 14px;
+    }
+    .coffee-reviews__footer-avatar {
+        margin-right: 35px;
+        width: 50px;
+        height: 50px;
+    }
+    .coffee-reviews__name {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .coffee-reviews__city {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .coffee-instructions__reviews-button {
+        margin-top: 50px;
+        height: 49px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
 @media (min-width: 1349px) {
-    .coffee-instructions,
     .coffee-instruction__wrapper {
-        padding-left: 6.35%;
-        padding-right: 6.35%;
+        padding: 20px 6.35%;
     }
     .coffee-specifications__texts {
         margin-right: 120px;
         max-width: 855px;
     }
+    .coffee-specifications__info,
+    .coffee-instructions__howtocook,
+    .coffee-instructions__additionally,
+    .coffee-instructions__reviews {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+    }
+    .coffee-instructions__howtocook {
+        padding-bottom: 80px;
+    }
     .coffee-instructions__howtocook .coffee-dishes__list {
         width: 100%;
-        padding-bottom: 80px;
     }
     .coffee-instructions__howtocook label {
         font-size: 14px;
@@ -504,6 +722,14 @@
         width: 134px;
         height: 134px;
         border-radius: 14px;
+    }
+    .coffee-instruction__tasteandspecifications {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+        padding-bottom: 90px;
+    }
+    .coffee-instructions__additionally {
+        padding-bottom: 80px;
     }
     .coffee-instructions__additionally-text {
         max-width: 963px;
@@ -584,6 +810,10 @@
         font-size: 40px;
         line-height: 50px;
     }
+    .coffee-instructions__howtocook {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
     .coffee-instructions__howtocook-title {
         margin-bottom: 60px;
     }
@@ -604,11 +834,9 @@
         left: -20px;
         border-radius: 20px;
     }
-    .coffee-instructions__howtocook .coffee-dishes__list {
+    .coffee-instructions__additionally {
+        padding-top: 50px;
         padding-bottom: 100px;
-    }
-    .coffee-instructions__additionally-container {
-        padding-bottom: 150px;
     }
     .coffee-instructions__additionally__title {
         margin-bottom: 60px;
@@ -622,5 +850,72 @@
     .coffee-instructions__additionally-img {
         width: 1660px;
         height: 550px;
+    }
+    /*reviews*/
+    .coffee-instructions__reviews-container {
+        padding-bottom: 85px;
+    }
+    .coffee-instructions__reviews__title {
+        margin-bottom: 100px;
+    }
+    .coffee-instructions__reviews-box {
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+        margin-top: 70px;
+    }
+    .coffee-reviews__main {
+        padding: 40px 140px 86px 80px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .coffee-reviews__quotes {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .coffee-reviews__data {
+        font-size: 20px;
+        line-height: 26px;
+        right: 140px;
+        top: 95px;
+    }
+    .coffee-reviews__title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .coffee-reviews__stars {
+        margin-bottom: 40px;
+        width: 187px;
+        height: 34px;
+    }
+    .coffee-reviews__text {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 1060px;
+    }
+    .coffee-reviews__footer {
+        padding: 25px 140px 25px 80px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .coffee-reviews__footer-avatar {
+        margin-right: 50px;
+        width: 70px;
+        height: 70px;
+    }
+    .coffee-reviews__name {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .coffee-reviews__city {
+        font-size: 20px;
+        line-height: 26px;
+        opacity: 1;
+    }
+    .coffee-instructions__reviews-button {
+        height: 70px;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
