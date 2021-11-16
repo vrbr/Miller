@@ -1,15 +1,15 @@
-.coffee-instruction__wrapper {
+.instruction__wrapper {
     padding: 10px 4.8%;
     background-color: #fff;
 }
-.coffee-instruction__list {
+.instruction__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
 }
-.coffee-instruction__item {
+.instruction__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@
     bottom: -6px;
 }
 /*instruction*/
-.coffee-specifications__info {
+.main-specifications__info {
     border-bottom: 1px solid #B3B3B3;
 }
 .coffee-instruction__specifications {
@@ -105,19 +105,19 @@
 .coffee-specifications__descr-first {
     width: 50%;
 }
-.coffee-specifications__texts {
+.main-specifications__texts {
     padding: 30px 4.8% 40px;
 }
-.coffee-specifications__text {
+.main-specifications__text {
     margin: 0;
 }
-.coffee-specifications__text + .coffee-specifications__text {
+.main-specifications__text + .main-specifications__text {
     padding-top: 20px;
 }
-.coffee-specifications__photo {
+.main-specifications__photo {
     padding-bottom: 50px;
 }
-.coffee-specifications__img {
+.main-specifications__img {
     display: block;
     width: 340px;
     height: 170px;
@@ -214,78 +214,78 @@
     display: none;
 }
 /*reviews*/
-.coffee-instructions__reviews {
+.main-instructions__reviews{
     background: url("../../../img/page-coffee/instruction/vector-bg.svg") no-repeat;
     background-size: contain;
     background-color: #F5F5F5;
 }
-.coffee-instructions__reviews-container {
+.main-instructions__reviews-container {
     padding: 0 4.8% 34px;
 }
-.coffee-instructions__reviews__title {
+.main-instructions__reviews__title {
     margin-bottom: 20px;
 }
-.coffee-instructions__reviews-box {
+.main-instructions__reviews-box {
     box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
     border-radius: 10px;
 }
-.coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+.main-instructions__reviews-box + .main-instructions__reviews-box {
     margin-top: 20px;
 }
-.coffee-reviews__main {
+.main-reviews__main {
     padding: 20px 51px 20px 20px;
     background-color: #fff;
     border-radius: 10px 10px 0px 0px;
 }
-.coffee-reviews__quotes {
+.main-reviews__quotes {
     font-weight: 900;
     font-size: 20px;
     line-height: 25px;
 }
-.coffee-reviews__title {
+.main-reviews__title {
     margin: 0;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
 }
-.coffee-reviews__stars {
+.main-reviews__stars {
     display: block;
     margin-bottom: 20px;
 }
-.coffee-reviews__text {
+.main-reviews__text {
     margin: 0;
     font-size: 12px;
     line-height: 16px;
 }
-.coffee-reviews__footer {
+.main-reviews__footer {
     display: flex;
     align-items: center;
     padding: 10px 51px 10px 20px;
     background: #FFF7E1;
     border-radius: 0px 0px 10px 10px;
 }
-.coffee-reviews__footer-avatar {
+.main-reviews__footer-avatar {
     display: block;
     margin-right: 19px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.coffee-reviews__name,
-.coffee-reviews__city {
+.main-reviews__name,
+.main-reviews__city {
     margin: 0;
     font-size: 12px;
     line-height: 16px;
 }
-.coffee-reviews__name {
+.main-reviews__name {
     margin-bottom: 5px;
     font-weight: bold;
 }
-.coffee-reviews__city {
+.main-reviews__city {
     opacity: 0.12;
 }
-.coffee-instructions__reviews-button {
+.main-instructions__reviews-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,18 +299,18 @@
     box-sizing: border-box;
     border-radius: 5px;
 }
-.coffee-reviews__data {
+.main-reviews__data {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding: 20px 4.8%;
     }
-    .coffee-instruction__list {
+    .instruction__list {
         grid-row-gap: 20px;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 70px;
         font-size: 25px;
         line-height: 30px;
@@ -344,7 +344,7 @@
         bottom: -14px;
     }
     /*instruction*/
-    .coffee-instructions__reviews-container {
+    .main-instructions__reviews-container {
         padding-bottom: 102px;
     }
     .coffee-specifications__wrapper {
@@ -364,14 +364,14 @@
         font-size: 20px;
         line-height: 26px;
     }
-    .coffee-specifications__texts {
+    .main-specifications__texts {
         padding-top: 39px;
         padding-bottom: 80px;
     }
-    .coffee-specifications__photo {
+    .main-specifications__photo {
         padding-bottom: 70px;
     }
-    .coffee-specifications__img {
+    .main-specifications__img {
         width: 700px;
         height: 348px;
     }
@@ -427,54 +427,54 @@
         line-height: 36px;
     }
     /*reviews*/
-    .coffee-instructions__reviews__title {
+    .main-instructions__reviews__title {
         margin-bottom: 70px;
     }
-    .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box {
         box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
         border-radius: 10px;
     }
-    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box + .main-instructions__reviews-box {
         margin-top: 30px;
     }
-    .coffee-reviews__main {
+    .main-reviews__main {
         padding: 50px 106px 50px 50px;
     }
-    .coffee-reviews__quotes {
+    .main-reviews__quotes {
         font-size: 30px;
         line-height: 37px;
     }
-    .coffee-reviews__title {
+    .main-reviews__title {
         margin-bottom: 30px;
         font-size: 30px;
         line-height: 39px;
     }
-    .coffee-reviews__stars {
+    .main-reviews__stars {
         margin-bottom: 40px;
         width: 113px;
         height: 21px;
     }
-    .coffee-reviews__text {
+    .main-reviews__text {
         font-size: 20px;
         line-height: 26px;
     }
-    .coffee-reviews__footer {
+    .main-reviews__footer {
         padding: 11px 106px 12px 50px;
     }
-    .coffee-reviews__footer-avatar {
+    .main-reviews__footer-avatar {
         width: 90px;
         height: 90px;
     }
-    .coffee-reviews__name {
+    .main-reviews__name {
         margin-bottom: 11px;
         font-size: 25px;
         line-height: 33px;
     }
-    .coffee-reviews__city {
+    .main-reviews__city {
         font-size: 20px;
         line-height: 26px;
     }
-    .coffee-instructions__reviews-button {
+    .main-instructions__reviews-button {
         margin-top: 30px;
         height: 70px;
         font-size: 25px;
@@ -483,7 +483,7 @@
 }
 
 @media (min-width: 1200px) {
-    .coffee-instruction__list {
+    .coffee-card__instruction .instruction__list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
@@ -491,7 +491,7 @@
         padding: 0;
         grid-column: 1/2;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 42px;
         font-size: 18px;
         line-height: 22px;
@@ -552,24 +552,24 @@
         font-size: 18px;
         line-height: 23px;
     }
-    .coffee-specifications__info {
+    .main-specifications__info {
         display: flex;
         justify-content: space-between;
         padding-left: 4.8%;
         padding-right: 4.8%;
     }
-    .coffee-specifications__texts {
+    .main-specifications__texts {
         margin-right: 30px;
         padding: 0;
     }
-    .coffee-specifications__text {
+    .main-specifications__text {
         font-size: 17px;
         line-height: 23px;
     }
-    .coffee-specifications__photo {
+    .main-specifications__photo {
         padding-bottom: 70px;
     }
-    .coffee-specifications__img {
+    .main-specifications__img {
         width: 280px;
         height: 296px;
     }
@@ -612,29 +612,29 @@
         height: 357px;
     }
     /*reviews*/
-    .coffee-instructions__reviews {
+    .main-instructions__reviews{
         padding-left: 4.8%;
         padding-right: 4.8%;
     }
-    .coffee-instructions__reviews-container {
+    .main-instructions__reviews-container {
         padding: 0 0 64px;
     }
-    .coffee-instructions__reviews__title {
+    .main-instructions__reviews__title {
         margin-bottom: 80px;
     }
-    .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box {
         box-shadow: 0px 0px 21px rgba(149, 149, 149, 0.25);
         border-radius: 14px;
     }
-    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box + .main-instructions__reviews-box {
         margin-top: 50px;
     }
-    .coffee-reviews__main {
+    .main-reviews__main {
         position: relative;
         padding: 33px 100px 69px 58px;
         border-radius: 14px 14px 0px 0px;
     }
-    .coffee-reviews__data {
+    .main-reviews__data {
         display: block;
         position: absolute;
         right: 100px;
@@ -642,44 +642,44 @@
         font-size: 14px;
         line-height: 18px;
     }
-    .coffee-reviews__quotes {
+    .main-reviews__quotes {
         font-size: 28px;
         line-height: 35px;
     }
-    .coffee-reviews__title {
+    .main-reviews__title {
         margin-bottom: 10px;
         font-size: 18px;
         line-height: 23px;
     }
-    .coffee-reviews__stars {
+    .main-reviews__stars {
         margin-bottom: 20px;
         width: 128px;
         height: 24px;
     }
-    .coffee-reviews__text {
+    .main-reviews__text {
         max-width: 740px;
         font-size: 14px;
         line-height: 18px;
     }
-    .coffee-reviews__footer {
+    .main-reviews__footer {
         padding: 17px 69px 18px 58px;
         border-radius: 0px 0px 14px 14px;
     }
-    .coffee-reviews__footer-avatar {
+    .main-reviews__footer-avatar {
         margin-right: 35px;
         width: 50px;
         height: 50px;
     }
-    .coffee-reviews__name {
+    .main-reviews__name {
         margin-bottom: 10px;
         font-size: 14px;
         line-height: 18px;
     }
-    .coffee-reviews__city {
+    .main-reviews__city {
         font-size: 14px;
         line-height: 18px;
     }
-    .coffee-instructions__reviews-button {
+    .main-instructions__reviews-button {
         margin-top: 50px;
         height: 49px;
         font-size: 14px;
@@ -688,17 +688,17 @@
 }
 
 @media (min-width: 1349px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding: 20px 6.35%;
     }
-    .coffee-specifications__texts {
+    .main-specifications__texts {
         margin-right: 120px;
         max-width: 855px;
     }
-    .coffee-specifications__info,
+    .main-specifications__info,
     .coffee-instructions__howtocook,
     .coffee-instructions__additionally,
-    .coffee-instructions__reviews {
+    .main-instructions__reviews{
         padding-left: 6.35%;
         padding-right: 6.35%;
     }
@@ -741,11 +741,11 @@
 }
 
 @media (min-width: 1904px) {
-    .coffee-instruction__wrapper {
+    .instruction__wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .coffee-instruction__item {
+    .instruction__item {
         height: 60px;
         font-size: 25px;
         line-height: 30px;
@@ -788,21 +788,21 @@
         font-size: 25px;
         line-height: 32px;
     }
-    .coffee-specifications__texts {
+    .main-specifications__texts {
         margin-right: 160px;
         max-width: 1100px;
     }
-    .coffee-specifications__text {
+    .main-specifications__text {
         font-size: 25px;
         line-height: 33px;
     }
-    .coffee-specifications__text + .coffee-specifications__text {
+    .main-specifications__text + .main-specifications__text {
         padding-top: 30px;
     }
-    .coffee-specifications__photo {
+    .main-specifications__photo {
         padding-bottom: 100px;
     }
-    .coffee-specifications__img {
+    .main-specifications__img {
         width: 397px;
         height: 418px;
     }
@@ -852,68 +852,68 @@
         height: 550px;
     }
     /*reviews*/
-    .coffee-instructions__reviews-container {
+    .main-instructions__reviews-container {
         padding-bottom: 85px;
     }
-    .coffee-instructions__reviews__title {
+    .main-instructions__reviews__title {
         margin-bottom: 100px;
     }
-    .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box {
         box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
         border-radius: 20px;
     }
-    .coffee-instructions__reviews-box + .coffee-instructions__reviews-box {
+    .main-instructions__reviews-box + .main-instructions__reviews-box {
         margin-top: 70px;
     }
-    .coffee-reviews__main {
+    .main-reviews__main {
         padding: 40px 140px 86px 80px;
         border-radius: 20px 20px 0px 0px;
     }
-    .coffee-reviews__quotes {
+    .main-reviews__quotes {
         font-size: 40px;
         line-height: 50px;
     }
-    .coffee-reviews__data {
+    .main-reviews__data {
         font-size: 20px;
         line-height: 26px;
         right: 140px;
         top: 95px;
     }
-    .coffee-reviews__title {
+    .main-reviews__title {
         margin-bottom: 20px;
         font-size: 20px;
         line-height: 26px;
     }
-    .coffee-reviews__stars {
+    .main-reviews__stars {
         margin-bottom: 40px;
         width: 187px;
         height: 34px;
     }
-    .coffee-reviews__text {
+    .main-reviews__text {
         font-size: 20px;
         line-height: 26px;
         max-width: 1060px;
     }
-    .coffee-reviews__footer {
+    .main-reviews__footer {
         padding: 25px 140px 25px 80px;
         border-radius: 0px 0px 20px 20px;
     }
-    .coffee-reviews__footer-avatar {
+    .main-reviews__footer-avatar {
         margin-right: 50px;
         width: 70px;
         height: 70px;
     }
-    .coffee-reviews__name {
+    .main-reviews__name {
         margin-bottom: 15px;
         font-size: 20px;
         line-height: 26px;
     }
-    .coffee-reviews__city {
+    .main-reviews__city {
         font-size: 20px;
         line-height: 26px;
         opacity: 1;
     }
-    .coffee-instructions__reviews-button {
+    .main-instructions__reviews-button {
         height: 70px;
         font-size: 20px;
         line-height: 24px;

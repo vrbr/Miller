@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/blocks/global/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body class="card-body">
+    <header class="header">
+        <div class="header__wrapper container">
+            <button class="header__nav-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <picture>
+                    <source media="(min-width: 1904px)"
+                        srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)"
+                        srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
+                        height="50" alt="Логотип">
+                </picture>
+                <div class="header__interaction">
+                    <button class="header__btn header__interaction-search" type="button"></button>
+                    <button class="header__btn header__interaction-basket" type="button"></button>
+                    <button class="header__btn header__interaction-user" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu__head">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
+                            width="110" height="50" alt="Логотип">
+                    </picture>
+                </div>
+                <div class="header-menu__main">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-menu__interaction">
+                        <button class="header-menu__btn header-menu__interaction-basket" type="button"></button>
+                        <button class="header-menu__btn header-menu__interaction-user" type="button"></button>
+                    </div>
+                </div>
+                <div class="header-menu__footer">
+                    <a class="header-menu__mail" href="#">Import@kldrefine.com</a>
+                    <ul class="header-menu__social">
+                        <li class="header-menu__social-item header-menu__social-phone"></li>
+                        <li class="header-menu__social-item header-menu__social-insta"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-search">
+                <form class="header-search__form" action="#">
+                    <img class="header-search__img" src="../../img/header/search-form.svg" width="12" height="12" alt="">
+                    <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+                    <button class="header-search__btn" type="button">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="coffee-card__info">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="coffee-card__container">
+                <nav class="coffee__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../../index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="">Каталог товаров</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../catalog-tea.html">Чай и кофейные напитки</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link-current">Карточка товара название</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="card__details tea-card__details">
+                    <div class="card__box">
+                        <div class="card__img-box">
+                            <picture>
+                                <source media="(min-width: 1904px)" srcset="../../img/page-tea/tea-card/slide-desc@1x.jpg 1x, ../../img/page-tea/tea-card/slide-desc@2x.jpg 2x">
+                                <source media="(min-width: 1349px)" srcset="../../img/page-tea/tea-card/slide-laptop@1x.jpg 1x, ../../img/page-tea/tea-card/slide-laptop@2x.jpg 2x">
+                                <img class="card__img" src="../../img/page-tea/tea-card/slide-tab2@1x.jpg" srcset="../../img/page-tea/tea-card/slide-tab2@2x.jpg">
+                            </picture>
+                        </div>
+                        <div class="tea-card__info-box card-box">
+                            <div class="card-box__ratings">
+                                <img class="card-box__stars" src="../../img/page-coffee/coffee-card/stars.svg" width="142" height="24" alt="">
+                                <div class="card-box__grade">
+                                    <span class="card-box__number">4.0</span>
+                                    <span class="card-box__reviews">(32 отзыва)</span>
+                                </div>
+                            </div>
+                            <div class="card-box__img">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="../../img/page-tea/tea-card/slide-tab@1x.jpg 1x, ../../img/page-tea/tea-card/slide-tab@2x.jpg 2x">
+                                    <img class="card__img" src="../../img/page-tea/tea-card/slide@1x.jpg" srcset="../../img/page-tea/tea-card/slide@2x.jpg" width="143" height="194" alt="">
+                                </picture>
+                            </div>
+                            <div class="card-box__descr">
+                                <h3 class="card-box__descr-name">Наименование чая</h3>
+                                <p class="card-box__descr-text">Молочный улунг</p>
+                            </div>
+                            <div class="card-box__description">
+                                <p class="card-box__description-text">Компания Нью Рефайнинг Груп находится
+                                    в г. Калининграде и имеет свой склад
+                                    и представительство в Москве.<span class="card-box__points">..</span></span>
+                                <details class="card-box__details">
+                                    <summary class="card-box__more">Читать полностью</summary>
+                                    <p class="card-box__more-text">Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.</p>
+                                </details>
+                            </div>
+                            <div class="card-box__description-laptop">
+                                <p class="card-box__description-text">Компания Нью Рефайнинг Груп находится
+                                    в г. Калининграде и имеет свой склад
+                                    и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.
+                                </p>
+                            </div>
+                            <form class="card-box__choice" method="" action="">
+                                <select class="card-box__choice-size">
+                                    <option value="100 г.">100 г.</option>
+                                    <option value="150 г.">150 г.</option>
+                                    <option value="165 г.">165 г.</option>
+                                    <option value="200 г.">200 г.</option>
+                                </select>
+                                <div class="card-box__choice-inputs">
+                                    <button type="button" class="card-box__choice-buttons card-box__choice-less">-</button>
+                                    <input class="card-box__choice-input" type="text" value="1">
+                                    <button type="button" class="card-box__choice-buttons card-box__choice-more">+</button>
+                                </div>
+                                <button class="button card-box__choice-button" type="submit">Купить за 250 ₽</button>
+                            </form>
+                            <form class="card-box__choice-laptop" method="" action="">
+                                <ul class="card-box__choice-inputs-list">
+                                    <li class="card-box__choice-inputs-item">
+                                        <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="100" checked>
+                                        <label for="100">100 г.</label>
+                                    </li>
+                                    <li class="card-box__choice-inputs-item">
+                                        <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="150">
+                                        <label for="150">150 г.</label>
+                                    </li>
+                                    <li class="card-box__choice-inputs-item">
+                                        <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="165">
+                                        <label for="165">165 г.</label>
+                                    </li>
+                                    <li class="card-box__choice-inputs-item">
+                                        <input class="card-box__choice-inputs-radio" type="radio" name="weight" id="200">
+                                        <label for="200">200 г.</label>
+                                    </li>
+                                </ul>
+                                <div class="card-box__choice-laptop-buttons">
+                                    <div class="card-box__choice-number">
+                                        <button type="button" class="card-box__choice-number-buttons card-box__choice-number-less">-</button>
+                                        <input class="card-box__choice-number-input" type="text" value="1">
+                                        <button type="button" class="card-box__choice-number-buttons card-box__choice-number-more">+</button>
+                                    </div>
+                                    <button class="button card-box__choice-laptop-button" type="submit">Купить за 250 ₽</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const summary = document.querySelector('.card-box__more');
+                summary.addEventListener('click', () => {
+                    summary.style.display = "none";
+                })
+            </script>
+        </section>
+        <section class="tea-card__instruction instruction">
+            <div class="instruction__wrapper">
+                <ul class="instruction__list">
+                    <li class="instruction__item">
+                        <a class="instruction__link" href="">Описание</a>
+                    </li>
+                    <li class="instruction__item">
+                        <a class="instruction__link" href="">Отзывы</a>
+                    </li>
+                    <li class="instruction__item">
+                        <a class="instruction__link" href="">Как готовить?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-specifications__info">
+                <div class="main-specifications__texts">
+                    <p class="main-specifications__text">
+                        Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
+                    </p>
+                    <p class="main-specifications__text">
+                        Задача организации, в особенности же рамки и место обучения кадров способствует подготовки 
+                        и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
+                    </p>
+                    <p class="main-specifications__text">
+                        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.
+                        С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.
+                    </p>
+                </div>
+                <div class="main-specifications__photo">
+                    <picture>
+                        <source media="(min-width: 1904px)" srcset="../../img/page-tea/instruction/photo-desc@1x.jpg 1x, ../../img/page-tea/instruction/photo-desc@2x.jpg 2x">
+                        <source media="(min-width: 1200px)" srcset="../../img/page-tea/instruction/photo-laptop@1x.jpg 1x, ../../img/page-tea/instruction/photo-laptop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="../../img/page-tea/instruction/photo-tab@1x.jpg 1x, ../../img/page-tea/instruction/photo-tab@1x.jpg 2x">
+                        <img class="main-specifications__img" src="../../img/page-tea/instruction/photo@1x.jpg" srcset="../../img/page-tea/instruction/photo@2x.jpg" width="340" height="170" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="main-instructions__howtocook">
+                <div class="main-instructions__box">
+                    <h2 class="coffee-instructions__title main-instructions__title">Как готовить?</h2>
+                    <p class="main-instructions__text">
+                        Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
+                    </p>
+                </div>
+            </div>
+            <div class="main-instructions__reviews">
+                <div class="main-instructions__reviews-container">
+                    <h2 class="coffee-instructions__title main-instructions__reviews__title">Отзывы</h2>
+                    <div class="main-instructions__reviews-box main-reviews">
+                        <div class="main-reviews__main">
+                            <span class="main-reviews__quotes">""</span>
+                            <span class="main-reviews__data">21.12.2020</span>
+                            <h3 class="main-reviews__title">Отличный вкус!</h3>
+                            <img class="main-reviews__stars" src="../../img/page-coffee/coffee-card/stars.svg" width="64" height="12" alt="">
+                            <p class="main-reviews__text">Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+                        </div>
+                        <div class="main-reviews__footer">
+                            <picture>
+                                <source media="(min-width: 1904px)" srcset="../../img/page-coffee/instruction/avatar-desc@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-desc@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="../../img/page-coffee/instruction/avatar-laptop@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-laptop@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../../img/page-coffee/instruction/avatar-tab@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-tab@2x.jpg 2x">
+                                <img class="main-reviews__footer-avatar" src="../../img/page-coffee/instruction/avatar@1x.jpg" srcset="../../img/page-coffee/instruction/avatar@2x.jpg" width="40" height="40" alt="">
+                            </picture>
+                            <div class="main-reviews__info">
+                                <p class="main-reviews__name">Ирина</p>
+                                <p class="main-reviews__city">г. Москва</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-instructions__reviews-box main-reviews">
+                        <div class="main-reviews__main">
+                            <span class="main-reviews__quotes">""</span>
+                            <span class="main-reviews__data">21.12.2020</span>
+                            <h3 class="main-reviews__title">Отличный вкус!</h3>
+                            <img class="main-reviews__stars" src="../../img/page-coffee/coffee-card/stars.svg" width="64" height="12" alt="">
+                            <p class="main-reviews__text">Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+                        </div>
+                        <div class="main-reviews__footer">
+                            <picture>
+                                <source media="(min-width: 1904px)" srcset="../../img/page-coffee/instruction/avatar-desc@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-desc@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="../../img/page-coffee/instruction/avatar-laptop@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-laptop@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../../img/page-coffee/instruction/avatar-tab@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-tab@2x.jpg 2x">
+                                <img class="main-reviews__footer-avatar" src="../../img/page-coffee/instruction/avatar@1x.jpg" srcset="../../img/page-coffee/instruction/avatar@2x.jpg" width="40" height="40" alt="">
+                            </picture>
+                            <div class="main-reviews__info">
+                                <p class="main-reviews__name">Ирина</p>
+                                <p class="main-reviews__city">г. Москва</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-instructions__reviews-box main-reviews">
+                        <div class="main-reviews__main">
+                            <span class="main-reviews__quotes">""</span>
+                            <span class="main-reviews__data">21.12.2020</span>
+                            <h3 class="main-reviews__title">Отличный вкус!</h3>
+                            <img class="main-reviews__stars" src="../../img/page-coffee/coffee-card/stars.svg" width="64" height="12" alt="">
+                            <p class="main-reviews__text">Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+                        </div>
+                        <div class="main-reviews__footer">
+                            <picture>
+                                <source media="(min-width: 1904px)" srcset="../../img/page-coffee/instruction/avatar-desc@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-desc@2x.jpg 2x">
+                                <source media="(min-width: 1200px)" srcset="../../img/page-coffee/instruction/avatar-laptop@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-laptop@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../../img/page-coffee/instruction/avatar-tab@1x.jpg 1x, ../../img/page-coffee/instruction/avatar-tab@2x.jpg 2x">
+                                <img class="main-reviews__footer-avatar" src="../../img/page-coffee/instruction/avatar@1x.jpg" srcset="../../img/page-coffee/instruction/avatar@2x.jpg" width="40" height="40" alt="">
+                            </picture>
+                            <div class="main-reviews__info">
+                                <p class="main-reviews__name">Ирина</p>
+                                <p class="main-reviews__city">г. Москва</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="main-instructions__reviews-button">Показать еще</button>
+                </div>
+            </div>
+        </section>
+        <section class="subscription subscription-catalog">
+            <div class="container">
+                <div class="subscription__wrapper">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                                    srcset="../../img/subscription/bg-desk@1x.png 1x, ../../img/subscription/bg-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                                    srcset="../../img/subscription/bg-laptop@1x.png 1x, ../../img/subscription/bg-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                    srcset="../../img/subscription/bg-tab@1x.png 1x, ../../img/subscription/bg-tab@2x.png 2x">
+                        <img class="subscription__img" src="../../img/subscription/bg@1x.png" srcset="../../img/subscription/bg@2x.png" width="361" height="297" alt="">
+                    </picture>
+                    
+                    <form action="#" class="subscription__form" method="POST">
+                        <h2 class="subscription__title section-title">Подписка на новости и рассылку</h2>
+                        <p class="subscription__text">Подпишитесь на нашу рассылку прямо сейчас
+                            и будьте в курсе новых поставок, скидок
+                            и эксклюзивных предложений.</p>
+                        <div class="subscription__application">
+                            <input class="subscription__input" type="email" name="email" placeholder="Ваш email" tabindex="0" id="email" required>
+                            <input class="button subscription__button" type="submit" name="submit" value="Подписаться">
+                        </div>
+                        <p class="subscription__agreement">Нажимая на кнопку “Подписаться”, вы принимаете <span class="carry">правила
+                            <a class="subscription__link" href="#">пользовательского соглашения</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <picture>
+                    <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
+                </picture>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+</body>
+</html>

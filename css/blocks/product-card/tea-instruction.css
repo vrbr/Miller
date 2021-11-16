@@ -1,0 +1,91 @@
+/*instruction*/
+.tea-card__instruction .instruction__item:first-child {
+    grid-column: 1/-1;
+}
+/*howtocook*/
+.main-instructions__howtocook {
+    padding: 50px 4.8%;
+    border-bottom: 1px solid #B3B3B3;
+}
+.main-instructions__title {
+    margin-bottom: 30px;
+}
+.main-instructions__text {
+    margin: 0;
+}
+/*reviews*/
+.tea-card__instruction .main-instructions__reviews-container {
+    padding-top: 38px;
+}
+
+@media (min-width: 768px) {
+    .main-instructions__howtocook {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .main-instructions__title {
+        margin-bottom: 40px;
+    }
+    /*reviews*/
+    .tea-card__instruction .main-instructions__reviews-container {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*instruction*/
+    .tea-card__instruction .instruction__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .tea-card__instruction .instruction__item:first-child {
+        grid-column: 1/2;
+    }
+    /*specifications*/
+    .tea-card__instruction .main-specifications__info {
+        padding-top: 45px;
+    }
+    /*instructions*/
+    .main-instructions__howtocook {
+        padding-bottom: 90px;
+    }
+    .main-instructions__box {
+        max-width: 965px;
+    }
+    /*reviews*/
+    .tea-card__instruction .main-instructions__reviews-container {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .main-instructions__howtocook {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+    }
+    /*reviews*/
+    .tea-card__instruction .main-instructions__reviews-container {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .main-instructions__howtocook {
+        padding-top: 50px;
+        padding-bottom: 108px;
+    }
+    .main-instructions__title {
+        margin-bottom: 50px;
+    }
+    .main-instructions__box {
+        max-width: 1100px;
+    }
+    .main-instructions__text {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    /*reviews*/
+    .tea-card__instruction .main-instructions__reviews-container {
+        padding-top: 100px;
+    }
+}

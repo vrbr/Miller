@@ -1,0 +1,67 @@
+.tea-card__details .card__img {
+    display: none;
+}
+.tea-card__info-box .card-box__ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.tea-card__info-box .card-box__stars {
+    margin-bottom: 0;
+}
+.tea-card__info-box .card-box__ratings {
+    margin-bottom: 24px;
+}
+.tea-card__info-box .card-box__img {
+    margin-bottom: 10px;
+}
+.tea-card__info-box .card__img {
+    display: block;
+    margin: 0 auto;
+    width: 143px;
+    height: 194px;
+}
+
+@media (min-width: 768px) {
+    .tea-card__info-box .card-box__ratings {
+        margin-bottom: 50px;
+    }
+    .tea-card__info-box .card-box__img {
+        margin-bottom: 23px;
+    }
+    .tea-card__info-box .card__img {
+        display: block;
+        margin: 0 auto;
+        width: 292px;
+        height: 396px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tea-card__info-box .card-box__img {
+        display: none;
+    }
+    .tea-card__details .card__img {
+        display: block;
+        width: 305px;
+        height: 415px;
+    }
+    .tea-card__info-box .card-box__ratings {
+        margin-bottom: 35px;
+        justify-content: normal;
+    }
+}
+
+@media (min-width: 1349px) {
+    .tea-card__details .card__img {
+        width: 351px;
+        height: 478px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .tea-card__details .card__img {
+        width: 496px;
+        height: 676px;
+    }
+}
