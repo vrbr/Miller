@@ -1,0 +1,91 @@
+.health-card__details .card__img {
+    display: none;
+}
+.health-card__info-box .card-box__ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.health-card__info-box .card-box__stars {
+    margin-bottom: 0;
+}
+.health-card__info-box .card-box__ratings {
+    margin-bottom: 24px;
+}
+.health-card__info-box .card-box__img {
+    margin-bottom: 10px;
+}
+.health-card__info-box .card__img {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 199px;
+}
+
+@media (min-width: 768px) {
+    .health-card__info-box .card-box__ratings {
+        margin-bottom: 50px;
+    }
+    .health-card__info-box .card-box__img {
+        margin-bottom: 23px;
+    }
+    .health-card__info-box .card__img {
+        display: block;
+        margin: 0 auto;
+        width: 303px;
+        height: 464px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card__details.health-card__details {
+        padding: 42px 80px 40px 65px;
+    }
+    .health-card__info-box .card-box__img {
+        display: none;
+    }
+    .health-card__details .card__img-box {
+        padding-right: 30px;
+        margin-top: -38px;
+    }
+    .health-card__details .card__img {
+        display: block;
+        width: 295px;
+        height: 450px;
+    }
+    .health-card__info-box .card-box__ratings {
+        margin-bottom: 35px;
+        justify-content: normal;
+    }
+    .health-card__info-box .card-box__choice-inputs-item {
+        margin-right: 18px;
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .health-card__details .card__img-box {
+        margin-top: -41px;
+        padding-right: 0;
+    }
+    .health-card__details .card-box__description-text {
+        max-width: 470px;
+    }
+    .health-card__details .card__img {
+        width: 362px;
+        height: 553px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .health-card__details .card__img {
+        width: 496px;
+        height: 676px;
+    }
+    .health-card__details .card-box__description-text {
+        max-width: 645px;
+    }
+    .health-card__info-box .card-box__choice-inputs-item {
+        margin-right: 50px;
+    }
+}

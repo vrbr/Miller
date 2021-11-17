@@ -1,0 +1,48 @@
+/*instruction*/
+.health-card__instruction .instruction__item:first-child {
+    grid-column: 1/-1;
+}
+/*reviews*/
+.health-card__instruction .main-instructions__reviews-container {
+    padding-top: 38px;
+}
+
+@media (min-width: 768px) {
+    /*reviews*/
+    .health-card__instruction .main-instructions__reviews-container {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*instruction*/
+    .health-card__instruction .instruction__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .health-card__instruction .instruction__item:first-child {
+        grid-column: 1/2;
+    }
+    /*specifications*/
+    .health-card__instruction .main-specifications__info {
+        padding-top: 45px;
+    }
+    /*reviews*/
+    .health-card__instruction .main-instructions__reviews-container {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 1349px) {
+    /*reviews*/
+    .health-card__instruction .main-instructions__reviews-container {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 1904px) {
+    /*reviews*/
+    .health-card__instruction .main-instructions__reviews-container {
+        padding-top: 100px;
+    }
+}
