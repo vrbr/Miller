@@ -1,0 +1,91 @@
+.vending-card__details .card__img {
+    display: none;
+}
+.vending-card__info-box .card-box__ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.vending-card__info-box .card-box__stars {
+    margin-bottom: 0;
+}
+.vending-card__info-box .card-box__ratings {
+    margin-bottom: 24px;
+}
+.vending-card__info-box .card-box__img {
+    margin-bottom: 10px;
+}
+.vending-card__info-box .card__img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 159px;
+}
+
+@media (min-width: 768px) {
+    .vending-card__info-box .card-box__ratings {
+        margin-bottom: 50px;
+    }
+    .vending-card__info-box .card-box__img {
+        margin-bottom: 23px;
+    }
+    .vending-card__info-box .card__img {
+        display: block;
+        margin: 0 auto;
+        width: 620px;
+        height: 348px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card__details.vending-card__details {
+        padding: 42px 80px 40px 65px;
+    }
+    .vending-card__info-box .card-box__img {
+        display: none;
+    }
+    .vending-card__details .card__img-box {
+        padding-right: 30px;
+        margin-top: -38px;
+    }
+    .vending-card__details .card__img {
+        display: block;
+        width: 295px;
+        height: 450px;
+    }
+    .vending-card__info-box .card-box__ratings {
+        margin-bottom: 35px;
+        justify-content: normal;
+    }
+    .vending-card__info-box .card-box__choice-inputs-item {
+        margin-right: 18px;
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .vending-card__details .card__img-box {
+        margin-top: -41px;
+        padding-right: 0;
+    }
+    .vending-card__details .card-box__description-text {
+        max-width: 470px;
+    }
+    .vending-card__details .card__img {
+        width: 362px;
+        height: 553px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .vending-card__details .card__img {
+        width: 496px;
+        height: 676px;
+    }
+    .vending-card__details .card-box__description-text {
+        max-width: 645px;
+    }
+    .vending-card__info-box .card-box__choice-inputs-item {
+        margin-right: 50px;
+    }
+}
