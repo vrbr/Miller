@@ -1,0 +1,44 @@
+/*nav*/
+.education-nav__container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+}
+.education-nav .breadcrumbs__link {
+    color: #000;
+}
+.education-nav .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
+    background: #000;
+}
+/*instruction*/
+.education-instruction .instruction__item:first-child {
+    grid-column: 1/-1;
+}
+
+@media (min-width: 1200px) {
+    /*instruction*/
+    .education-instruction .instruction__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .education-instruction .instruction__item:first-child {
+        grid-column: 1/2;
+    }
+}
+
+@media (min-width: 1349px) {
+    /*nav*/
+    .education-nav__container {
+        padding-left: 6.35%;
+        padding-right: 6.35%;
+    }
+    .education-nav .breadcrumbs__list {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 1904px) {
+    /*nav*/
+    .education-nav .breadcrumbs__list {
+        padding-bottom: 20px;
+    }
+}
