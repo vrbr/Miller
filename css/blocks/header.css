@@ -333,9 +333,6 @@
 }
 
 @media (min-width: 1349px) {
-    .header {
-        box-shadow: none;
-    }
     .header__container {
         min-height: 113px;
         justify-content: space-between;
