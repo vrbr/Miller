@@ -1,44 +1,122 @@
 /*nav*/
-.education-nav__container {
+.blog-nav__container {
     padding-left: 4.8%;
     padding-right: 4.8%;
 }
-.education-nav .breadcrumbs__link {
+.blog-nav .breadcrumbs__link {
     color: #000;
 }
-.education-nav .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
+.blog-nav .breadcrumbs__link:not(.breadcrumbs__link-current)::before {
     background: #000;
 }
 /*instruction*/
-.education-instruction .instruction__item:first-child {
+.blog-instruction .instruction__item:first-child {
     grid-column: 1/-1;
 }
+/*dishes*/
+.blog-dishes__wrapper {
+    padding: 10px 4.8% 50px;
+}
+.blog-dishes__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+}
+.blog-dishes .coffee-dishes__item::after {
+    position: sticky;
+}
+.blog-dishes input[name="dishes"] {
+    display: none;
+}
+.blog-dishes svg {
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.blog-dishes .coffee-dishes__item label {
+    display: block;
+    position: relative;
+}
+.blog-dishes .coffee-dishes__item label::before {
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 110px;
+    left: -10px;
+    top: -10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+    z-index: -1;
+}
+.blog-dishes [type="radio"]:nth-of-type(1):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(1) label::after,
+.blog-dishes [type="radio"]:nth-of-type(2):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(2) label::after,
+.blog-dishes [type="radio"]:nth-of-type(3):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(3) label::after,
+.blog-dishes [type="radio"]:nth-of-type(4):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(4) label::after,
+.blog-dishes [type="radio"]:nth-of-type(5):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(5) label::after,
+.blog-dishes [type="radio"]:nth-of-type(6):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(6) label::after,
+.blog-dishes [type="radio"]:nth-of-type(7):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(7) label::after,
+.blog-dishes [type="radio"]:nth-of-type(8):checked ~ .coffee-dishes__list > .coffee-dishes__item:nth-child(8) label::after {
+    position: absolute;
+    content: "";
+    border-radius: 10px;
+    background-color: #F9B300;
+    left: -10px;
+    top: -10px;
+    width: 106px;
+    height: 110px;
+    z-index: -1;
+}
+.blog-dishes .blog-dishes__content section {
+    display: none;
+}
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(1):checked ~ .blog-dishes__content > section:nth-child(1),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(2):checked ~ .blog-dishes__content > section:nth-child(2),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(3):checked ~ .blog-dishes__content > section:nth-child(3),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(4):checked ~ .blog-dishes__content > section:nth-child(4),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(5):checked ~ .blog-dishes__content > section:nth-child(5),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(6):checked ~ .blog-dishes__content > section:nth-child(6),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(7):checked ~ .blog-dishes__content > section:nth-child(7),
+.blog-dishes .coffee-dishes__box input[name="dishes"]:nth-of-type(8):checked ~ .blog-dishes__content > section:nth-child(8) {
+    display: block;
+}
+.blog-dishes .coffee-instructions__additionally-container {
+    padding: 0;
+}
+.blog-dishes__content {
+    padding-top: 40px;
+}
+
 
 @media (min-width: 1200px) {
     /*instruction*/
-    .education-instruction .instruction__list {
+    .blog-instruction .instruction__list {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .education-instruction .instruction__item:first-child {
+    .blog-instruction .instruction__item:first-child {
         grid-column: 1/2;
     }
 }
 
 @media (min-width: 1349px) {
     /*nav*/
-    .education-nav__container {
+    .blog-nav__container {
         padding-left: 6.35%;
         padding-right: 6.35%;
     }
-    .education-nav .breadcrumbs__list {
+    .blog-nav .breadcrumbs__list {
         padding-bottom: 10px;
     }
 }
 
 @media (min-width: 1904px) {
     /*nav*/
-    .education-nav .breadcrumbs__list {
+    .blog-nav .breadcrumbs__list {
         padding-bottom: 20px;
     }
 }
