@@ -72,11 +72,20 @@
 .contacts-stores {
     display: none;
 }
+.main-contacts .subscription.subscription-catalog {
+    background: none;
+}
 
 @media (min-width: 768px) {
     .contacts__wrapper {
-        background: linear-gradient(to bottom, #ffffff 65%,#fff7e1 65%);
+        background-size: contain;
+        background: url("../../img/contacts/bg.svg"), linear-gradient(to bottom, #ffffff 65%,#fff7e1 65%);
+        background-position: 0 254px, 0 0px;
+        background-repeat: no-repeat;
         padding: 40px 4.8% 50px;
+    }
+    .contacts-stores .contacts__wrapper {
+        background-position: 0 316px, 0 0px;
     }
     .contacts__info {
         display: grid;
@@ -125,6 +134,10 @@
         border: 1px solid #A4A4A4;
         border-radius: 5px;
     }
+    .main-contacts .subscription.subscription-catalog {
+        background: url("../../img/subscription/bg-tab.svg") no-repeat;
+        background-size: contain;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -134,6 +147,14 @@
     }
     .contacts__wrapper {
         display: flex;
+        padding-bottom: 150px;
+        background: url("../../img/contacts/bg.svg");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+    }
+    .contacts-stores .contacts__wrapper {
+        background-position: left bottom;
     }
     .contacts__box + .contacts__box {
         padding-top: 50px;
