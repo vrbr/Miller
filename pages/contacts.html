@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/blocks/global/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <button class="header__nav-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <picture>
+                    <source media="(min-width: 1904px)"
+                        srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)"
+                        srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
+                        height="50" alt="Логотип">
+                </picture>
+                <div class="header__interaction">
+                    <button class="header__btn header__interaction-search" type="button"></button>
+                    <button class="header__btn header__interaction-basket" type="button"></button>
+                    <button class="header__btn header__interaction-user" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu__head">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
+                            width="110" height="50" alt="Логотип">
+                    </picture>
+                </div>
+                <div class="header-menu__main">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-menu__interaction">
+                        <button class="header-menu__btn header-menu__interaction-basket" type="button"></button>
+                        <button class="header-menu__btn header-menu__interaction-user" type="button"></button>
+                    </div>
+                </div>
+                <div class="header-menu__footer">
+                    <a class="header-menu__mail" href="#">Import@kldrefine.com</a>
+                    <ul class="header-menu__social">
+                        <li class="header-menu__social-item header-menu__social-phone"></li>
+                        <li class="header-menu__social-item header-menu__social-insta"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-search">
+                <form class="header-search__form" action="#">
+                    <img class="header-search__img" src="../../img/header/search-form.svg" width="12" height="12" alt="">
+                    <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+                    <button class="header-search__btn" type="button">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-contacts">
+        <section class="blog-nav">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="blog-nav__container">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link-current">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="contacts-instruction instruction">
+            <div class="instruction__wrapper">
+                <ul class="instruction__list">
+                    <li class="instruction__item instruction__item-communications">
+                        <a class="instruction__link">Контакты</a>
+                    </li>
+                    <li class="instruction__item instruction__item-stores">
+                        <a class="instruction__link">Наши магазины</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts contacts-communications">
+            <div class="contacts__wrapper">
+                <div class="contacts__info">
+                    <div class="contacts__box">
+                        <h2 class="coffee-instructions__title contacts__title">Связаться с нами:</h2>
+                        <ul class="contacts-communications__connection-list">
+                            <li class="contacts-communications__connection-item connection-item-mail">
+                                <a class="contacts-communications__connection-link" href="#">import@kldrefine.com</a>
+                            </li>
+                            <li class="contacts-communications__connection-item connection-item-phone">
+                                <a class="contacts-communications__connection-link" href="#">+7 (401) 237 53 43</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__box">
+                        <h2 class="coffee-instructions__title contacts__title">Юридический адрес:</h2>
+                        <p class="contacts__text">Российская, Федерация, 238310, Калининградская область, Гурьевский район, поселок Васильково, улица Шатурская, дом 4А</p>
+                    </div>
+                    <div class="contacts__box">
+                        <h2 class="coffee-instructions__title contacts__title">Адрес склада:</h2>
+                        <p class="contacts__text">Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5171795357783!2d37.87004031575533!3d55.78425698056181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acb72be6524dd%3A0x54fba0ef6c88d552!2z0YguINCt0L3RgtGD0LfQuNCw0YHRgtC-0LIsIDEsINCR0LDQu9Cw0YjQuNGF0LAsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQzOTEy!5e0!3m2!1sru!2sua!4v1637431027112!5m2!1sru!2sua" width="375" height="317" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="contacts contacts-stores">
+            <div class="contacts__wrapper">
+                <div class="contacts__info">
+                    <div class="contacts__box">
+                        <h2 class="coffee-instructions__title contacts__title">Наши магазины <span class="carry">г. Санкт-Петербург</span></h2>
+                        <ul class="contacts-stores__connection-list">
+                            <li class="contacts-stores__connection-item">
+                                Гороховая, 53
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Московский, 53
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__box">
+                        <h2 class="coffee-instructions__title contacts__title">Наши магазины <span class="carry">Калининградская обл.</span></h2>
+                        <ul class="contacts-stores__connection-list">
+                            <li class="contacts-stores__connection-item">
+                                Советск, Гончарова 2а
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Черняховск, Пионерская 1
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Ульяны-Громовой 15
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Советский проспект 6а
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Гурьевск, Каштановая 1г
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Черняховского 15
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Панина 2а
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Ленинский 8Б
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Аксакова 133
+                            </li>
+                            <li class="contacts-stores__connection-item">
+                                Липовая Аллея 2
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5171795357783!2d37.87004031575533!3d55.78425698056181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acb72be6524dd%3A0x54fba0ef6c88d552!2z0YguINCt0L3RgtGD0LfQuNCw0YHRgtC-0LIsIDEsINCR0LDQu9Cw0YjQuNGF0LAsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQzOTEy!5e0!3m2!1sru!2sua!4v1637431027112!5m2!1sru!2sua" width="375" height="317" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="subscription subscription-catalog">
+            <div class="container">
+                <div class="subscription__wrapper">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                                    srcset="../img/subscription/bg-desk@1x.png 1x, ../img/subscription/bg-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                                    srcset="../img/subscription/bg-laptop@1x.png 1x, ../img/subscription/bg-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                    srcset="../img/subscription/bg-tab@1x.png 1x, ../img/subscription/bg-tab@2x.png 2x">
+                        <img class="subscription__img" src="../img/subscription/bg@1x.png" srcset="../img/subscription/bg@2x.png" width="361" height="297" alt="">
+                    </picture>
+                    
+                    <form action="#" class="subscription__form" method="POST">
+                        <h2 class="subscription__title section-title">Подписка на новости и рассылку</h2>
+                        <p class="subscription__text">Подпишитесь на нашу рассылку прямо сейчас
+                            и будьте в курсе новых поставок, скидок
+                            и эксклюзивных предложений.</p>
+                        <div class="subscription__application">
+                            <input class="subscription__input" type="email" name="email" placeholder="Ваш email" tabindex="0" id="email" required>
+                            <input class="button subscription__button" type="submit" name="submit" value="Подписаться">
+                        </div>
+                        <p class="subscription__agreement">Нажимая на кнопку “Подписаться”, вы принимаете <span class="carry">правила
+                            <a class="subscription__link" href="#">пользовательского соглашения</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link">Контакты</a>
+                    </li>
+                </ul>
+                <picture>
+                    <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
+                </picture>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/contacts.js"></script>
+</body>
+</html>
