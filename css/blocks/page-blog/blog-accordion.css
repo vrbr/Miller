@@ -79,6 +79,12 @@
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
 }
+/*subscription*/
+.main-blog .subscription.subscription-catalog {
+    background: none;
+    margin-top: -85px;
+    padding: 0;
+}
 
 @media (min-width: 768px) {
     .blog-faq__wrapper {
@@ -128,6 +134,10 @@
         font-size: 20px;
         line-height: 26px;
     }
+    /*subscription*/
+    .main-blog .subscription.subscription-catalog {
+        margin-top: -236px;
+    }
 }
 
 @media (min-width: 1349px) {
@@ -144,6 +154,10 @@
     .blog-accordion {
         width: 58%;
         margin-left: auto;
+    }
+    /*subscription*/
+    .main-blog .subscription.subscription-catalog {
+        margin-top: -136px;
     }
 }
 
