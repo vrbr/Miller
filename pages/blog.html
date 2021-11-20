@@ -97,7 +97,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main-blog">
         <section class="blog-nav">
             <h1 class="visually-hidden">Кофе Miller</h1>
             <div class="blog-nav__container">
@@ -826,6 +826,77 @@
                 </div>
             </div>
         </section>
+        <section class="blog-faq">
+            <div class="blog-faq__wrapper">
+                <h2 class="coffee-instructions__title blog-faq__title">Частые вопросы</h2>
+                <div class="blog-accordion">
+                    <div class="blog-accordion__item">
+                        <button id="blog-accordion__button1" aria-expanded="false">
+                            <span class="blog-accordion__title">Чем вы отличаетесь от конкурентов?<br>Почему мне стоит выбрать вас?</span>
+                            <span class="blog-accordion__icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="blog-accordion__content">
+                            <p>Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+                        </div>
+                    </div>
+                    <div class="blog-accordion__item">
+                        <button id="blog-accordion__button1" aria-expanded="false">
+                            <span class="blog-accordion__title">Чем вы отличаетесь от конкурентов?<br>Почему мне стоит выбрать вас?</span>
+                            <span class="blog-accordion__icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="blog-accordion__content">
+                            <p>Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+                        </div>
+                    </div>
+                    <div class="blog-accordion__item">
+                        <button id="blog-accordion__button1" aria-expanded="true">
+                            <span class="blog-accordion__title">Чем вы отличаетесь от конкурентов?<br>Почему мне стоит выбрать вас?</span>
+                            <span class="blog-accordion__icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="blog-accordion__content">
+                            <p>Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+                        </div>
+                    </div>
+                    <div class="blog-accordion__item">
+                        <button id="blog-accordion__button1" aria-expanded="false">
+                            <span class="blog-accordion__title">Чем вы отличаетесь от конкурентов?<br>Почему мне стоит выбрать вас?</span>
+                            <span class="blog-accordion__icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="blog-accordion__content">
+                            <p>Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscription subscription-catalog">
+            <div class="container">
+                <div class="subscription__wrapper">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                                    srcset="../img/subscription/bg-desk@1x.png 1x, ../img/subscription/bg-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                                    srcset="../img/subscription/bg-laptop@1x.png 1x, ../img/subscription/bg-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                    srcset="../img/subscription/bg-tab@1x.png 1x, ../img/subscription/bg-tab@2x.png 2x">
+                        <img class="subscription__img" src="../img/subscription/bg@1x.png" srcset="../img/subscription/bg@2x.png" width="361" height="297" alt="">
+                    </picture>
+                    
+                    <form action="#" class="subscription__form" method="POST">
+                        <h2 class="subscription__title section-title">Подписка на новости и рассылку</h2>
+                        <p class="subscription__text">Подпишитесь на нашу рассылку прямо сейчас
+                            и будьте в курсе новых поставок, скидок
+                            и эксклюзивных предложений.</p>
+                        <div class="subscription__application">
+                            <input class="subscription__input" type="email" name="email" placeholder="Ваш email" tabindex="0" id="email" required>
+                            <input class="button subscription__button" type="submit" name="submit" value="Подписаться">
+                        </div>
+                        <p class="subscription__agreement">Нажимая на кнопку “Подписаться”, вы принимаете <span class="carry">правила
+                            <a class="subscription__link" href="#">пользовательского соглашения</a></span></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -853,5 +924,6 @@
     </footer>
 
     <script src="../../js/header.js"></script>
+    <script src="../../js/blog-accordion.js"></script>
 </body>
 </html>

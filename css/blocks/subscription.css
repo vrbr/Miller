@@ -105,6 +105,7 @@
     }
     .subscription__wrapper picture {
         order: 2;
+        margin-left: -60px;
     }
     .subscription__img {
         width: 569px;

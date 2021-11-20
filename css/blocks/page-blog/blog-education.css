@@ -196,7 +196,7 @@
         padding-top: 80px;
     }
     .blog-dishes__wrapper {
-        padding: 40px 6.35% 50px;
+        padding: 40px 6.35% 80px;
     }
     .blog-dishes .coffee-dishes__item label {
         font-size: 14px;
@@ -301,5 +301,8 @@
     .dishes__item-machine svg {
         width: 63px;
         height: 84px;
+    }
+    .blog-dishes__wrapper {
+        padding-bottom: 100px;
     }
 }

@@ -1,0 +1,187 @@
+.blog-faq__wrapper {
+    padding: 40px 4.8% 128px;
+    background: url("../../../img/blog/blog-top-bg.svg"), url("../../../img/blog/blog-bottom-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -100px, 0 530px;
+    background-color: #FFF7E1;
+}
+.blog-faq__title {
+    margin-bottom: 30px;
+}
+.blog-accordion__item {
+    padding: 20px 24px 26px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 10px;
+}
+.blog-accordion__item:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.blog-accordion__item button {
+    position: relative;
+    padding: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.blog-accordion__icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+}
+.blog-accordion__icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 4px;
+    width: 14px;
+    height: 2px;
+    background: #000;
+}
+.blog-accordion__icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: 10px;
+    width: 2px;
+    height: 14px;
+    background: #000;
+}
+.blog-accordion__content p {
+    margin: 0;
+    margin-top: 23px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222;
+}
+.blog-accordion__item button[aria-expanded='true'] .blog-accordion__icon::after {
+    width: 0;
+}
+.blog-accordion__item button[aria-expanded='true'] + .blog-accordion__content {
+    opacity: 1;
+    max-height: 100px;
+    transition: all 200ms linear;
+}
+.blog-accordion__content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+}
+/*subscription*/
+.main-blog .subscription.subscription-catalog {
+    background: none;
+    margin-top: -85px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .blog-faq__wrapper {
+        padding: 70px 4.8% 287px;
+        background: url("../../../img/blog/blog-top-desc-bg.svg"), url("../../../img/blog/blog-bottom-desc-bg.svg");
+        background-repeat: no-repeat;
+        background-position: 0 -70px, 0 763px;
+        background-color: #FFF7E1;
+    }
+    .blog-faq__title {
+        margin-bottom: 60px;
+    }
+    .blog-accordion__item {
+        padding: 30px 42px 30px 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
+        border-radius: 10px;
+    }
+    .blog-accordion__item:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    .blog-accordion__item button {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .blog-accordion__icon {
+        top: 6px;
+        width: 40px;
+        height: 40px;
+    }
+    .blog-accordion__icon::before {
+        top: 18px;
+        left: 6px;
+        width: 28px;
+        height: 3px;
+    }
+    .blog-accordion__icon::after {
+        top: 6px;
+        left: 18px;
+        width: 3px;
+        height: 28px;
+    }
+    .blog-accordion__content {
+        padding-right: 30px;
+    }
+    .blog-accordion__content p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    /*subscription*/
+    .main-blog .subscription.subscription-catalog {
+        margin-top: -236px;
+    }
+}
+
+@media (min-width: 1349px) {
+    .blog-faq__wrapper {
+        padding: 83px 6.35% 215px;
+        background: url("../../../img/blog/blog-top-desc-bg.svg"), url("../../../img/blog/blog@1x.png"), url("../../../img/blog/blog-bottom-desc-bg.svg");
+        background-repeat: no-repeat;
+        background-position: 0 -22px, 58px 205px, 0 700px;
+        background-color: #FFF7E1;
+    }
+    .blog-faq__title {
+        margin-bottom: 60px;
+    }
+    .blog-accordion {
+        width: 58%;
+        margin-left: auto;
+    }
+    /*subscription*/
+    .main-blog .subscription.subscription-catalog {
+        margin-top: -136px;
+    }
+}
+
+@media (min-width: 1904px) {
+    .blog-faq__wrapper {
+        padding: 118px 6.35% 250px;
+        background: url("../../../img/blog/blog-top-desc-bg.svg"), url("../../../img/blog/blog-desc@1x.png"), url("../../../img/blog/blog-bottom-desc-bg.svg");
+        background-position: 0 -22px, 58px 174px, 0 900px;
+        background-repeat: no-repeat;
+        background-color: #FFF7E1;
+    }
+    .blog-faq__title {
+        margin-bottom: 56px;
+    }
+    .blog-accordion__item {
+        padding: 39px 34px 39px 50px;
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+        border-radius: 20px;
+    }
+    .blog-accordion__item button {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .blog-accordion__icon {
+        top: 14px;
+    }
+}
