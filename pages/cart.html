@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/blocks/global/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <button class="header__nav-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <picture>
+                    <source media="(min-width: 1904px)"
+                        srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)"
+                        srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
+                        height="50" alt="Логотип">
+                </picture>
+                <div class="header__interaction">
+                    <button class="header__btn header__interaction-search" type="button"></button>
+                    <a class="header__btn header__interaction-basket"></a>
+                    <button class="header__btn header__interaction-user" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu__head">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
+                            width="110" height="50" alt="Логотип">
+                    </picture>
+                </div>
+                <div class="header-menu__main">
+                    <nav class="header-menu__nav">
+                        <ul class="header-menu__nav-list">
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class="header-menu__nav-item">
+                                <a class="header-menu__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-menu__interaction">
+                        <a class="header-menu__btn header-menu__interaction-basket"></a>
+                        <button class="header-menu__btn header-menu__interaction-user" type="button"></button>
+                    </div>
+                </div>
+                <div class="header-menu__footer">
+                    <a class="header-menu__mail" href="#">Import@kldrefine.com</a>
+                    <ul class="header-menu__social">
+                        <li class="header-menu__social-item header-menu__social-phone"></li>
+                        <li class="header-menu__social-item header-menu__social-insta"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-search">
+                <form class="header-search__form" action="#">
+                    <img class="header-search__img" src="../../img/header/search-form.svg" width="12" height="12" alt="">
+                    <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+                    <button class="header-search__btn" type="button">Отменить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-cart">
+        <section class="blog-nav">
+            <h1 class="visually-hidden">Кофе Miller</h1>
+            <div class="blog-nav__container">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__link-current">Корзина</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="cart__wrapper">
+                <div class="cart__cards cart-cards">
+                    <div class="cart-cards__wrapper">
+                        <h2 class="cart-cards__title">2 товара в корзине</h2>
+                        <button class="cart-cards__delite">Удалить все</button>
+                        <div class="cart-cards__box cart-cards__box-mob">
+                            <div class="cart-card">
+                                <div class="cart-card__good">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="../img/cart/good-tab@1x.png 1x, ../img/cart/good-tab@2x.png 2x">
+                                        <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="41" height="75" alt="">
+                                    </picture>
+                                    <div class="cart-card__info">
+                                        <h3 class="cart-card__info-title">Columbia Supremo</h3>
+                                        <p class="cart-card__info-name">Мытая, натуральная, смесь</p>
+                                        <span class="cart-card__info-weight">250 г.</span>
+                                    </div>
+                                    <div class="cart-card__price">
+                                        <span class="cart-card__price-total">243 ₽ </span>
+                                        <div class="cart-card__price-sale">
+                                            <span class="cart-card__price-old">270 ₽</span>
+                                            <span class="cart-card__price-discount">(-10%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-card__interaction">
+                                    <button class="cart-card__interaction-delite">
+                                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5H3M3 5H19M3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V5H3ZM6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M8 10V16M12 10V16" stroke="#F9B300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <div class="cart-card__interaction-inputs">
+                                        <button type="button" class="cart-card__interaction-button cart-card__interaction-less">-</button>
+                                        <input class="cart-card__interaction-input" type="text" value="1">
+                                        <button type="button" class="cart-card__interaction-button cart-card__interaction-more">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-card">
+                                <div class="cart-card__good">
+                                    <picture>
+                                        <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="41" height="75" alt="">
+                                    </picture>
+                                    <div class="cart-card__info">
+                                        <h3 class="cart-card__info-title">Columbia Supremo</h3>
+                                        <p class="cart-card__info-name">Мытая, натуральная, смесь</p>
+                                        <span class="cart-card__info-weight">250 г.</span>
+                                    </div>
+                                    <div class="cart-card__price">
+                                        <span class="cart-card__price-total">243 ₽ </span>
+                                        <div class="cart-card__price-sale">
+                                            <span class="cart-card__price-old">270 ₽</span>
+                                            <span class="cart-card__price-discount">(-10%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-card__interaction">
+                                    <button class="cart-card__interaction-delite">
+                                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5H3M3 5H19M3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V5H3ZM6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M8 10V16M12 10V16" stroke="#F9B300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <div class="cart-card__interaction-inputs">
+                                        <button type="button" class="cart-card__interaction-button cart-card__interaction-less">-</button>
+                                        <input class="cart-card__interaction-input" type="text" value="1">
+                                        <button type="button" class="cart-card__interaction-button cart-card__interaction-more">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-cards__box cart-cards__box-desc">
+                            <div class="cart-card-desc">
+                                <table class="cart-card-desc__table">
+                                    <tr class="cart-card-desc__table-name">
+                                        <th>Удалить&nbsp;товар</th>
+                                        <th>Наименование&nbsp;товара</th>
+                                        <th>Цена</th>
+                                        <th>Количество</th>
+                                        <th>Скидка&nbsp;(10%)</th>
+                                        <th>Итого</th>
+                                    </tr>
+                                    <tr class="cart-card-desc__table-content">
+                                        <td>
+                                            <button class="cart-card-desc__delite">
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00098 2L17.0006 16.9997" stroke="#F9B300" stroke-width="2.12553" stroke-linecap="round"/>
+                                                    <path d="M17.001 2L2.00132 16.9997" stroke="#F9B300" stroke-width="2.12553" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <div class="cart-card__good">
+                                                <picture>
+                                                    <!-- <source media="(min-width: 768px)" srcset="../img/cart/good-tab@1x.png 1x, ../img/cart/good-tab@2x.png 2x"> -->
+                                                    <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="43" height="80" alt="">
+                                                </picture>
+                                                <div class="cart-card__info">
+                                                    <h3 class="cart-card__info-title">Columbia Supremo</h3>
+                                                    <p class="cart-card__info-name">Мытая, натуральная, смесь</p>
+                                                    <span class="cart-card__info-weight">250 г.</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-old">270 ₽</span>
+                                        </td>
+                                        <td>
+                                            <div class="cart-card__interaction-inputs">
+                                                <button type="button" class="cart-card__interaction-button cart-card__interaction-less">-</button>
+                                                <input class="cart-card__interaction-input" type="text" value="1">
+                                                <button type="button" class="cart-card__interaction-button cart-card__interaction-more">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-sale">27 ₽</span>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-total">243 ₽</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-card-desc__table-content">
+                                        <td>
+                                            <button class="cart-card-desc__delite">
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00098 2L17.0006 16.9997" stroke="#F9B300" stroke-width="2.12553" stroke-linecap="round"/>
+                                                    <path d="M17.001 2L2.00132 16.9997" stroke="#F9B300" stroke-width="2.12553" stroke-linecap="round"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <div class="cart-card__good">
+                                                <picture>
+                                                    <!-- <source media="(min-width: 768px)" srcset="../img/cart/good-tab@1x.png 1x, ../img/cart/good-tab@2x.png 2x"> -->
+                                                    <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="43" height="80" alt="">
+                                                </picture>
+                                                <div class="cart-card__info">
+                                                    <h3 class="cart-card__info-title">Columbia Supremo</h3>
+                                                    <p class="cart-card__info-name">Мытая, натуральная, смесь</p>
+                                                    <span class="cart-card__info-weight">250 г.</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-old">270 ₽</span>
+                                        </td>
+                                        <td>
+                                            <div class="cart-card__interaction-inputs">
+                                                <button type="button" class="cart-card__interaction-button cart-card__interaction-less">-</button>
+                                                <input class="cart-card__interaction-input" type="text" value="1">
+                                                <button type="button" class="cart-card__interaction-button cart-card__interaction-more">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-sale">27 ₽</span>
+                                        </td>
+                                        <td>
+                                            <span class="cart-card__price-total">243 ₽</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__delivery cart-delivery">
+                    <div class="cart-delivery__wrapper">
+
+                    </div>
+                </div>
+                <div class="cart__promo cart-promo">
+                    <div class="cart-promo__wrapper">
+
+                    </div>
+                </div>
+                <div class="cart__result cart-result">
+                    <div class="card-result__wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link">Контакты</a>
+                    </li>
+                </ul>
+                <picture>
+                    <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                    <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                    <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
+                </picture>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+</body>
+</html>
