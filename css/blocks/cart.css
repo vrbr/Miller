@@ -234,6 +234,36 @@
         width: 25px;
         height: 27px;
     }
+    /*delivery*/
+    .cart-delivery__wrapper {
+        padding: 40px 4.8% 94px;
+    }
+    .cart-title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .cart-form__info, .cart-form__address {
+        margin-bottom: 20px;
+    }
+    .cart-form__title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .cart-form-input {
+        padding: 22px 50px;
+        height: 70px;
+    }
+    .cart-form-input::placeholder {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .cart-form__button {
+        padding: 20px 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 1200px) {
