@@ -206,7 +206,7 @@
                                         <td>
                                             <div class="cart-card__good">
                                                 <picture>
-                                                    <!-- <source media="(min-width: 768px)" srcset="../img/cart/good-tab@1x.png 1x, ../img/cart/good-tab@2x.png 2x"> -->
+                                                    <source media="(min-width: 1904px)" srcset="../img/cart/good-desc@1x.png 1x, ../img/cart/good-desc@2x.png 2x">
                                                     <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="43" height="80" alt="">
                                                 </picture>
                                                 <div class="cart-card__info">
@@ -245,7 +245,7 @@
                                         <td>
                                             <div class="cart-card__good">
                                                 <picture>
-                                                    <!-- <source media="(min-width: 768px)" srcset="../img/cart/good-tab@1x.png 1x, ../img/cart/good-tab@2x.png 2x"> -->
+                                                    <source media="(min-width: 1904px)" srcset="../img/cart/good-desc@1x.png 1x, ../img/cart/good-desc@2x.png 2x">
                                                     <img class="cart-card__img" src="../img/cart/good@1x.png" srcset="../img/cart/good@2x.png" width="43" height="80" alt="">
                                                 </picture>
                                                 <div class="cart-card__info">
@@ -279,17 +279,78 @@
                 </div>
                 <div class="cart__delivery cart-delivery">
                     <div class="cart-delivery__wrapper">
-
+                        <h2 class="cart-title cart-delivery__title">Доставка</h2>
+                        <form class="cart-delivery__form cart-form" method="" action="">
+                            <fieldset class="cart-form__info">
+                                <legend class="cart-form__title">Контактная информация</legend>
+                                <input class="cart-form-input" type="text" placeholder="Имя">
+                                <input class="cart-form-input" type="text" placeholder="Фамилия">
+                                <input class="cart-form-input" type="number" placeholder="Телефон">
+                                <input class="cart-form-input" type="email" placeholder="Email">
+                                <textarea class="cart-form-input" type="text" placeholder="Название компании (необязательно)"></textarea>
+                            </fieldset>
+                            <fieldset class="cart-form__address">
+                                <legend class="cart-form__title">Адрес доставки</legend>
+                                <input class="cart-form-input" type="text" placeholder="Страна">
+                                <input class="cart-form-input" type="text" placeholder="Город">
+                                <input class="cart-form-input" type="text" placeholder="Улица, дом">
+                                <input class="cart-form-input" type="number" placeholder="Почтовый индекс">
+                                <textarea class="cart-form-input" type="text" placeholder="Комментарий (необязательно)"></textarea>
+                            </fieldset>
+                            <button class="cart-form__button" type="submit">Рассчитать доставку</button>
+                        </form>
                     </div>
                 </div>
                 <div class="cart__promo cart-promo">
                     <div class="cart-promo__wrapper">
-
+                        <h2 class="cart-title cart-promo__title">Промокод</h2>
+                        <p class="cart-promo__subtitle">Введите подарочный промокод в поле ниже 
+                            и получите скидку на заказ до 20%. Скидка 
+                            не распространяется на доставку</p>
+                        <form class="cart-promo__form cart-form" method="" action="">
+                            <input class="cart-form-input" type="text" placeholder="Введите промокод">
+                            <button class="cart-form__button" type="submit">Ввести промокод</button>
+                        </form>
                     </div>
                 </div>
                 <div class="cart__result cart-result">
                     <div class="card-result__wrapper">
-
+                        <h2 class="cart-title card-result__title">Итог: 486 ₽</h2>
+                        <div class="card-result__banks">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/cart/mc@1x.png 1x, ../img/cart/mc@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="../img/cart/mc-tab@1x.png 1x, ../img/cart/mc-tab@2x.png 2x">
+                                <img class="card-result__bank-mc" src="../img/cart/mc@1x.png" srcset="../img/cart/mc@2x.png" width="63" height="41" alt="">
+                            </picture>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/cart/visa@1x.png 1x, ../img/cart/visa@2x.png 2x">
+                                <source media="(min-width: 768px)" srcset="../img/cart/visa-tab@1x.png 1x, ../img/cart/visa-tab@2x.png 2x">
+                                <img class="card-result__bank-visa" src="../img/cart/visa@1x.png" srcset="../img/cart/visa@2x.png" width="53" height="35" alt="">
+                            </picture>
+                        </div>
+                        <form class="card-result__form" method="" action="">
+                            <p class="card-result__subtotal">Подытог: <span class="card-result__subtotal-sum">540</span> ₽</p>
+                            <p class="card-result__sale">Скидка: <span class="card-result__sale-sum">54</span> ₽ (10%)</p>
+                            <div class="card-result__delivery">
+                                <h3 class="card-result__delivery-title">Доставка:</h3>
+                                <ul class="card-result__delivery-list">
+                                    <li class="card-result__delivery-item">
+                                        <input class="card-result__input" name="choose" type="radio" id="door" checked>
+                                        <label for="door">СДЭК - до двери <span>390 ₽</span></label>
+                                    </li>
+                                    <li class="card-result__delivery-item">
+                                        <input class="card-result__input" name="choose" type="radio" id="mail">
+                                        <label for="mail">Почта России <span>390 ₽</span></label>
+                                    </li>
+                                    <li class="card-result__delivery-item">
+                                        <input class="card-result__input" name="choose" type="radio" id="courier">
+                                        <label for="courier">DPD - курьер, 3 дн <span>427 ₽</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="button card-result__button" type="submit">Оплатить заказ</button>
+                            <small class="card-result__more">Ваши персональные данные будут использоваться для управления доступом к вашей учетной записи и для других целей, описанных в нашем документе политика конфиденциальности.</small>
+                        </form>
                     </div>
                 </div>
             </div>
