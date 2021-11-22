@@ -195,6 +195,117 @@
     margin: 0;
     margin-bottom: 20px;
 }
+/*result*/
+.cart__result {
+    margin-bottom: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+}
+.card-result__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 30px 4.8% 50px;
+}
+.card-result__banks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.card-result__banks img {
+    display: block;
+    margin-left: 6px;
+}
+.card-result__form {
+    grid-column: 1/-1;
+}
+.card-result__subtotal,
+.card-result__sale {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #747474;
+}
+.card-result__sale {
+    margin-bottom: 20px;
+}
+.card-result__delivery {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+.card-result__delivery-title {
+    margin: 0;
+    margin-right: 6%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #222222;
+}
+.card-result__delivery-list {
+    padding-left: 28px;
+    width: 100%;
+}
+.card-result__delivery-item + .card-result__delivery-item{
+    padding-top: 20px;
+}
+.card-result__delivery-item label {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #222222;
+    cursor: pointer;
+    user-select: none;
+}
+.card-result__delivery-item label span {
+    font-weight: 700;
+}
+.card-result__input + label::before,
+.card-result__input:checked + label::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -28px;
+}
+.card-result__input + label::before {
+    background-color: #E4E4E4;
+}
+.card-result__input:checked + label::after {
+    background-color: #F9B300;
+}
+.card-result__delivery-list [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.card-result__button {
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.card-result__more {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #747474;
+}
 
 @media (min-width: 768px) {
     .main-cart .blog-nav__container {
@@ -293,6 +404,48 @@
     .cart-promo__form .cart-form-input {
         margin-bottom: 20px;
     }
+    /*result*/
+    .card-result__wrapper {
+        padding: 40px 4.8% 60px;
+    }
+    .card-result__title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .card-result__bank-mc {
+        width: 74px;
+        height: 49px;
+    }
+    .card-result__bank-visa {
+        width: 63px;
+        height: 41px;
+    }
+    .card-result__subtotal, .card-result__sale {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__sale {
+        margin-bottom: 10px;
+    }
+    .card-result__delivery-title {
+        margin-right: 7%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__delivery-item label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__button {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .card-result__more {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -311,7 +464,7 @@
     }
     .cart__wrapper {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 55% 45%;
         grid-template-rows: auto;
         grid-gap: 20px;
         padding-left: 4.8%;
@@ -480,6 +633,62 @@
     .cart-promo__form .cart-form-input {
         margin-bottom: 25px;
     }
+    /*result*/
+    .cart__result {
+        margin-bottom: 20px;
+    }
+    .card-result__wrapper {
+        padding: 40px 12% 14px;
+    }
+    .card-result__title {
+        margin-bottom: 12px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .card-result__bank-mc {
+        width: 63px;
+        height: 41px;
+    }
+    .card-result__bank-visa {
+        width: 53px;
+        height: 35px;
+    }
+    .card-result__subtotal, .card-result__sale {
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card-result__delivery {
+        margin-bottom: 20px;
+    }
+    .card-result__delivery-title {
+        margin-right: 6%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card-result__delivery-item + .card-result__delivery-item {
+        padding-top: 7px;
+    }
+    .card-result__delivery-item label {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card-result__input + label::before, .card-result__input:checked + label::after {
+        width: 12px;
+        height: 12px;
+        top: 1px;
+        left: -28px;
+    }
+    .card-result__button {
+        height: 49px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .card-result__more {
+        margin-top: 8px;
+        font-size: 10px;
+        line-height: 12px;
+    }
 }
 
 @media (min-width: 1349px) {
@@ -609,5 +818,48 @@
     }
     .cart-promo__form .cart-form-input {
         margin-bottom: 40px;
+    }
+    /*result*/
+    .card-result__wrapper {
+        padding: 50px 18% 23px;
+    }
+    .card-result__title {
+        margin-bottom: 12px;
+    }
+    .card-result__subtotal, .card-result__sale {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__delivery {
+        margin-bottom: 30px;
+    }
+    .card-result__delivery-title {
+        margin-right: 6%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__delivery-item + .card-result__delivery-item {
+        padding-top: 10px;
+    }
+    .card-result__delivery-item label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card-result__input + label::before, .card-result__input:checked + label::after {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -28px;
+    }
+    .card-result__button {
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .card-result__more {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
