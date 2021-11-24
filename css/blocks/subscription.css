@@ -48,6 +48,10 @@
 }
 .subscription__link {
     color: #F9B300;
+    transition: all 0.4s ease;
+}
+.subscription__link:hover {
+    color: #E2A300;
 }
 
 @media (min-width: 768px) {

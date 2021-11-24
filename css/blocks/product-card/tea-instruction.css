@@ -4,6 +4,7 @@
 }
 /*howtocook*/
 .main-instructions__howtocook {
+    position: relative;
     padding: 50px 4.8%;
     border-bottom: 1px solid #B3B3B3;
 }
@@ -17,8 +18,15 @@
 .tea-card__instruction .main-instructions__reviews-container {
     padding-top: 38px;
 }
+.health-card span#reviews {
+    position: absolute;
+    top: -120px;
+}
 
 @media (min-width: 768px) {
+    .health-card span#reviews {
+        top: -210px;
+    }
     .main-instructions__howtocook {
         padding-top: 40px;
         padding-bottom: 70px;
@@ -33,6 +41,9 @@
 }
 
 @media (min-width: 1200px) {
+    .health-card span#reviews {
+        top: -90px;
+    }
     /*instruction*/
     .tea-card__instruction .instruction__list {
         grid-template-columns: 1fr 1fr 1fr;
@@ -70,6 +81,15 @@
 }
 
 @media (min-width: 1904px) {
+    .health-card span#reviews {
+        top: -120px;
+    }
+    .health-card span#info {
+        top: -120px;
+    }
+    .health-card span#howtocook {
+        top: -90px;
+    }
     .main-instructions__howtocook {
         padding-top: 50px;
         padding-bottom: 108px;

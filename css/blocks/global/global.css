@@ -38,6 +38,7 @@ body {
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .container {
     margin: 0 auto;
@@ -51,6 +52,14 @@ body {
     background: #F9B300;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.button:hover {
+    background-color: #E2A300;
+}
+.button:active{
+    background-color: #C89000;
 }
 .section-title {
     margin: 0;
@@ -81,6 +90,9 @@ body {
     cursor: pointer;
     user-select: none;
 }
+.no-hidden {
+    overflow: visible;
+}
 
 @media (min-width: 768px) {
     body {
@@ -105,10 +117,17 @@ body {
         line-height: 23px;
     }
     .main-body {
+        position: relative;
+    }
+    .main-body::after {
+        position: absolute;
+        content: "";
         background: url("../../../img/promo/bg-laptop.svg") no-repeat;
-        background-size: 514px, 1244px;
-        background-position-x: right;
-        background-position-y: -197px;
+        width: 524px;
+        height: 1244px;
+        right: -20px;
+        top: -197px;
+        z-index: -1;
     }
     .container {
         width: 87.3%;

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-<body>
+<body class="no-hidden" id="top">
     <header class="header">
         <div class="header__wrapper container">
             <button class="header__nav-btn" type="button">
@@ -22,10 +22,10 @@
                     <div class="header__nav-menu">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                                <a class="header__nav-link" href="../index.html#catalog">Каталог товаров</a>
                             </li>
                             <li class="header__nav-item">
-                                <a class="header__nav-link">Блог</a>
+                                <a class="header__nav-link current">Блог</a>
                             </li>
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="contacts.html">Контакты</a>
@@ -33,16 +33,19 @@
                         </ul>
                     </div>
                 </nav>
-                <picture>
-                    <source media="(min-width: 1904px)"
-                        srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
-                    <source media="(min-width: 1349px)"
-                        srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
-                    <source media="(min-width: 768px)"
-                        srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
-                    <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
-                        height="50" alt="Логотип">
-                </picture>
+                <a class="index-back" href="../index.html">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                            srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                            srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="header__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110"
+                            height="50" alt="Логотип">
+                    </picture>
+                </a>
+                
                 <div class="header__interaction">
                     <button class="header__btn header__interaction-search" type="button"></button>
                     <a class="header__btn header__interaction-basket" href="cart.html"></a>
@@ -52,18 +55,21 @@
 
             <div class="header-menu">
                 <div class="header-menu__head">
-                    <picture>
-                        <source media="(min-width: 768px)"
-                            srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
-                        <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
-                            width="110" height="50" alt="Логотип">
-                    </picture>
+                    <a class="index-back" href="../index.html">
+                        <picture>
+                            <source media="(min-width: 768px)"
+                                srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                            <img class="header-menu__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png"
+                                width="110" height="50" alt="Логотип">
+                        </picture>
+                    </a>
+                    
                 </div>
                 <div class="header-menu__main">
                     <nav class="header-menu__nav">
                         <ul class="header-menu__nav-list">
                             <li class="header-menu__nav-item">
-                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                                <a class="header-menu__nav-link current" href="../index.html#catalog">Каталог товаров</a>
                             </li>
                             <li class="header-menu__nav-item">
                                 <a class="header-menu__nav-link">Блог</a>
@@ -116,18 +122,18 @@
             <div class="instruction__wrapper">
                 <ul class="instruction__list">
                     <li class="instruction__item">
-                        <a class="instruction__link" href="">Обучение</a>
+                        <a class="instruction__link current" href="#blog-dishes">Обучение</a>
                     </li>
                     <li class="instruction__item">
-                        <a class="instruction__link" href="">Новости</a>
+                        <a class="instruction__link" href="#blog-news">Новости</a>
                     </li>
                     <li class="instruction__item">
-                        <a class="instruction__link" href="">Частые вопросы</a>
+                        <a class="instruction__link" href="#blog-faq">Частые вопросы</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="blog-dishes">
+        <section class="blog-dishes" id="blog-dishes">
             <div class="blog-dishes__wrapper">
                 <div class="coffee-dishes__box">
                     <h2 class="blog-dishes__title">Приготовление кофе разными способами</h2>
@@ -479,7 +485,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog-news">
+        <section class="blog-news" id="blog-news">
             <div class="blog-news__wrapper">
                 <div class="blog-news__box">
                     <h2 class="coffee-instructions__title blog-news__title">Новости компании:</h2>
@@ -825,7 +831,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog-faq">
+        <section class="blog-faq" id="blog-faq">
             <div class="blog-faq__wrapper">
                 <h2 class="coffee-instructions__title blog-faq__title">Частые вопросы</h2>
                 <div class="blog-accordion">
@@ -903,7 +909,7 @@
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a class="footer__link" href="#">Каталог товаров</a>
+                        <a class="footer__link" href="../index.html#catalog">Каталог товаров</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__link">Блог</a>
@@ -912,17 +918,21 @@
                         <a class="footer__link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
-                <picture>
-                    <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
-                    <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
-                    <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
-                </picture>
+                <a class="anchor-top" href="#top">
+                    <picture>
+                        <source media="(min-width: 1904px)" srcset="../../img/header/logo-desk@1x.png 1x, ../../img/header/logo-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)" srcset="../../img/header/logo-laptop@1x.png 1x, ../../img/header/logo-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="../../img/header/logo-tab@1x.png 1x, ../../img/header/logo-tab@2x.png 2x">
+                        <img class="footer__logo" src="../../img/header/logo@1x.png" srcset="../../img/header/logo@2x.png" width="110" height="50" alt="">
+                    </picture>
+                </a>
+                
             </nav>
         </div>
     </footer>
 
     <script src="../../js/header.js"></script>
+    <script src="../../js/instruction.js"></script>
     <script src="../../js/blog-accordion.js"></script>
 </body>
 </html>

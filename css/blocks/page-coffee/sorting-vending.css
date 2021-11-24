@@ -113,6 +113,13 @@
         height: 546px;
         padding: 30px 33px 42px;
         border-radius: 10px;
+        transition: all 0.4s ease;
+    }
+    .sorting-vending__card:hover {
+        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.6);
+    }
+    .sorting-vending__card:hover .sorting-vending-card__img {
+        transform: scale(1.1);
     }
     .sorting-vending-header__size {
         padding-left: 23px;
@@ -122,6 +129,7 @@
     .sorting-vending-card__img {
         width: 274px;
         height: 211px;
+        transition: all 0.4s ease;
     }
     .sorting-vending-footer__text {
         margin-bottom: 23px;

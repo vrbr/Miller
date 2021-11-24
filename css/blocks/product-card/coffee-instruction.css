@@ -1,3 +1,8 @@
+.instruction {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .instruction__wrapper {
     padding: 10px 4.8%;
     background-color: #fff;
@@ -22,6 +27,25 @@
     border: 1px solid #C9C9C9;
     box-sizing: border-box;
     border-radius: 5px;
+}
+.instruction__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.instruction__link.current {
+    background: #FFF7E1;
+    border: 1px solid #F9B300;
+}
+.coffee-instruction__tasteandspecifications {
+    position: relative;
+}
+span#tasteandspecifications {
+    position: absolute;
+    top: -90px;
 }
 .coffee-instruction__taste {
     padding: 20px 4.8% 9px;
@@ -67,7 +91,12 @@
 }
 /*instruction*/
 .main-specifications__info {
+    position: relative;
     border-bottom: 1px solid #B3B3B3;
+}
+.health-card span#info {
+    position: absolute;
+    top: -130px;
 }
 .coffee-instruction__specifications {
     padding: 0 4.8%;
@@ -125,6 +154,7 @@
 }
 /*howtocook*/
 .coffee-instructions__howtocook {
+    position: relative;
     border-bottom: 1px solid #B3B3B3;
 }
 .coffee-instructions__howtocook-container {
@@ -183,6 +213,21 @@
     z-index: -1;
 }
 /*additionally*/
+.coffee-instructions__additionally {
+    position: relative;
+}
+span#howtocook,
+span#additionally,
+span#reviews,
+.tea-card span#info,
+.vending-card span#info {
+    position: absolute;
+    top: -90px;
+}
+.tea-card span#reviews,
+.vending-card span#reviews {
+    top: -120px;
+}
 .coffee-instructions__additionally-container {
     padding: 30px 4.8% 38px;
 }
@@ -215,6 +260,7 @@
 }
 /*reviews*/
 .main-instructions__reviews{
+    position: relative;
     background: url("../../../img/page-coffee/instruction/vector-bg.svg") no-repeat;
     background-size: contain;
     background-color: #F5F5F5;
@@ -304,6 +350,10 @@
 }
 
 @media (min-width: 768px) {
+    .health-card span#info,
+    .vending-card span#info {
+        top: -190px;
+    }
     .instruction__wrapper {
         padding: 20px 4.8%;
     }
@@ -388,6 +438,10 @@
     .coffee-instructions__howtocook label {
         font-size: 24px;
         line-height: 28px;
+        transition: all 0.4s ease;
+    }
+    .coffee-instructions__howtocook label:hover {
+        color: #F9B300;
     }
     .coffee-instructions__howtocook [type="radio"] + label::before {
         width: 220px;
@@ -403,6 +457,16 @@
         left: -20px;
         top: -20px;
         border-radius: 20px;
+    }
+    span#howtocook,
+    span#additionally,
+    .tea-card span#info {
+        top: -180px;
+    }
+    span#reviews,
+    .tea-card span#reviews,
+    .vending-card span#reviews {
+        top: -220px;
     }
     /*additionally*/
     .coffee-instructions__additionally-container {
@@ -479,10 +543,23 @@
         height: 70px;
         font-size: 25px;
         line-height: 30px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+    .main-instructions__reviews-button:hover {
+        background: #FFF7E1;
+        border: 1px solid #E4E4E4;
     }
 }
 
 @media (min-width: 1200px) {
+    .health-card span#info,
+    .vending-card span#info {
+        top: -90px;
+    }
+    .health-card span#howtocook {
+        top: -50px;
+    }
     .coffee-card__instruction .instruction__list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -592,6 +669,16 @@
     .coffee-instructions__howtocook [type="radio"]:checked + label::after {
         width: 250px;
         height: 250px;
+    }
+    span#howtocook,
+    span#additionally,
+    .tea-card span#info {
+        top: -80px;
+    }
+    span#reviews,
+    .tea-card span#reviews,
+    .vending-card span#reviews {
+        top: -100px;
     }
     /*additionally*/
     .coffee-instructions__additionally-container {
@@ -852,6 +939,13 @@
         height: 550px;
     }
     /*reviews*/
+    span#reviews,
+    .tea-card span#info,
+    .tea-card span#reviews,
+    .vending-card span#info,
+    .vending-card span#reviews {
+        top: -130px;
+    }
     .main-instructions__reviews-container {
         padding-bottom: 85px;
     }

@@ -13,7 +13,7 @@
 .promo-slide__wrapper {
     position: relative;
     height: 362px;
-    padding: 60px 50px 70px 4.8%;
+    padding: 60px 4.8% 70px;
 }
 
 .promo-slide__title {
@@ -111,7 +111,7 @@
 
     .promo-slide__wrapper {
         height: 591px;
-        padding: 130px 100px 145px 4.8%;
+        padding: 130px 4.8% 145px;
     }
 
     .promo-slide__title {

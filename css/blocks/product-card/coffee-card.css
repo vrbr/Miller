@@ -270,6 +270,12 @@
         margin-top: 30px;
         font-size: 25px;
         line-height: 29px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    .card-box__more:hover {
+        color: #E2A300;
     }
     .card-box__more::after {
         width: 20px;
@@ -277,6 +283,10 @@
         left: 238px;
         top: 10px;
         background-size: cover;
+        transition: all 0.4s ease;
+    }
+    .card-box__more:hover::after {
+        transform: translateY(5px);
     }
     .card-box__info-boxes {
         margin-bottom: 54px;
@@ -302,6 +312,7 @@
         border-radius: 5px;
         font-size: 25px;
         line-height: 29px;
+        cursor: pointer;
     }
     .card-box__choice-inputs {
         height: 70px;
@@ -310,12 +321,14 @@
         width: 100px;
         font-size: 40px;
         line-height: 47px;
+        cursor: pointer;
     }
     .card-box__choice-input {
         width: 103px;
         font-weight: 600;
         font-size: 25px;
         line-height: 30px;
+        cursor: pointer;
     }
     .card-box__choice-button {
         height: 70px;

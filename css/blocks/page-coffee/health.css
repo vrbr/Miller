@@ -145,6 +145,13 @@
     .health__form label {
         font-size: 20px;
         line-height: 24px;
+        transition: all 0.4s ease;
+    }
+    .health__form label:hover {
+        color: #F9B300;
+    }
+    .health__form [type="radio"]:checked + label {
+        color: #fff;
     }
     .health-dishes__item::after {
         background-image: url("../../../img/page-tea/tea-tab-01@1x.png");
@@ -159,6 +166,10 @@
         top: -10px;
         box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
         border-radius: 20px;
+        transition: all 0.4s ease;
+    }
+    .health-dishes__list [type="radio"] + label:hover::before {
+        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.6);
     }
     .health__form [type="radio"]:checked + label::after {
         border-radius: 20px;

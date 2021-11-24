@@ -60,6 +60,8 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+    border: none;
+    outline: none;
 }
 .swiper-horizontal>.preview-pagination.swiper-pagination-bullets, .preview-pagination.swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: -32px;
@@ -83,6 +85,10 @@
         width: 460px !important;
         height: 402px;
         padding-bottom: 40px;
+        transition: all 0.4s ease;
+    }
+    .preview-slide:hover {
+        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.5);
     }
     .preview-slide__wrapper {
         padding-left: 40px;
