@@ -347,9 +347,24 @@
     .coffee-choose__item + .coffee-choose__item {
         padding-top: 30px;
     }
+    .coffee-choose__item:hover label {
+        transition: all 0.2s ease;
+        color: #F9B300;
+    }
+    .catalog-form [type="radio"]:checked + label {
+        color: #fff;
+    }
     .coffee__form label {
         font-size: 24px;
         line-height: 28px;
+        transition: all 0.4s ease;
+    }
+    .coffee__form label:hover {
+        color: #F9B300;
+    }
+    .coffee__form label:hover svg path {
+        fill: #F9B300;
+        transition: all 0.2s ease;
     }
     .coffee-choose__radio + label::before,
     .coffee-choose__radio:checked + label::after {
@@ -377,6 +392,10 @@
         top: -20px;
         box-shadow: 0px 0px 61.44px rgba(149, 149, 149, 0.25);
         border-radius: 20px;
+        transition: all 0.4s ease;
+    }
+    .coffee-dishes__list [type="radio"] + label:hover::before {
+        box-shadow: 0px 0px 10px rgba(149, 149, 149, 0.6);
     }
     .coffee-dishes__list [type="radio"]:checked + label::after {
         width: 220px;

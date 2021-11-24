@@ -520,6 +520,9 @@
         border: 1px solid #F0F0F0;
         border-radius: 14px;
     }
+    .cart-card-desc__table-content:hover {
+        box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    }
     .cart-card-desc__table-content td {
         text-align: center;
     }
@@ -528,6 +531,7 @@
         border: none;
         outline: none;
         background: transparent;
+        cursor: pointer;
     }
     .cart-card__good {
         margin-bottom: 0;
@@ -575,6 +579,7 @@
         line-height: 21px;
         background: #F6F6F6;
         border-radius: 4px;
+        cursor: pointer;
     }
     .cart-card__interaction-input {
         width: 30px;
@@ -624,6 +629,11 @@
         padding: 13px 30px;
         font-size: 18px;
         line-height: 21px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    .cart-form__button:hover {
+        border: 1px solid #FFF7E1;
     }
     /*promo*/
     .cart-promo__wrapper {

@@ -85,6 +85,7 @@
     border: 1px solid #F9B300;
     box-sizing: border-box;
     border-radius: 3px;
+    cursor: pointer;
 }
 .sale-slide__content {
     margin-bottom: 23px;
@@ -93,6 +94,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.sale-deskr:hover {
+    cursor: pointer;
 }
 .sale-deskr__ratings {
     padding-bottom: 19px;
@@ -214,6 +218,10 @@
     .sale-slide {
         width: 340px !important;
         height: 552px;
+        transition: all 0.4s ease;
+    }
+    .sale-slide:hover {
+        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.5);
     }
     .sale-slide__wrapper {
         padding: 21px 38px 42px 35px;
@@ -251,6 +259,10 @@
     .sale-deskr__main-img {
         width: 144px;
         height: 260px;
+        transition: all 0.4s ease;
+    }
+    .sale-deskr:hover .sale-deskr__main-img {
+        transform: scale(1.1);
     }
     .sale-deskr__ratings {
         padding-bottom: 20px;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body id="top">
     <header class="header">
         <div class="header__wrapper container">
             <button class="header__nav-btn" type="button">
@@ -23,7 +23,7 @@
                     <div class="header__nav-menu">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a class="header__nav-link current" href="#">Каталог товаров</a>
+                                <a class="header__nav-link current" href="../index.html#catalog">Каталог товаров</a>
                             </li>
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="blog.html">Блог</a>
@@ -34,16 +34,19 @@
                         </ul>
                     </div>
                 </nav>
-                <picture>
-                    <source media="(min-width: 1904px)"
-                        srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
-                    <source media="(min-width: 1349px)"
-                        srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
-                    <source media="(min-width: 768px)"
-                        srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
-                    <img class="header__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110"
-                        height="50" alt="Логотип">
-                </picture>
+                <a class="index-back" href="../index.html">
+                    <picture>
+                        <source media="(min-width: 1904px)"
+                            srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)"
+                            srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                            srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                        <img class="header__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110"
+                            height="50" alt="Логотип">
+                    </picture>
+                </a>
+                
                 <div class="header__interaction">
                     <button class="header__btn header__interaction-search" type="button"></button>
                     <a class="header__btn header__interaction-basket" href="cart.html"></a>
@@ -53,18 +56,21 @@
 
             <div class="header-menu">
                 <div class="header-menu__head">
-                    <picture>
-                        <source media="(min-width: 768px)"
-                            srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
-                        <img class="header-menu__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png"
-                            width="110" height="50" alt="Логотип">
-                    </picture>
+                    <a class="index-back" href="../index.html">
+                        <picture>
+                            <source media="(min-width: 768px)"
+                                srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                            <img class="header-menu__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png"
+                                width="110" height="50" alt="Логотип">
+                        </picture>
+                    </a>
+                    
                 </div>
                 <div class="header-menu__main">
                     <nav class="header-menu__nav">
                         <ul class="header-menu__nav-list">
                             <li class="header-menu__nav-item">
-                                <a class="header-menu__nav-link current" href="#">Каталог товаров</a>
+                                <a class="header-menu__nav-link current" href="../index.html#catalog">Каталог товаров</a>
                             </li>
                             <li class="header-menu__nav-item">
                                 <a class="header-menu__nav-link" href="blog.html">Блог</a>
@@ -107,7 +113,7 @@
                             <a class="breadcrumbs__link" href="../index.html">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="">Каталог товаров</a>
+                            <a class="breadcrumbs__link" href="../index.html#catalog">Каталог товаров</a>
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link breadcrumbs__link-current">Здоровое питание</a>
@@ -163,7 +169,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -196,7 +202,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -229,7 +235,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -262,7 +268,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -295,7 +301,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -328,7 +334,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -361,7 +367,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -394,7 +400,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -427,7 +433,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -460,7 +466,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -493,7 +499,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -526,7 +532,7 @@
                             <option value="250 г.">250 г.</option>
                         </select>
                     </div>
-                    <a class="sorting-health-card__main" href="product-cards/health-cart.html">
+                    <a class="sorting-health-card__main" href="product-cards/health-card.html">
                         <picture>
                             <source media="(min-width: 1904px)" srcset="../../../img/page-health/health/health-desc@1x.png 1x, ../../../img/page-health/health/health-desc@2x.png 2x">
                             <source media="(min-width: 1349px)" srcset="../../../img/page-health/health/health-laptop@1x.png 1x, ../../../img/page-health/health/health-laptop@2x.png 2x">
@@ -581,7 +587,7 @@
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a class="footer__link" href="#">Каталог товаров</a>
+                        <a class="footer__link" href="../index.html#catalog">Каталог товаров</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__link" href="blog.html">Блог</a>
@@ -590,12 +596,15 @@
                         <a class="footer__link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
-                <picture>
-                    <source media="(min-width: 1904px)" srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
-                    <source media="(min-width: 1349px)" srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
-                    <img class="footer__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110" height="50" alt="">
-                </picture>
+                <a class="anchor-top" href="#top">
+                    <picture>
+                        <source media="(min-width: 1904px)" srcset="../img/header/logo-desk@1x.png 1x, ../img/header/logo-desk@2x.png 2x">
+                        <source media="(min-width: 1349px)" srcset="../img/header/logo-laptop@1x.png 1x, ../img/header/logo-laptop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="../img/header/logo-tab@1x.png 1x, ../img/header/logo-tab@2x.png 2x">
+                        <img class="footer__logo" src="../img/header/logo@1x.png" srcset="../img/header/logo@2x.png" width="110" height="50" alt="">
+                    </picture>
+                </a>
+                
             </nav>
         </div>
     </footer>

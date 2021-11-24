@@ -38,6 +38,13 @@
     height: 40px;
     border-radius: 50%;
     background-color: #F9B300;
+    transition: all 0.4s ease;
+}
+.insta__link:hover {
+    background-color: #E2A300;
+}
+.insta__link:active{
+    background-color: #C89000;
 }
 .insta__swiper {
     padding: 0 15px 22px 4.8%;
